@@ -1,0 +1,23 @@
+state={
+	id=788
+	name="Western Armenia"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = ARM
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ARM
+		add_core_of = TUR
+	}
+
+	provinces={ 789 6991 10472 4583 12376 652 1636 
+		 
+	}
+}

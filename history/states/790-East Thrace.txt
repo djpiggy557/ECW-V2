@@ -1,0 +1,23 @@
+state={
+	id=790
+	name="East Thrace"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = GRE
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GRE
+		add_core_of = TUR
+	}
+
+	provinces={ 849 922 3879 3893 6895 11842 
+		 
+	}
+}

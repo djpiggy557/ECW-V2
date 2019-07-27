@@ -1,0 +1,23 @@
+state={
+	id=789
+	name="Persian Azerbaijan"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = KUR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KUR
+		
+	}
+
+	provinces={ 7604 1822 
+		 
+	}
+}

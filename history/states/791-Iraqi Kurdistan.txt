@@ -1,0 +1,23 @@
+state={
+	id=791
+	name="Iraqi Kurdistan"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = KUR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KUR
+		add_core_of = IRQ
+	}
+
+	provinces={ 10811 3916 5014 8123 6826 10793 
+		 
+	}
+}
