@@ -136,11 +136,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Konstantin Päts"
+	name = "Jaan Anvelt"
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
-	picture = "GFX_Portrait_estonia_konstantin_pats"
+	picture = "portrait_est_Jaan_Anvelt.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = stalinism
 	traits = {
 		#
 	}
