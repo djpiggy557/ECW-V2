@@ -102,10 +102,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Antanas Snieckus"
-	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
+	name = "Vincas Mickevičius-Kapsukas"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "portrait_est_Vincas_Kapsukas.dds"
+	expire = "1999.1.1"
 	ideology = stalinism
 	traits = {
 		#

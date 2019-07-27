@@ -74,38 +74,14 @@ set_popularities = {
 	neutrality = 5
 }
 
-}
-
 create_country_leader = {
-	name = "Drastamat Kanayan"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1953.3.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Hovhannes Kajaznuni"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Grigor Harutyunyan"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1953.3.1"
+	name = "Aghasi Khanjian"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "portrait_arm_Aghasi_Khanjian.dds"
+	expire = "1999.1.1"
 	ideology = stalinism
 	traits = {
-		
+		#
 	}
 }
 

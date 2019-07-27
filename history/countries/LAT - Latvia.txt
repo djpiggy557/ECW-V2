@@ -117,11 +117,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Karlis Ulmanis"
-	desc = "POLITICS_KARLIS_ULMANIS_DESC"
-	picture = "GFX_Portrait_latvia_karlis_ulmanis"
-	expire = "1965.1.1"
-	ideology = oligarchism
+	name = "Pēteris Stučka"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "portrait_lat_peteris_stucka.dds"
+	expire = "1999.1.1"
+	ideology = stalinism
 	traits = {
 		#
 	}
@@ -133,26 +133,6 @@ create_country_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Fricis Menders"
-	desc = ""
-	picture = "GFX_portrait_lat_fricis_menders"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Vilis Lacis"
-	desc = ""
-	picture = "GFX_portrait_lat_vilis_lacis"
-	expire = "1965.1.1"
-	ideology = marxism
 	traits = {
 		#
 	}
