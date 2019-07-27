@@ -353,7 +353,6 @@ add_to_faction = HON
 add_to_faction = ITA
 add_to_faction = JAP
 add_to_faction = LIB
-add_to_faction = HOL
 add_to_faction = NIC
 add_to_faction = NOR
 add_to_faction = PAN

@@ -58,8 +58,8 @@ set_popularities = {
 }
 create_country_leader = {
 	
-	name = "Theodor Heuss"
-	picture = "gfx/leaders/RHI/Portrait_Rhineland_Theodor_Heuss.dds"
+	name = "Konrad Adenauer"
+	picture = "gfx/leaders/RHI/Portrait_Rhineland_Konrad_Adenauer.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

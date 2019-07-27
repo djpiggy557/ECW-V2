@@ -292,6 +292,7 @@ add_to_faction = TAN
 add_to_faction = GER
 add_to_faction = HUN
 add_to_faction = BUL
+add_to_faction = HOL
 
 
 add_ideas = {
