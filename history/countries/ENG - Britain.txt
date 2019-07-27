@@ -351,7 +351,7 @@ add_to_faction = GRE
 add_to_faction = HAI
 add_to_faction = HON
 add_to_faction = ITA
-add_to_faction = JAP
+add_to_faction = LUX
 add_to_faction = LIB
 add_to_faction = NIC
 add_to_faction = NOR
@@ -366,6 +366,7 @@ add_to_faction = VEN
 add_to_faction = URG
 add_to_faction = COS
 add_to_faction = USA
+add_to_faction = INS
 
 give_guarantee = RHI
 
