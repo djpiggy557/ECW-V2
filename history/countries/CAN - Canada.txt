@@ -183,9 +183,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Mackenzie King"
+	name = "Richard Bedford Bennett"
 	desc = "POLITICS_MACKENZIE_KING_DESC"
-	picture = "Portrait_Canada_Mackenzie_King.dds"
+	picture = "Portrait_Can_RB_Bennett.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

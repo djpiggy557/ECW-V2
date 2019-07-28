@@ -111,9 +111,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Georgi Dimitrov"
+	name = "Mihail Gerdzhikov"
 	desc = "POLITICS_GEORGI_DIMITROV_DESC"
-	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
+	picture = "portrait_bul_mihail_gerdzhikov.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {

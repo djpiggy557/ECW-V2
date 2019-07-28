@@ -61,15 +61,16 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1933.1.24"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 98
-	fascism = 1
-	communism = 1
+	democratic = 10
+	fascism = 70
+	communism = 5
+	neutrality = 15
 }
 
 1939.1.1 = {
@@ -94,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Eoin O'Duffy"
 	desc = "POLITICS_EOIN_ODUFFY_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	picture = "portrait_ire_eoin_oduffy.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

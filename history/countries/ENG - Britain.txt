@@ -342,7 +342,6 @@ add_to_faction = SAF
 add_to_faction = ARG
 add_to_faction = BEL
 add_to_faction = BRA
-add_to_faction = CHL
 add_to_faction = COL
 add_to_faction = CUB
 add_to_faction = DEN

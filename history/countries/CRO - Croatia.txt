@@ -83,23 +83,24 @@ set_convoys = 5
 	}
 }
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1935.6.9"
 	election_frequency = 12
 	elections_allowed = no # none after offset 1
 }
 set_popularities = {
-	democratic = 15
-	fascism = 75
+	democratic = 10
+	fascism = 5
 	communism = 10
+	neutrality = 75
 }
 
 create_country_leader = {
-	name = "Ante Pavelic"
+	name = "Ivo Perović"
 	desc = "ANTE_PAVELIC_DESC"
-	picture = "Portrait_Croatia_Ante_Pavelic.dds"
+	picture = "portrait_cro_ivo_perovic.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = despotism
 	traits = {
 		#
 	}

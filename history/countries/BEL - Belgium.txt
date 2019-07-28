@@ -107,9 +107,9 @@ set_convoys = 80
 set_stability = 0.75
 
 create_country_leader = {
-	name = "Hubert Pierlot"
+	name = "Charles de Broqueville"
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	picture = "portrait_bel_charles_broqueville.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

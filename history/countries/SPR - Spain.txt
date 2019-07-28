@@ -170,9 +170,9 @@ set_stability = 0.5
 }
 
 create_country_leader = {
-	name = "Manuel Azana"
+	name = "Niceto Alcalá-Zamora"
 	desc = "POLITICS_MANUEL_AZANA_DESC"
-	picture = "Portrait_Spain_Manuel_Azana.dds"
+	picture = "portrait_spr_niceto_zamora.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

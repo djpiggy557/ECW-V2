@@ -114,17 +114,19 @@ set_convoys = 20
 	}
 }
 
-set_convoys = 5
 set_politics = {
-	ruling_party = democratic
-	last_election = "1932.10.30"
-	election_frequency = 72  #but 4 years after this one in 1938.
-	elections_allowed = yes
-}
-set_popularities = {
-	democratic = 98
-	communism = 2
-}
+		ruling_party = communism
+		last_election = "1938.10.25"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		communism = 55
+		fascism = 5
+		democratic = 20
+		neutrality = 20
+	}
 
 create_country_leader = {
 	name = "Arturo Alessandri"
@@ -139,14 +141,17 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = communism
 		last_election = "1938.10.25"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 
 	set_popularities = {
-		democratic = 100
+		communism = 55
+		fascism = 5
+		democratic = 20
+		neutrality = 20
 	}
 
 	create_country_leader = {
@@ -173,9 +178,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Carlos Contreras Labarca"
+	name = "Carlos Dávila"
 	desc = "POLITICS_CARLOS_CONTRERAS_LABARCA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+	picture = "portrait_chl_Carlos_Dávila.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {

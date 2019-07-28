@@ -197,9 +197,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Sefik Hüsnü"
+	name = "Ethem Nejat"
 	desc = "POLITICS_SEFIK_HUSNU_DESC"
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
+	picture = "Portrait_tur_Ethem_Nejat.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
