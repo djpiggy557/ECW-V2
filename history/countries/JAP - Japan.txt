@@ -300,9 +300,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Hirohito"
+	name = "Yasuhito"
 	desc = "POLITICS_Hirohito_DESC"
-	picture = "Portrait_Japan_Hirohito.dds"
+	picture = "portrait_jap_Yasuhito.dds"
 	expire = "1989.1.1"
 	ideology = fascism_ideology
 	traits = {

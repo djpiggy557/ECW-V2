@@ -296,9 +296,9 @@ set_autonomy = {
 }
 
 create_country_leader = {
-	name = "Franklin Delano Roosevelt"
+	name = "John J. Pershing"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "Portrait_USA_Franklin_Roosevelt.dds"
+	picture = "portrait_usa_Johnn_Pershing.dds"
 	expire = "1947.1.1"
 	ideology = liberalism
 	traits = {

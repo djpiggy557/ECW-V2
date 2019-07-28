@@ -391,9 +391,9 @@ create_country_leader = {
 
 
 create_country_leader = {
-	name = "Stanley Baldwin"
+	name = "Ramsay MacDonald"
 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
-	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
+	picture = "portrait_eng_Ramsay_MacDonald.dds"
 	expire = "1938.1.1"
 	ideology = liberalism
 	traits = {

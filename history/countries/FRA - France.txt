@@ -229,9 +229,9 @@ add_ideas = {
 
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
-	name = "Édouard Daladier"
+	name = "Albert Lebrun"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
+	picture = "portrait_fra_Albert_Lebrun.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
