@@ -38,6 +38,16 @@ if = {
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		coastal_defense_ships = 1
+
+if = {
+	limit = {
+		has_start_date < 1932.01.02
+	}
+
+	declare_war_on = {
+		target = COL
+		type = annex_everything
+	
 	}
 }
 
@@ -105,19 +115,19 @@ set_convoys = 5
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1931.10.11"
+	last_election = "1999.10.11"
 	election_frequency = 96
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 49
-	fascism = 51
+	democratic = 20
+	fascism = 80
 }
 
 create_country_leader = {
-	name = "Óscar Benavides"
+	name = "Luis M.S. Cerro"
 	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "GFX_Portrait_peru_oscar_benavides"
+	picture = "portrait_pru_luis_cerro.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
