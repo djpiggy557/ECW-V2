@@ -115,25 +115,28 @@ set_convoys = 5
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1999.10.11"
+	last_election = "1932.10.11"
 	election_frequency = 96
 	elections_allowed = no
 }
 set_popularities = {
 	democratic = 20
 	fascism = 80
+	communism = 0
+	neutrality = 0
 }
 
 create_country_leader = {
 	name = "Luis M.S. Cerro"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
 	picture = "portrait_pru_luis_cerro.dds"
-	expire = "1965.1.1"
+	expire = "1999.1.1"
 	ideology = fascism_ideology
 	traits = {
 		#
 	}
 }
+
 
 1939.1.1 = {
 	create_country_leader = {
