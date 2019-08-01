@@ -1,0 +1,418 @@
+focus_tree = { 
+id = HUN
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = HUN 
+} 
+} 
+#Focus for Slovak Expulsion from the South
+focus = { 
+id = HUN_slovakexpulsionfromthesouth
+icon = GFX_goal_generic_demand_territory
+x = 32
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_magyarization } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+SLO = {remove_state_core= 664}
+ } 
+
+ } 
+
+#Focus for filler
+focus = { 
+id = HUN_filler
+icon = GFX_goal_unknown
+x = 38
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Solidify the Soviet State
+focus = { 
+id = HUN_solidifythesovietstate
+icon = GFX_focus_generic_join_comintern
+x = 14
+y = 1
+cost = 5
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power= 50
+ } 
+
+ } 
+
+#Focus for Removed from Crisana
+focus = { 
+id = HUN_removedfromcrisana
+icon = GFX_goal_generic_demand_territory
+x = 36
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_removedfromsoutherntransylvania } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+ROM = {remove_state_core= 83}
+ } 
+
+ } 
+
+#Focus for Magyarization
+focus = { 
+id = HUN_magyarization
+icon = GFX_focus_generic_military_mission
+x = 34
+y = 1
+cost = 5
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Removed from Southern Transylvania
+focus = { 
+id = HUN_removedfromsoutherntransylvania
+icon = GFX_goal_generic_demand_territory
+x = 36
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_removedfromnortherntransylvania } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+ROM = {remove_state_core= 84}
+ } 
+
+ } 
+
+#Focus for Begin the Romanian Deportaion
+focus = { 
+id = HUN_begintheromaniandeportaion
+icon = GFX_goal_generic_demand_territory
+x = 36
+y = 2
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_magyarization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Removed from Northern Transylvania
+focus = { 
+id = HUN_removedfromnortherntransylvania
+icon = GFX_goal_generic_demand_territory
+x = 36
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_begintheromaniandeportaion } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+ROM = {remove_state_core= 76}
+ } 
+
+ } 
+
+#Focus for a
+focus = { 
+id = HUN_a
+icon = GFX_goal_unknown
+x = 35
+y = 12
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Rakosi Coup
+focus = { 
+id = HUN_rakosicoup
+icon = GFX_goal_generic_dangerous_deal
+x = 14
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_solidifythesovietstate } 
+mutually_exclusive = { focus = HUN_backtotherepublic } 
+mutually_exclusive = { focus = HUN_stickwithbelakun } 
+mutually_exclusive = { focus = HUN_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Collective Farming
+focus = { 
+id = HUN_collectivefarming
+icon = GFX_goal_generic_national_unity
+x = 6
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_finishrepairinginflation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Kunist One Party System
+focus = { 
+id = HUN_kunistonepartysystem
+icon = GFX_goal_support_communism
+x = 8
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_purgethesocialdemocrats } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Leave the Comintern
+focus = { 
+id = HUN_leavethecomintern
+icon = GFX_focus_eng_liberate_the_home_of_marx
+x = 7
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_kunistonepartysystem } 
+prerequisite = { focus = HUN_collectivefarming } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+leave_faction= HUN
+ } 
+
+ } 
+
+#Focus for Stick with Bela Kun
+focus = { 
+id = HUN_stickwithbelakun
+icon = GFX_focus_generic_soviet_politics
+x = 7
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_solidifythesovietstate } 
+mutually_exclusive = { focus = HUN_backtotherepublic } 
+mutually_exclusive = { focus = HUN_rakosicoup } 
+mutually_exclusive = { focus = HUN_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Liberate the Croats
+focus = { 
+id = HUN_liberatethecroats
+icon = GFX_focus_YUG_banovina_of_croatia
+x = 32
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_removeserbsfromvojvodina } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_wargoal= { 
+type = puppet_target
+target = CRO
+}
+ } 
+
+ } 
+
+#Focus for Remove Serbs from Banat
+focus = { 
+id = HUN_removeserbsfrombanat
+icon = GFX_goal_generic_demand_territory
+x = 32
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_austrianquestion } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+SER = {remove_state_core= 764}
+ } 
+
+ } 
+
+#Focus for Remove Serbs from Vojvodina
+focus = { 
+id = HUN_removeserbsfromvojvodina
+icon = GFX_goal_generic_demand_territory
+x = 32
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_removeserbsfrombanat } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+SER = {remove_state_core= 45}
+ } 
+
+ } 
+
+#Focus for Back to the Republic
+focus = { 
+id = HUN_backtotherepublic
+icon = GFX_goal_anti_comintern_pact
+x = 22
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_solidifythesovietstate } 
+mutually_exclusive = { focus = HUN_rakosicoup } 
+mutually_exclusive = { focus = HUN_stickwithbelakun } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Removed from Banat
+focus = { 
+id = HUN_removedfrombanat
+icon = GFX_goal_generic_demand_territory
+x = 36
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_removedfromcrisana } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+ROM = {remove_state_core= 82}
+ } 
+
+ } 
+
+#Focus for Finish Repairing Inflation
+focus = { 
+id = HUN_finishrepairinginflation
+icon = GFX_focus_hol_the_foundations_of_defense
+x = 6
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_stickwithbelakun } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Slovak Expulsion from Carpathia
+focus = { 
+id = HUN_slovakexpulsionfromcarpathia
+icon = GFX_goal_generic_demand_territory
+x = 32
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_slovakexpulsionfromthesouth } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+SLO = {remove_state_core= 73}
+ } 
+
+ } 
+
+#Focus for Crush Codreanu
+focus = { 
+id = HUN_crushcodreanu
+icon = GFX_goal_generic_demand_territory
+x = 36
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_removedfrombanat } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_wargoal= { 
+type = puppet_target
+target = ROM
+}
+ } 
+
+ } 
+
+#Focus for Austrian Question
+focus = { 
+id = HUN_austrianquestion
+icon = GFX_goal_generic_demand_territory
+x = 32
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_slovakexpulsionfromcarpathia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Purge the Social Democrats
+focus = { 
+id = HUN_purgethesocialdemocrats
+icon = GFX_goal_generic_war_with_comintern
+x = 8
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_stickwithbelakun } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }
