@@ -1,0 +1,24 @@
+add_namespace = kommissarreich
+
+##Event: May Day Celebrations!
+country_event = {
+ id = kommissarreich.1
+ title = kommissarreich.1.title
+ desc = kommissarreich.1.desc
+ picture = GFX_report_event_pla_in_beijing
+ is_triggered_only = yes
+ fire_only_once = yes
+ trigger = {
+complete_national_focus= GER_celebratemayday
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = kommissarreich.1.a
+		ai_chance = { factor = 1}
+		add_popularity= { 
+ideology = communism
+popularity = 0.05 
+}
+add_national_unity= 0.05
+	}
+}
+
