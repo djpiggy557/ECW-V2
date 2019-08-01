@@ -373,7 +373,7 @@ add_namespace = {
 
 create_field_marshal = {
 	name = "Johan Knief"
-	picture = "Portrait_Germany_Hermann_Goring.dds"
+	picture = "portrait_ger_johan_knief.dds"
 	traits = { defensive_doctrine offensive_doctrine old_guard }
 	skill = 3
 	attack_skill = 3
@@ -385,7 +385,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Karl Radek"
-	picture = "Portrait_Germany_Hermann_Goring.dds"
+	picture = "portrait_ger_karl_radek.dds"
 	traits = {  offensive_doctrine armor_officer }
 	skill = 3
 	id = 2
@@ -397,7 +397,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Leo Jogiches"
-	picture = "Portrait_Germany_Hermann_Goring.dds"
+	picture = "portrait_ger_leo_jogiches.dds"
 	traits = { trait_cautious armor_officer }
 	skill = 1
 	id = 3
@@ -409,7 +409,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Hans Marchwitza"
-	picture = "Portrait_Germany_Hermann_Goring.dds"
+	picture = "portrait_ger_hans_marchwitza.dds"
 	traits = { trickster trait_reckless war_hero armor_officer media_personality }
 	skill = 4
 	id = 4
@@ -421,7 +421,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Wilhelm Zaisser"
-	picture = "Portrait_Germany_Hermann_Goring.dds"
+	picture = "portrait_ger_wilhelm_zaisser.dds"
 	traits = { trickster armor_officer brilliant_strategist trait_engineer }
 	skill = 4
 	id = 5
@@ -433,7 +433,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Karl Schröder"
-	picture = "Portrait_Germany_Hermann_Goring.dds"
+	picture = "portrait_ger_karl_schroder.dds"
 	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
 	skill = 4
 	id = 6
@@ -445,7 +445,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Emil Eichhorn"
-	picture = "Portrait_Germany_Hermann_Goring.dds"
+	picture = "portrait_ger_emil_eichhorn.dds"
 	traits = { career_officer inflexible_strategist }
 	skill = 2
 	id = 7
@@ -470,7 +470,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Walter Ulbricht"
-	picture = "Portrait_Germany_Hermann_Goring.dds"
+	picture = "portrait_ger_walter_ulbricht.dds"
 	traits = { harsh_leader trait_cautious }
 	skill = 4
 	id = 9
@@ -482,7 +482,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "Ernst Toller"
-	picture = "Portrait_Germany_Hermann_Goring.dds"
+	picture = "portrait_ger_ernst_toller.dds"
 	traits = { defensive_doctrine brilliant_strategist trait_cautious politically_connected }
 	skill = 3
 	id = 10

@@ -110,7 +110,7 @@ country_event = { id = kommissarreich.6 }
 #Focus for Further Disarmament
 focus = { 
 id = GER_furtherdisarmament
-icon = GFX_goal_unknown
+icon = GFX_goal_continuous_reduce_training_time
 x = 3
 y = 4
 cost = 10
@@ -118,6 +118,9 @@ available_if_capitulated = yes
 prerequisite = { focus = GER_karlliebknechtsuccession } 
 ai_will_do = { 
  factor = 1
+ } 
+complete_tooltip = { 
+add_ideas = disarmed_nation
  } 
 
  } 
