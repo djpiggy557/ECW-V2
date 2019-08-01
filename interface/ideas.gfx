@@ -4013,13 +4013,8 @@ spriteTypes = {
 }
 
 	spriteType = {
-		name = "GFX_PurgedReichstag"
-		texturefile = "gfx/interface/ideas/generic_purge.dds"
+		name = "GFX_theSpartacistSpirit"
+		texturefile = "gfx/interface/ideas/generic_morale_bonus.dds"
 	}
 	
-	
-	spriteType = {
-		name = "GFX_DetainedRivals"
-		texturefile = "gfx/interface/ideas/officers_purged.dds"
-	}
 }

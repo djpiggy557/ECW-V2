@@ -45,48 +45,6 @@ ideas = {
 			}
 		}
 
-		Ger_Purged_Reichstag = {
-
-		        picture = generic_purge
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no			
-			}
-
-			removal_cost = -1
-
-			
-			modifier = {
-				stability_factor = -0.2
-				war_support_factor = -0.1			
-			}
-		}
-
-		Ger_Detained_Rivals = {
-
-		        picture = officers_purged
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no			
-			}
-
-			removal_cost = -1
-
-			
-			modifier = {
-				stability_factor = 0.1
-				communism_drift = 0.01
-		
-			}
-		}
-
 	# TECHNOLOGY
 	tank_manufacturer = { 
 		
