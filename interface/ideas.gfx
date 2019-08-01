@@ -4023,15 +4023,3 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/officers_purged.dds"
 	}
 }
-
-	spriteType = {
-		name = "GFX_DetainedRivals"
-		texturefile = "gfx/interface/ideas/officers_purged.dds"
-	}
-}
-
-    spriteType = {
-		name = "GFX_theSpartacistSpirit"
-		texturefile = "gfx/interface/ideas/fourth_international.dds"
-	}
-}
