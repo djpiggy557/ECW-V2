@@ -4,7 +4,7 @@ ideas = {
 
 		GER_the_Spartacist_Spirit = {
 
-			picture = generic_morale_bonus
+			picture = fourth_international
 			
 			allowed = {
 				original_tag = GER
