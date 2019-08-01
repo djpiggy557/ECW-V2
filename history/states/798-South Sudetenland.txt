@@ -1,0 +1,23 @@
+state={
+	id=798
+	name="South Sudatenland"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = GER
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GER
+		add_core_of = AUS
+	}
+
+	provinces={ 557 11525 5283 543 
+		 
+	}
+}
