@@ -1,0 +1,238 @@
+focus_tree = { 
+id = GER
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = GER 
+} 
+} 
+#Focus for Celebrate May Day!
+focus = { 
+id = GER_celebratemayday
+icon = GFX_focus_smiling_buddha
+x = 7
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+country_event = { id = kommissarreich.1 }
+ } 
+
+ } 
+
+#Focus for Autonomy for Minority's?
+focus = { 
+id = GER_autonomyforminoritys
+icon = GFX_focus_generic_polish_deal
+x = 6
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GER_celebratemayday } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+country_event = { id = kommissarreich.2 }
+ } 
+
+ } 
+
+#Focus for Remove the last Monuments
+focus = { 
+id = GER_removethelastmonuments
+icon = GFX_goal_continuous_non_factory_construct
+x = 8
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GER_celebratemayday } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+country_event = { id = kommissarreich.5 }
+ } 
+
+ } 
+
+#Focus for Reichstag Selection
+focus = { 
+id = GER_reichstagselection
+icon = GFX_focus_generic_self_management
+x = 13
+y = 3
+cost = 1
+available_if_capitulated = yes 
+prerequisite = { focus = GER_funeralofluxembourg } 
+mutually_exclusive = { focus = GER_karlliebknechtsuccession } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_country_leader= {
+ name = "Reichstag"
+desc = ""
+picture = "Portrait_GER_Reichstag.dds" 
+expire = "1965.1.1"
+ideology = stalinism
+traits = {
+}
+
+ }
+ } 
+
+ } 
+
+#Focus for Funeral of Luxembourg
+focus = { 
+id = GER_funeralofluxembourg
+icon = GFX_goal_generic_CAS
+x = 7
+y = 2
+cost = 1
+available_if_capitulated = yes 
+prerequisite = { focus = GER_autonomyforminoritys } 
+prerequisite = { focus = GER_removethelastmonuments } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+country_event = { id = kommissarreich.6 }
+ } 
+
+ } 
+
+#Focus for Further Disarmament
+focus = { 
+id = GER_furtherdisarmament
+icon = GFX_goal_unknown
+x = 3
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GER_karlliebknechtsuccession } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Leave Trotsky's faction
+focus = { 
+id = GER_leavetrotskysfaction
+icon = GFX_goal_unknown
+x = 5
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GER_karlliebknechtsuccession } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Find A Successor
+focus = { 
+id = GER_findasuccessor
+icon = GFX_goal_unknown
+x = 4
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = GER_leavetrotskysfaction } 
+prerequisite = { focus = GER_furtherdisarmament } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Ernst Thälmann Surprise Coup
+focus = { 
+id = GER_ernstthlmannsurprisecoup
+icon = GFX_goal_unknown
+x = 11
+y = 4
+cost = 1
+available_if_capitulated = yes 
+prerequisite = { focus = GER_reichstagselection } 
+mutually_exclusive = { focus = GER_eugenlevinelected } 
+mutually_exclusive = { focus = GER_wilhelmbuckelected } 
+mutually_exclusive = { focus = GER_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Wilhelm Buck Elected
+focus = { 
+id = GER_wilhelmbuckelected
+icon = GFX_goal_unknown
+x = 16
+y = 4
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = GER_reichstagselection } 
+mutually_exclusive = { focus = GER_ernstthlmannsurprisecoup } 
+mutually_exclusive = { focus = GER_eugenlevinelected } 
+mutually_exclusive = { focus = GER_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Karl Liebknecht Succession
+focus = { 
+id = GER_karlliebknechtsuccession
+icon = GFX_goal_tripartite_pact
+x = 4
+y = 3
+cost = 1
+available_if_capitulated = yes 
+prerequisite = { focus = GER_funeralofluxembourg } 
+mutually_exclusive = { focus = GER_reichstagselection } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_country_leader= {
+ name = "Karl Liebknecht"
+desc = ""
+picture = "Portrait_GER_Karl_Liebknecht.dds" 
+expire = "1965.1.1"
+ideology = stalinism
+traits = {
+}
+
+ }
+ } 
+
+ } 
+
+#Focus for Eugen Leviné Elected
+focus = { 
+id = GER_eugenlevinelected
+icon = GFX_goal_unknown
+x = 21
+y = 4
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = GER_reichstagselection } 
+mutually_exclusive = { focus = GER_ernstthlmannsurprisecoup } 
+mutually_exclusive = { focus = GER_wilhelmbuckelected } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

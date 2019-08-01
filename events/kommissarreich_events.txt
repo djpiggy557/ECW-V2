@@ -22,3 +22,129 @@ add_national_unity= 0.05
 	}
 }
 
+##Event: Autonomy for Minority's
+country_event = {
+ id = kommissarreich.2
+ title = kommissarreich.2.title
+ desc = kommissarreich.2.desc
+ picture = GFX_report_event_vienna_award_hungary
+ is_triggered_only = yes
+ fire_only_once = yes
+ trigger = {
+complete_national_focus= GER_AutonomyforMinority's?
+	}	option = {
+		name = kommissarreich.2.a
+		ai_chance = { factor = 1}
+		country_event= {
+days = 1
+id = kommissarreich.3
+}
+	}
+}
+
+##Event: Austrian Question
+country_event = {
+ id = kommissarreich.3
+ title = kommissarreich.3.title
+ desc = kommissarreich.3.desc
+ picture = GFX_report_event_generic_read_write
+ is_triggered_only = yes
+ fire_only_once = yes
+	option = {
+		name = kommissarreich.3.a
+		ai_chance = { factor = 1}
+		AUS = {
+transfer_state = 4
+transfer_state = 152
+}		
+puppet = AUS
+
+country_event = { id = kommissarreich.4 }
+	}
+	option = {
+		name = kommissarreich.3.b
+		ai_chance = { factor = 1}
+		add_stability= -0.10
+
+country_event = { id = kommissarreich.4 }
+	}
+}
+
+##Event: Czech Question
+country_event = {
+ id = kommissarreich.4
+ title = kommissarreich.4.title
+ desc = kommissarreich.4.desc
+ picture = GFX_event_test
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = kommissarreich.4.a
+		ai_chance = { factor = 1}
+		CZE = {
+transfer_state = 9
+transfer_state = 75
+}		
+puppet = CZE
+
+country_event = { id = kommissarreich.4 }
+	}
+	option = {
+		name = kommissarreich.4.b
+		ai_chance = { factor = 1}
+		add_stability= -0.10
+
+country_event = { id = kommissarreich.5 }
+	}
+}
+
+##Event: Destroy the last Bourgeois Statues
+country_event = {
+ id = kommissarreich.5
+ title = kommissarreich.5.title
+ desc = kommissarreich.5.desc
+ picture = GFX_report_event_germany_victory
+ is_triggered_only = yes
+ fire_only_once = yes
+ trigger = {
+complete_national_focus= RemovethelastMonuments
+	}	option = {
+		name = kommissarreich.5.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = kommissarreich.5.b
+		ai_chance = { factor = 1}
+	}
+}
+
+##Event: Luxembourg's successor
+country_event = {
+ id = kommissarreich.6
+ title = kommissarreich.6.title
+ desc = kommissarreich.6.desc
+ picture = GFX_report_event_soviet_purge_speech
+ is_triggered_only = yes
+ fire_only_once = yes
+ major = yes
+ trigger = {
+complete_national_focus= FuneralofLuxembourg
+	}	option = {
+		name = kommissarreich.6.a
+		ai_chance = { factor = 1}
+		kill_country_leader= yes
+
+create_country_leader= {
+ name = "Karl Liebknecht"
+desc = ""
+picture = "Portrait_GER_Karl_Liebknecht.dds" 
+expire = "1965.1.1"
+ideology = stalinism
+traits = {
+}
+
+ }
+	}
+}
+
