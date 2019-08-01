@@ -181,17 +181,6 @@ create_field_marshal = {
 	logistics_skill = 4
 }
 
-create_field_marshal = {
-	name = "Joseph Stalin"
-	gfx = "gfx/leaders/PRC/portrait_prc_joseph_stalin.dds"
-	traits = { defensive_doctrine trait_cautious politically_connected }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-
 create_corps_commander = {
 	name = "Zhu De"
 	gfx = "GFX_portrait_prc_zhu_de"
@@ -234,4 +223,16 @@ create_corps_commander = {
 	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 4
+}
+
+
+create_field_marshal = {
+	name = "Joseph Stalin"
+	picture = "portrait_prc_joseph_stalin.dds"
+	traits = { defensive_doctrine trait_cautious politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
