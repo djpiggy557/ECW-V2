@@ -1,0 +1,23 @@
+state={
+	id=797
+	name="Leticia"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = COL
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = PRU
+		add_core_of = COL
+	}
+
+	provinces={ 12825 
+		 
+	}
+}

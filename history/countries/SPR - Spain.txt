@@ -181,9 +181,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "José Díaz"
+	name = "Julián Besteiro"
 	desc = "POLITICS_JOSE_DIAZ_DESC"
-	picture = "Portrait_Spain_Jose_Diaz.dds"
+	picture = "Portrait_spr_Julian_Besteiro.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
