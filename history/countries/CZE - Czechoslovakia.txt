@@ -58,9 +58,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Klement Gottwald"
+	name = "Bohumil Jílek"
 	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
-	picture = "Portrait_Czech_Klement_Gottwald.dds"
+	picture = "portrait_cze_bohumil_jilek.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
