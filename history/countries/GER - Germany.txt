@@ -372,8 +372,8 @@ add_namespace = {
 }
 
 create_field_marshal = {
-	name = "Gerd von Rundstedt"
-	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
+	name = "Johan Knief"
+	picture = "Portrait_Europe_Generic_1.dds"
 	traits = { defensive_doctrine offensive_doctrine old_guard }
 	skill = 3
 	attack_skill = 3
@@ -384,8 +384,8 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Günther von Kluge"
-	picture = "Portrait_Germany_Gunther_von_Kluge.dds"
+	name = "Karl Radek"
+	picture = "Portrait_Europe_Generic_2.dds"
 	traits = {  offensive_doctrine armor_officer }
 	skill = 3
 	id = 2
@@ -396,8 +396,8 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
-	name = "Friedrich Paulus"
-	picture = "Portrait_Germany_Friedrich_Paulus.dds"
+	name = "Leo Jogiches"
+	picture = "Portrait_Europe_Generic_3.dds"
 	traits = { trait_cautious armor_officer }
 	skill = 1
 	id = 3
@@ -408,8 +408,8 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Erwin Rommel"
-	picture = "Portrait_Germany_Erwin_Rommel.dds"
+	name = "Hans Marchwitza"
+	picture = "portrait_europe_generic_4.dds"
 	traits = { trickster trait_reckless war_hero armor_officer media_personality }
 	skill = 4
 	id = 4
@@ -420,8 +420,8 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Erich von Manstein"
-	picture = "Portrait_Germany_Erich_von_Manstein.dds"
+	name = "Wilhelm Zaisser"
+	picture = "portrait_europe_generic_5.dds"
 	traits = { trickster armor_officer brilliant_strategist trait_engineer }
 	skill = 4
 	id = 5
@@ -432,8 +432,8 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Heinz Guderian"
-	picture = "Portrait_Germany_Heinz_Guderian.dds"
+	name = "Karl Schröder"
+	picture = "portrait_europe_generic_6.dds"
 	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
 	skill = 4
 	id = 6
@@ -444,8 +444,8 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Wilhelm List"
-	picture = "Portrait_Germany_Wilhelm_List.dds"
+	name = "Emil Eichhorn"
+	picture = "Portrait_Europe_Generic_land_1.dds"
 	traits = { career_officer inflexible_strategist }
 	skill = 2
 	id = 7
@@ -469,8 +469,8 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Fedor von Bock"
-	picture = "Portrait_Germany_Fedor_von_Bock.dds"
+	name = "Walter Ulbricht"
+	picture = "Portrait_Europe_Generic_land_3.dds"
 	traits = { harsh_leader trait_cautious }
 	skill = 4
 	id = 9
@@ -481,8 +481,8 @@ create_corps_commander = {
 }
 
 create_field_marshal = {
-	name = "Walter Model"
-	picture = "Portrait_Germany_Walter_Model.dds"
+	name = "Ernst Toller"
+	picture = "Portrait_Europe_Generic_land_2.dds"
 	traits = { defensive_doctrine brilliant_strategist trait_cautious politically_connected }
 	skill = 3
 	id = 10
