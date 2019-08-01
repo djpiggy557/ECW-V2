@@ -366,7 +366,7 @@ add_namespace = {
 	type = unit_leader
 }
 
-create_field_marshal = {
+create_corps_commander = {
 	name = "Johan Knief"
 	picture = "portrait_ger_johan_knief.dds"
 	traits = { defensive_doctrine offensive_doctrine old_guard }
@@ -375,7 +375,7 @@ create_field_marshal = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
-	id = 1
+	id = 3
 }
 
 create_field_marshal = {
@@ -390,12 +390,12 @@ create_field_marshal = {
 	logistics_skill = 3
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Leo Jogiches"
 	picture = "portrait_ger_leo_jogiches.dds"
 	traits = { trait_cautious armor_officer }
 	skill = 1
-	id = 3
+	id = 4
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
@@ -455,7 +455,7 @@ create_corps_commander = {
 	desc = ""
 	picture = "Portrait_Germany_Ewald_von_Kleist.dds"
 	traits = { armor_officer trait_cautious }
-	skill = 2
+	skill = 3
 	id = 8
 	attack_skill = 2
 	defense_skill = 1
