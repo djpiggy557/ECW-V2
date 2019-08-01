@@ -2,15 +2,18 @@ add_namespace = kommissarreich
 
 ##Event: May Day Celebrations!
 country_event = {
- id = kommissarreich.1
- title = kommissarreich.1.title
- desc = kommissarreich.1.desc
- picture = GFX_report_event_pla_in_beijing
- is_triggered_only = yes
- fire_only_once = yes
- trigger = {
-complete_national_focus= GER_celebratemayday
-	}	mean_time_to_happen = { days = 1}
+	id = kommissarreich.1
+	title = kommissarreich.1.title
+	desc = kommissarreich.1.desc
+	picture = GFX_report_event_pla_in_beijing
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		complete_national_focus= GER_celebratemayday
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = kommissarreich.1.a
 		ai_chance = { factor = 1}
@@ -21,18 +24,18 @@ popularity = 0.05
 add_national_unity= 0.05
 	}
 }
-
 ##Event: Autonomy for Minority's
 country_event = {
- id = kommissarreich.2
- title = kommissarreich.2.title
- desc = kommissarreich.2.desc
- picture = GFX_report_event_vienna_award_hungary
- is_triggered_only = yes
- fire_only_once = yes
- trigger = {
-complete_national_focus= GER_AutonomyforMinority's?
-	}	option = {
+	id = kommissarreich.2
+	title = kommissarreich.2.title
+	desc = kommissarreich.2.desc
+	picture = GFX_report_event_vienna_award_hungary
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		complete_national_focus= GER_AutonomyforMinority's?
+	}
+	option = {
 		name = kommissarreich.2.a
 		ai_chance = { factor = 1}
 		country_event= {
@@ -41,15 +44,14 @@ id = kommissarreich.3
 }
 	}
 }
-
 ##Event: Austrian Question
 country_event = {
- id = kommissarreich.3
- title = kommissarreich.3.title
- desc = kommissarreich.3.desc
- picture = GFX_report_event_generic_read_write
- is_triggered_only = yes
- fire_only_once = yes
+	id = kommissarreich.3
+	title = kommissarreich.3.title
+	desc = kommissarreich.3.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = kommissarreich.3.a
 		ai_chance = { factor = 1}
@@ -70,16 +72,17 @@ country_event = { id = kommissarreich.4 }
 country_event = { id = kommissarreich.4 }
 	}
 }
-
 ##Event: Czech Question
 country_event = {
- id = kommissarreich.4
- title = kommissarreich.4.title
- desc = kommissarreich.4.desc
- picture = GFX_report_event_cze_divided_nation
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = kommissarreich.4
+	title = kommissarreich.4.title
+	desc = kommissarreich.4.desc
+	picture = GFX_report_event_cze_divided_nation
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = kommissarreich.4.a
 		ai_chance = { factor = 1}
@@ -101,18 +104,18 @@ add_ideas = Ger_Autonomy_for_Minoritys
 country_event = { id = kommissarreich.5 }
 	}
 }
-
 ##Event: Destroy the last Bourgeois Statues
 country_event = {
- id = kommissarreich.5
- title = kommissarreich.5.title
- desc = kommissarreich.5.desc
- picture = GFX_report_event_germany_victory
- is_triggered_only = yes
- fire_only_once = yes
- trigger = {
-complete_national_focus= RemovethelastMonuments
-	}	option = {
+	id = kommissarreich.5
+	title = kommissarreich.5.title
+	desc = kommissarreich.5.desc
+	picture = GFX_report_event_germany_victory
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		complete_national_focus= RemovethelastMonuments
+	}
+	option = {
 		name = kommissarreich.5.a
 		ai_chance = { factor = 1}
 		set_political_party
@@ -131,19 +134,19 @@ add_popularity
 = { ideology = fascism popularity = 0.4 }
 	}
 }
-
 ##Event: Luxembourg's successor
 country_event = {
- id = kommissarreich.6
- title = kommissarreich.6.title
- desc = kommissarreich.6.desc
- picture = GFX_report_event_soviet_purge_speech
- is_triggered_only = yes
- fire_only_once = yes
- major = yes
- trigger = {
-complete_national_focus= FuneralofLuxembourg
-	}	option = {
+	id = kommissarreich.6
+	title = kommissarreich.6.title
+	desc = kommissarreich.6.desc
+	picture = GFX_report_event_soviet_purge_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		complete_national_focus= FuneralofLuxembourg
+	}
+	option = {
 		name = kommissarreich.6.a
 		ai_chance = { factor = 1}
 		kill_country_leader= yes
@@ -160,4 +163,63 @@ traits = {
  }
 	}
 }
+##Event: Thälmann's Coup!
+country_event = {
+	id = kommissarreich.7
+	title = kommissarreich.7.title
+	desc = kommissarreich.7.desc
+	picture = GFX_report_event_poland_rejects
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kommissarreich.7.a
+		ai_chance = { factor = 1}
+		create_country_leader= {
+ name = "Ernst Thälmann"
+desc = ""
+picture = "Portrait_GER_Ernst_Thälmann.dds" 
+expire = "1965.1.1"
+ideology = stalinism
+traits = {
+}
 
+ }
+
+add_stability
+= -0.1
+	}
+}
+##Event: Reichstag closed!
+country_event = {
+	id = kommissarreich.8
+	title = kommissarreich.8.title
+	desc = kommissarreich.8.desc
+	picture = GFX_report_event_soviet_in_riga
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = kommissarreich.8.a
+		ai_chance = { factor = 1}
+		add_ideas = Ger_Purged_Reichstag
+	}
+}
+##Event: Public Trials of Traitors
+country_event = {
+	id = kommissarreich.9
+	title = kommissarreich.9.title
+	desc = kommissarreich.9.desc
+	picture = GFX_report_event_soviet_purge_trial
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = kommissarreich.9.a
+		ai_chance = { factor = 1}
+		add_ideas = Ger_Detained_Rivals
+	}
+}
