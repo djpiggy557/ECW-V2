@@ -353,7 +353,6 @@ add_to_faction = NOR
 add_to_faction = PAN
 add_to_faction = POR
 add_to_faction = SIA
-add_to_faction = SPR
 add_to_faction = SWI
 add_to_faction = SWE
 add_to_faction = COS
