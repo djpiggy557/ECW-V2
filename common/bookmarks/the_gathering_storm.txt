@@ -70,9 +70,6 @@ bookmarks = {
 			ideology = fascism
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
 			}
 			focuses = {
 				GER_anschluss
