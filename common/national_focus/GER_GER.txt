@@ -106,6 +106,62 @@ traits = {
 		}
 	}
 
+	#Focus for Restaff the Military
+	focus = {
+		id = GER_restaffthemilitary
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 10
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_establishthestasi }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = GER_red_army_weakened
+		}
+	}
+
+	#Focus for March on Warsaw
+	focus = {
+		id = GER_marchonwarsaw
+		icon = GFX_focus_generic_little_entente
+		x = 11
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_restaffthemilitary 
+		}
+		prerequisite = { 
+			focus = GER_rebuildthegovernment 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = POL
+}
+		}
+	}
+
+	#Focus for Rebuild the Government
+	focus = {
+		id = GER_rebuildthegovernment
+		icon = GFX_focus_generic_soviet_politics
+		x = 12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_establishthestasi }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for Further Disarmament
 	focus = {
 		id = GER_furtherdisarmament
@@ -255,7 +311,7 @@ traits = {
 	#Focus for Establish the Stasi
 	focus = {
 		id = GER_establishthestasi
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_focus_generic_military_mission
 		x = 11
 		y = 6
 		cost = 10
@@ -267,17 +323,17 @@ traits = {
 			focus = GER_purgethereichstag 
 		}
 		prerequisite = { 
-			focus = GER_mobilizethemilitary 
+			focus = GER_purgethemilitary 
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	#Focus for Mobilize the Military
+	#Focus for Purge the Military
 	focus = {
-		id = GER_mobilizethemilitary
-		icon = GFX_focus_generic_little_entente
+		id = GER_purgethemilitary
+		icon = GFX_goal_demand_sudetenland
 		x = 9
 		y = 5
 		cost = 10
@@ -285,6 +341,9 @@ traits = {
 		prerequisite = { focus = GER_ernstthlmannssurprisecoup }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = GER_red_army_weakened
 		}
 	}
 

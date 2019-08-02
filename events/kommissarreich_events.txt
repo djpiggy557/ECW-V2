@@ -122,8 +122,6 @@ country_event = {
 = { ideology = communism popularity = -0.5 }
 
 add_political_powwer= 50
-
-add_national_unity= -0.05
 	}
 	option = {
 		name = kommissarreich.5.b
@@ -131,7 +129,7 @@ add_national_unity= -0.05
 		add_stability= 0.05
 
 add_popularity
-= { ideology = fascism popularity = 0.4 }
+= { ideology = fascism popularity = 0.05 }
 	}
 }
 ##Event: Luxembourg's successor
@@ -150,6 +148,8 @@ country_event = {
 		name = kommissarreich.6.a
 		ai_chance = { factor = 1}
 		kill_country_leader= yes
+
+add_stability= -0.1
 
 create_country_leader= {
  name = "Karl Liebknecht"
@@ -186,7 +186,7 @@ traits = {
  }
 
 add_stability
-= -0.1
+= -0.25
 	}
 }
 ##Event: Reichstag closed!

@@ -4030,3 +4030,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/fourth_international.dds"
 	}
 }
+
+	spriteType = {
+		name = "GFX_GERredarmy"
+		texturefile = "gfx/interface/ideas/mex_politicised_army.dds"
+	}
+}
+
+	spriteType = {
+		name = "GFX_GERredarmyweakened"
+		texturefile = "gfx/interface/ideas/generic_army_problems.dds"
+	}
+}

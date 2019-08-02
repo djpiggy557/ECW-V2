@@ -301,6 +301,7 @@ add_ideas = {
 	GER_the_Spartacist_Spirit
 	limited_exports
 	volunteer_only
+        GER_red_army
 }
 
 create_country_leader = {
