@@ -4042,3 +4042,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/generic_army_problems.dds"
 	}
 }
+
+	spriteType = {
+		name = "GFX_GERtrueredarmy"
+		texturefile = "gfx/interface/ideas/generic_communist_army.dds"
+	}
+}
+
+	spriteType = {
+		name = "GFX_GerCommunistReichstag"
+		texturefile = "gfx/interface/ideas/trotskyite_plot_purged.dds"
+	}
+}
+
+	spriteType = {
+		name = "GFX_GerCommunistReichstag"
+		texturefile = "gfx/interface/ideas/nkvd_2.dds"
+	}
+}

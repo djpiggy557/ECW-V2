@@ -2,6 +2,59 @@ ideas = {
 
 	country = {
 
+		Stasi = {
+			removal_cost = -1
+			
+		        picture = nkvd_2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				subversive_activites_upkeep = -0.5
+				land_reinforce_rate = 0.05
+			}
+		}
+
+		Ger_Communist_Reichstag = {
+
+		        picture = trotskyite_plot_purged
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no			
+			}
+
+			removal_cost = -1
+
+			
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.1			
+			}
+		}
+
+		GER_true_red_army = {
+
+			picture = generic_communist_army
+
+			allowed = { original_tag = GER }
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_regain = 0.1
+				training_time_factor = 0.2
+				land_reinforce_rate = 0.01
+			}
+		}	
+
 		GER_red_army = {
 
 			picture = prc_low_popular_support2

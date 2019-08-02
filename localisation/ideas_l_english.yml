@@ -2601,7 +2601,13 @@
  GER_red_army_desc:0 ""
  GER_red_army_weakened:0 "Purged Red Army"
  GER_red_army_weakened_desc:0 ""
-
+ GER_true_red_army:0 "A True Red Army"
+ GER_true_red_army_desc:0 ""
+ Ger_Communist_Reichstag:0 "Communist Reichstag"
+ Ger_Communist_Reichstag_desc:0 ""
+ Stasi:0 "Stasi"
+ Stasi_desc:0 ""
+ 
  GER_leo_jogiches:0 "Leo Jogiches"
  GER_ernst_toller:0 "Ernst Toller"
  GER_richard_muller:0 "Richard Müller"

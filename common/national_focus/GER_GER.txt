@@ -106,10 +106,10 @@ traits = {
 		}
 	}
 
-	#Focus for Establish Churchs of Reason
+	#Focus for Churchs of Reason
 	focus = {
-		id = GER_establishchurchsofreason
-		icon = GFX_goal_unknown
+		id = GER_churchsofreason
+		icon = GFX_goal_tfv_burn_the_royal_portraits
 		x = 19
 		y = 7
 		cost = 10
@@ -128,7 +128,7 @@ traits = {
 	#Focus for Replace Bank Officials
 	focus = {
 		id = GER_replacebankofficials
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		x = 20
 		y = 6
 		cost = 10
@@ -142,7 +142,7 @@ traits = {
 	#Focus for Revolutionize the Schools
 	focus = {
 		id = GER_revolutionizetheschools
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
 		x = 22
 		y = 6
 		cost = 10
@@ -156,7 +156,7 @@ traits = {
 	#Focus for Reform Paper Currency
 	focus = {
 		id = GER_reformpapercurrency
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
 		x = 21
 		y = 7
 		cost = 10
@@ -175,7 +175,7 @@ traits = {
 	#Focus for Revolution in the Factories
 	focus = {
 		id = GER_revolutioninthefactories
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		x = 20
 		y = 5
 		cost = 10
@@ -189,7 +189,7 @@ traits = {
 	#Focus for Housing Programs
 	focus = {
 		id = GER_housingprograms
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
 		x = 22
 		y = 5
 		cost = 10
@@ -203,7 +203,7 @@ traits = {
 	#Focus for Expand the Reichsbahn
 	focus = {
 		id = GER_expandthereichsbahn
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 16
 		y = 6
 		cost = 10
@@ -220,7 +220,7 @@ traits = {
 	#Focus for Reduce Corruption
 	focus = {
 		id = GER_reducecorruption
-		icon = GFX_goal_unknown
+		icon = GFX_goal_molotov_ribbentrop_pact
 		x = 15
 		y = 5
 		cost = 10
@@ -234,7 +234,7 @@ traits = {
 	#Focus for Promote Physical Education
 	focus = {
 		id = GER_promotephysicaleducation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		x = 17
 		y = 5
 		cost = 10
@@ -259,6 +259,9 @@ traits = {
 		}
 		completion_reward = {
 			remove_ideas = GER_red_army_weakened
+
+
+add_ideas = GER_true_red_army
 		}
 	}
 
@@ -298,6 +301,11 @@ target = POL
 		prerequisite = { focus = GER_establishthestasi }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = Ger_Communist_Reichstag
+
+remove_ideas = GER_Purged_Reichstag
 		}
 	}
 
@@ -479,6 +487,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = Stasi
+		}
 	}
 
 	#Focus for Purge the Military
@@ -497,6 +508,20 @@ traits = {
 			add_ideas = GER_red_army_weakened
 
 remove_ideas = GER_red_army
+		}
+	}
+
+	#Focus for Send in the Red Guards
+	focus = {
+		id = GER_sendintheredguards
+		icon = GFX_goal_continuous_suppression
+		x = 23
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_burythehatchet }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -534,10 +559,10 @@ remove_ideas = GER_red_army
 		}
 	}
 
-	#Focus for Bury the Hatche
+	#Focus for Bury the Hatchet
 	focus = {
-		id = GER_burythehatche
-		icon = GFX_goal_unknown
+		id = GER_burythehatchet
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
 		x = 23
 		y = 7
 		cost = 10
