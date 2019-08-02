@@ -1,3 +1,31 @@
 spriteTypes = { 
- 
+##Icon For: 1127157
+ SpriteType = { 
+ name = "GFX_churchsofreason" 
+ texturefile = "gfx/interface/goals/GFX_churchsofreason.tga" 
+ }##Icon For: 1127155
+ SpriteType = { 
+ name = "GFX_burythehatchet" 
+ texturefile = "gfx/interface/goals/GFX_burythehatchet.tga" 
+ }##Icon For: 1127156
+ SpriteType = { 
+ name = "GFX_reformpapercurrency" 
+ texturefile = "gfx/interface/goals/GFX_reformpapercurrency.tga" 
+ }##Icon For: 1127150
+ SpriteType = { 
+ name = "GFX_reformeconomicpolicys" 
+ texturefile = "gfx/interface/goals/GFX_reformeconomicpolicys.tga" 
+ }##Icon For: 1130469
+ SpriteType = { 
+ name = "GFX_thedreamhasfailed" 
+ texturefile = "gfx/interface/goals/GFX_thedreamhasfailed.tga" 
+ }##Icon For: 1130406
+ SpriteType = { 
+ name = "GFX_lessenrestrictionsonthechurch" 
+ texturefile = "gfx/interface/goals/GFX_lessenrestrictionsonthechurch.tga" 
+ }##Icon For: 1129858
+ SpriteType = { 
+ name = "GFX_revolutionizetheschools" 
+ texturefile = "gfx/interface/goals/GFX_revolutionizetheschools.tga" 
+ } 
  }

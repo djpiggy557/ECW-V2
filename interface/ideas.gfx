@@ -4060,3 +4060,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/nkvd_2.dds"
 	}
 }
+
+	spriteType = {
+		name = "GFX_GERPhysicalEducation"
+		texturefile = "gfx/interface/ideas/prc_the_long_march.dds"
+	}
+}
+
+	spriteType = {
+		name = "GFX_GERReformedPolicies"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
+	}
+}

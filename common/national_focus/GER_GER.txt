@@ -109,13 +109,13 @@ traits = {
 	#Focus for Churchs of Reason
 	focus = {
 		id = GER_churchsofreason
-		icon = GFX_goal_tfv_burn_the_royal_portraits
+		icon = GFX_churchsofreason
 		x = 19
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = GER_revolutionizetheschools 
+			focus = GER_burythehatchet 
 		}
 		prerequisite = { 
 			focus = GER_replacebankofficials 
@@ -139,15 +139,15 @@ traits = {
 		}
 	}
 
-	#Focus for Revolutionize the Schools
+	#Focus for Bury the Hatchet
 	focus = {
-		id = GER_revolutionizetheschools
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		id = GER_burythehatchet
+		icon = GFX_burythehatchet
 		x = 22
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = GER_housingprograms }
+		prerequisite = { focus = GER_sendintheredguards }
 		ai_will_do = {
 			factor = 1
 		}
@@ -156,7 +156,7 @@ traits = {
 	#Focus for Reform Paper Currency
 	focus = {
 		id = GER_reformpapercurrency
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_reformpapercurrency
 		x = 21
 		y = 7
 		cost = 10
@@ -165,7 +165,7 @@ traits = {
 			focus = GER_replacebankofficials 
 		}
 		prerequisite = { 
-			focus = GER_revolutionizetheschools 
+			focus = GER_burythehatchet 
 		}
 		ai_will_do = {
 			factor = 1
@@ -186,10 +186,10 @@ traits = {
 		}
 	}
 
-	#Focus for Housing Programs
+	#Focus for Send in the Red Guards
 	focus = {
-		id = GER_housingprograms
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		id = GER_sendintheredguards
+		icon = GFX_goal_generic_allies_build_infantry
 		x = 22
 		y = 5
 		cost = 10
@@ -200,20 +200,25 @@ traits = {
 		}
 	}
 
-	#Focus for Expand the Reichsbahn
+	#Focus for Reform Economic Policy's
 	focus = {
-		id = GER_expandthereichsbahn
-		icon = GFX_goal_generic_construct_infrastructure
+		id = GER_reformeconomicpolicys
+		icon = GFX_reformeconomicpolicys
 		x = 16
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_promotephysicaleducation 
+		}
+		prerequisite = { 
 			focus = GER_reducecorruption 
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = GER_Reformed_Policies
 		}
 	}
 
@@ -229,6 +234,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			remove_ideas = GER_red_army
+		}
 	}
 
 	#Focus for Promote Physical Education
@@ -242,6 +250,9 @@ traits = {
 		prerequisite = { focus = GER_erikzeignerelected }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = GER_Physical_Education
 		}
 	}
 
@@ -467,6 +478,43 @@ traits = {
 		}
 	}
 
+	#Focus for The Dream has failed
+	focus = {
+		id = GER_thedreamhasfailed
+		icon = GFX_thedreamhasfailed
+		x = 16
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_lessenrestrictionsonthechurch 
+		}
+		prerequisite = { 
+			focus = GER_lessenrestrictionsonproperty 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Lessen Restrictions on the Church
+	focus = {
+		id = GER_lessenrestrictionsonthechurch
+		icon = GFX_lessenrestrictionsonthechurch
+		x = 17
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reformeconomicpolicys }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability
+= 0.3
+		}
+	}
+
 	#Focus for Establish the Stasi
 	focus = {
 		id = GER_establishthestasi
@@ -511,15 +559,23 @@ remove_ideas = GER_red_army
 		}
 	}
 
-	#Focus for Send in the Red Guards
+	#Focus for Revolutionize the Schools
 	focus = {
-		id = GER_sendintheredguards
-		icon = GFX_goal_continuous_suppression
-		x = 23
+		id = GER_revolutionizetheschools
+		icon = GFX_revolutionizetheschools
+		x = 21
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = GER_burythehatchet }
+		prerequisite = { 
+			focus = GER_churchsofreason 
+		}
+		prerequisite = { 
+			focus = GER_reformpapercurrency 
+		}
+		prerequisite = { 
+			focus = GER_housingprograms 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -559,10 +615,10 @@ remove_ideas = GER_red_army
 		}
 	}
 
-	#Focus for Bury the Hatchet
+	#Focus for Housing Programs
 	focus = {
-		id = GER_burythehatchet
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		id = GER_housingprograms
+		icon = GFX_goal_continuous_naval_production
 		x = 23
 		y = 7
 		cost = 10
@@ -571,10 +627,31 @@ remove_ideas = GER_red_army
 			focus = GER_replacebankofficials 
 		}
 		prerequisite = { 
-			focus = GER_revolutionizetheschools 
+			focus = GER_burythehatchet 
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	#Focus for Lessen Restrictions on property
+	focus = {
+		id = GER_lessenrestrictionsonproperty
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reformeconomicpolicys }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability
+= 0.05
+
+add_political_power
+= 75
 		}
 	}
 
