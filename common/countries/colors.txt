@@ -543,3 +543,6 @@ RHI = {
 	color = rgb { 80 115 45}
 	color_ui = rgb { 222 247 198 }
 }
+DOA = {
+	color = rgb { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }

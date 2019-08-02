@@ -1,0 +1,23 @@
+state={
+	id=799
+	name="Deep Congo"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = DOA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = DOA
+		add_core_of = BEL
+	}
+
+	provinces={ 10858 1731 1929 
+		 
+	}
+}
