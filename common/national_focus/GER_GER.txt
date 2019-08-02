@@ -106,6 +106,145 @@ traits = {
 		}
 	}
 
+	#Focus for Establish Churchs of Reason
+	focus = {
+		id = GER_establishchurchsofreason
+		icon = GFX_goal_unknown
+		x = 19
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_revolutionizetheschools 
+		}
+		prerequisite = { 
+			focus = GER_replacebankofficials 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Replace Bank Officials
+	focus = {
+		id = GER_replacebankofficials
+		icon = GFX_goal_unknown
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_revolutioninthefactories }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Revolutionize the Schools
+	focus = {
+		id = GER_revolutionizetheschools
+		icon = GFX_goal_unknown
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_housingprograms }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reform Paper Currency
+	focus = {
+		id = GER_reformpapercurrency
+		icon = GFX_goal_unknown
+		x = 21
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_replacebankofficials 
+		}
+		prerequisite = { 
+			focus = GER_revolutionizetheschools 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Revolution in the Factories
+	focus = {
+		id = GER_revolutioninthefactories
+		icon = GFX_goal_unknown
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_eugenlevinelected }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Housing Programs
+	focus = {
+		id = GER_housingprograms
+		icon = GFX_goal_unknown
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_eugenlevinelected }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Reichsbahn
+	focus = {
+		id = GER_expandthereichsbahn
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_promotephysicaleducation 
+			focus = GER_reducecorruption 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reduce Corruption
+	focus = {
+		id = GER_reducecorruption
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_erikzeignerelected }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Promote Physical Education
+	focus = {
+		id = GER_promotephysicaleducation
+		icon = GFX_goal_unknown
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_erikzeignerelected }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for Restaff the Military
 	focus = {
 		id = GER_restaffthemilitary
@@ -225,7 +364,7 @@ target = POL
 			focus = GER_eugenlevinelected 
 		}
 		mutually_exclusive = { 
-			focus = GER_wilhelmbuckelected 
+			focus = GER_erikzeignerelected 
 		}
 		mutually_exclusive = { 
 			focus = GER_ 
@@ -238,9 +377,9 @@ target = POL
 		}
 	}
 
-	#Focus for Wilhelm Buck Elected
+	#Focus for Erik Zeigner Elected
 	focus = {
-		id = GER_wilhelmbuckelected
+		id = GER_erikzeignerelected
 		icon = GFX_goal_support_democracy
 		x = 16
 		y = 4
@@ -258,6 +397,18 @@ target = POL
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			create_country_leader= {
+ name = "Erik Zeigner"
+desc = ""
+picture = "portrait_ger_erik_zeigner.dds" 
+expire = "1965.1.1"
+ideology = stalinism
+traits = {
+}
+
+ }
 		}
 	}
 
@@ -291,7 +442,7 @@ traits = {
 	#Focus for Eugen Leviné Elected
 	focus = {
 		id = GER_eugenlevinelected
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_support_communism
 		x = 21
 		y = 4
 		cost = 2
@@ -301,7 +452,7 @@ traits = {
 			focus = GER_ernstthlmannssurprisecoup 
 		}
 		mutually_exclusive = { 
-			focus = GER_wilhelmbuckelected 
+			focus = GER_erikzeignerelected 
 		}
 		ai_will_do = {
 			factor = 1
@@ -344,6 +495,8 @@ traits = {
 		}
 		completion_reward = {
 			add_ideas = GER_red_army_weakened
+
+remove_ideas = GER_red_army
 		}
 	}
 
@@ -378,6 +531,25 @@ traits = {
 		}
 		completion_reward = {
 			country_event = { id = kommissarreich.9 }
+		}
+	}
+
+	#Focus for Bury the Hatche
+	focus = {
+		id = GER_burythehatche
+		icon = GFX_goal_unknown
+		x = 23
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_replacebankofficials 
+		}
+		prerequisite = { 
+			focus = GER_revolutionizetheschools 
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
