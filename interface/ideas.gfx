@@ -4072,3 +4072,45 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
 	}
 }
+
+	spriteType = {
+		name = "GFX_GERRevolutionizedFactories"
+		texturefile = "gfx/interface/ideas/FRA_factory_strikes.dds"
+	}
+}
+
+	spriteType = {
+		name = "GFX_GERReplacedbankofficials"
+		texturefile = "gfx/interface/ideas/generic_foreign_capital.dds"
+	}
+}
+
+	spriteType = {
+		name = "GFX_GERRedGuards"
+		texturefile = "gfx/interface/ideas/hun_secret_rearmament.dds"
+	}
+}
+
+	spriteType = {
+		name = "GFX_GERPurgedRivals"
+		texturefile = "gfx/interface/ideas/generic_purge.dds"
+	}
+}
+
+	spriteType = {
+		name = "GFX_GERChurchsofReason"
+		texturefile = "gfx/interface/ideas/generic_communism_drift_bonus.dds"
+	}
+}
+
+	spriteType = {
+		name = "GFX_GERHousingProgram"
+		texturefile = "gfx/interface/ideas/eng_spirit_of_the_industrial_revolution.dds"
+	}
+}
+
+	spriteType = {
+		name = "GFX_GERRevolutionizetheschools"
+		texturefile = "gfx/interface/ideas/FRA_national_mobilization_focus.dds"
+	}
+}

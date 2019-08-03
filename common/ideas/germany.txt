@@ -2,6 +2,99 @@ ideas = {
 
 	country = {
 
+		GER_Revolutionize_the_schools = {
+
+			picture = FRA_national_mobilization_focus
+			allowed = { original_tag = GER }
+
+			removal_cost = -1
+
+			modifier = {
+                                communism_drift = 0.10
+				stability_factor = 0.5
+			}
+		}	
+
+		GER_Housing_Program = {
+
+			picture = eng_spirit_of_the_industrial_revolution
+			allowed = { original_tag = GER }
+
+			removal_cost = -1
+
+			modifier = {
+                                local_building_slots_factor = -0.5
+				stability_factor = 0.5
+			}
+		}	
+
+		GER_Churchs_of_Reason = {
+
+			picture = generic_communism_drift
+			allowed = { original_tag = GER }
+
+			removal_cost = -1
+
+			modifier = {
+                                consumer_goods_factor = 0.05
+				stability_factor = 0.5
+			}
+		}	
+
+		GER_Purged_Rivals = {
+
+			picture = generic_purge
+			allowed = { original_tag = GER }
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = 0.5
+			}
+		}	
+
+		GER_Red_Guards = {
+
+			picture = hun_secret_rearmament
+			allowed = { original_tag = GER }
+
+			removal_cost = -1
+
+			modifier = {
+				foreign_subversive_activites = -0.50
+				stability_factor = 0.5
+			}
+		}	
+
+		GER_Replaced_bank_officials = {
+
+			picture = generic_foreign_capital
+			allowed = { original_tag = GER }
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = -0.10
+			}
+		}	
+
+
+		GER_Revolutionized_Factories = {
+
+			picture = FRA_factory_strikes
+			allowed = { original_tag = GER }
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.25
+                                production_factory_max_efficiency_factor = 0.1
+			}
+		}	
+
+
 		GER_Reformed_Policies = {
 
 			picture = generic_goods_red_bonus
@@ -134,7 +227,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.05				
+				stability_factor = 0.05	
+                                surrender_limit = 0.1			
 			}
 		}
 

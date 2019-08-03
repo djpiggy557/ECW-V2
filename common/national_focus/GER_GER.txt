@@ -123,6 +123,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = GER_Churchs_of_Reason
+		}
 	}
 
 	#Focus for Replace Bank Officials
@@ -137,6 +140,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = GER_Replaced_bank_officials
+		}
 	}
 
 	#Focus for Bury the Hatchet
@@ -150,6 +156,9 @@ traits = {
 		prerequisite = { focus = GER_sendintheredguards }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = GER_Purged_Rivals
 		}
 	}
 
@@ -184,6 +193,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = GER_Revolutionized_Factories
+		}
 	}
 
 	#Focus for Send in the Red Guards
@@ -197,6 +209,9 @@ traits = {
 		prerequisite = { focus = GER_eugenlevinelected }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = GER_Red_Guards
 		}
 	}
 
@@ -476,6 +491,18 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			create_country_leader= {
+ name = "Eugen Leviné"
+desc = ""
+picture = "portrait_ger_eugen_levine.dds" 
+expire = "1965.1.1"
+ideology = stalinism
+traits = {
+}
+
+ }
+		}
 	}
 
 	#Focus for The Dream has failed
@@ -494,6 +521,25 @@ traits = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			set_politics
+= { ruling_party = democratic elections_allowed = yes }
+
+add_popularity = {
+	ideology = democratic
+	popularity = 0.15
+}
+create_country_leader= {
+ name = "Erik Zeigner"
+desc = ""
+picture = "portrait_ger_erik_zeigner.dds" 
+expire = "1965.1.1"
+ideology = liberalism
+traits = {
+}
+
+ }
 		}
 	}
 
@@ -579,6 +625,9 @@ remove_ideas = GER_red_army
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = GER_Revolutionize_the_schools
+		}
 	}
 
 	#Focus for Purge the Reichstag
@@ -631,6 +680,9 @@ remove_ideas = GER_red_army
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = GER_Housing_Program
 		}
 	}
 
