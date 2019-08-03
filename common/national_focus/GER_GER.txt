@@ -212,6 +212,8 @@ traits = {
 		}
 		completion_reward = {
 			add_ideas = GER_Red_Guards
+
+remove_ideas = GER_red_army
 		}
 	}
 
@@ -505,6 +507,121 @@ traits = {
 		}
 	}
 
+	#Focus for Diplomacy
+	focus = {
+		id = GER_diplomacy
+		icon = GFX_diplomacy
+		x = 18
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#Focus for block
+	focus = {
+		id = GER_block
+		icon = GFX_goal_unknown
+		x = 45
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Uprising
+	focus = {
+		id = GER_theuprising
+		icon = GFX_theuprising
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_spreadsocialismtofrance 
+		}
+		prerequisite = { 
+			focus = GER_spreadsocialismtoitaly 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Spread Socialism to France
+	focus = {
+		id = GER_spreadsocialismtofrance
+		icon = GFX_goal_generic_cavalry
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_revolutionbypropaganda }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Spread Socialism to Italy
+	focus = {
+		id = GER_spreadsocialismtoitaly
+		icon = GFX_spreadsocialismtoitaly
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_revolutionbypropaganda }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Onward to Paris
+	focus = {
+		id = GER_onwardtoparis
+		icon = GFX_onwardtoparis
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_demandtherhine 
+		}
+		prerequisite = { 
+			focus = GER_demandschleswigholstein 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = POL
+}
+		}
+	}
+
+	#Focus for Demand the Rhine
+	focus = {
+		id = GER_demandtherhine
+		icon = GFX_goal_tripartite_pact
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_aggressiverevolution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for The Dream has failed
 	focus = {
 		id = GER_thedreamhasfailed
@@ -540,6 +657,36 @@ traits = {
 }
 
  }
+		}
+	}
+
+	#Focus for Aggressive Revolution
+	focus = {
+		id = GER_aggressiverevolution
+		icon = GFX_aggressiverevolution
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_diplomacy }
+		mutually_exclusive = { focus = GER_revolutionbypropaganda }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Revolution by propaganda
+	focus = {
+		id = GER_revolutionbypropaganda
+		icon = GFX_revolutionbypropaganda
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_diplomacy }
+		mutually_exclusive = { focus = GER_aggressiverevolution }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -704,6 +851,20 @@ remove_ideas = GER_red_army
 
 add_political_power
 = 75
+		}
+	}
+
+	#Focus for Demand Schleswig-Holstein
+	focus = {
+		id = GER_demandschleswigholstein
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_aggressiverevolution }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
