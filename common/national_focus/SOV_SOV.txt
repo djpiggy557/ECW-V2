@@ -1,163 +1,170 @@
-focus_tree = {
-	id = SOV
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = SOV
-		}
-	}
-	#Focus for Greek Communism
-	focus = {
-		id = SOV_greekcommunism
-		icon = GFX_goal_support_communism
-		x = 17
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_westernpath }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			GRE = {add_popularity= { 
+focus_tree = { 
+id = SOV
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = SOV 
+} 
+} 
+#Focus for Greek Communism
+focus = { 
+id = SOV_greekcommunism
+icon = GFX_goal_support_communism
+x = 17
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_westernpath } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+GRE = {add_popularity= { 
 ideology = communism 
 popularity = 0.5
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Free India
-	focus = {
-		id = SOV_freeindia
-		icon = GFX_goal_generic_political_pressure
-		x = 13
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_iraqirevolution }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			RAJ = {start_civil_war= {
+ } 
+
+#Focus for Free India
+focus = { 
+id = SOV_freeindia
+icon = GFX_goal_generic_political_pressure
+x = 13
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_iraqirevolution } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+RAJ = {start_civil_war= {
  ideology = communism 
 size = 25
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Western Path
-	focus = {
-		id = SOV_westernpath
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
-		x = 18
-		y = 2
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_permanentrevolution }
-		mutually_exclusive = { focus = SOV_easternpath }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+ } 
 
-	#Focus for Topple the Shah
-	focus = {
-		id = SOV_toppletheshah
-		icon = GFX_focus_rom_parties_end
-		x = 15
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_guominjunsupport }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			AFG = {start_civil_war= {
+#Focus for Western Path
+focus = { 
+id = SOV_westernpath
+icon = GFX_focus_usa_focus_on_europe
+x = 18
+y = 2
+cost = 1
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_permanentrevolution } 
+mutually_exclusive = { focus = SOV_easternpath } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Topple the Shah
+focus = { 
+id = SOV_toppletheshah
+icon = GFX_focus_rom_parties_end
+x = 15
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_guominjunsupport } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+AFG = {start_civil_war= {
  ideology = communism 
 size = 50
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Iraqi Revolution
-	focus = {
-		id = SOV_iraqirevolution
-		icon = GFX_goal_continuous_suppression
-		x = 13
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_kurdishsocialism }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			IRQ = {start_civil_war= {
+ } 
+
+#Focus for Iraqi Revolution
+focus = { 
+id = SOV_iraqirevolution
+icon = GFX_goal_continuous_suppression
+x = 13
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_kurdishsocialism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+IRQ = {start_civil_war= {
  ideology = communism 
 size = 50
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Invite Sinkiang
-	focus = {
-		id = SOV_invitesinkiang
-		icon = GFX_goal_support_communism
-		x = 15
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_toppletheshah }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_to_faction= SIK
-		}
-	}
+ } 
 
-	#Focus for Kurdish Socialism
-	focus = {
-		id = SOV_kurdishsocialism
-		icon = GFX_goal_generic_propaganda
-		x = 13
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_easternpath }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			KUR = {add_popularity= { 
+#Focus for Invite Sinkiang
+focus = { 
+id = SOV_invitesinkiang
+icon = GFX_goal_support_communism
+x = 15
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_toppletheshah } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_to_faction= SIK
+ } 
+
+ } 
+
+#Focus for Kurdish Socialism
+focus = { 
+id = SOV_kurdishsocialism
+icon = GFX_goal_generic_propaganda
+x = 13
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_easternpath } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+KUR = {add_popularity= { 
 ideology = communism 
 popularity = 0.25 
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Volga Arms Industry
-	focus = {
-		id = SOV_volgaarmsindustry
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 10
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_turkestanindustry }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			random_owned_controlled_state={
+ } 
+
+#Focus for Volga Arms Industry
+focus = { 
+id = SOV_volgaarmsindustry
+icon = GFX_goal_generic_construct_mil_factory
+x = 10
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_turkestanindustry } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+random_owned_controlled_state={
  limit = {
  free_building_slots = {
  building = arms_factory
@@ -195,23 +202,24 @@ random_owned_controlled_state={
 
  set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
  }
-		}
-	}
+ } 
 
-	#Focus for New Infrastructure
-	focus = {
-		id = SOV_newinfrastructure
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 10
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_volgaarmsindustry }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			random_owned_controlled_state= {
+ } 
+
+#Focus for New Infrastructure
+focus = { 
+id = SOV_newinfrastructure
+icon = GFX_goal_generic_construct_infrastructure
+x = 10
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_volgaarmsindustry } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+random_owned_controlled_state= {
 add_building_construction = {type = infrastructurelevel = 5
 instant_build = yes}
 
@@ -221,40 +229,42 @@ add_building_construction = {type = infrastructurelevel = 5
 instant_build = yes}
 
 }
-		}
-	}
+ } 
 
-	#Focus for Soviet Science
-	focus = {
-		id = SOV_sovietscience
-		icon = GFX_goal_generic_scientific_exchange
-		x = 10
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_newinfrastructure }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_research_slot= 6
-		}
-	}
+ } 
 
-	#Focus for Turkestan Industry
-	focus = {
-		id = SOV_turkestanindustry
-		icon = GFX_goal_generic_construction2
-		x = 10
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_beginafiveyearplan }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			random_owned_controlled_state={
+#Focus for Soviet Science
+focus = { 
+id = SOV_sovietscience
+icon = GFX_goal_generic_scientific_exchange
+x = 10
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_newinfrastructure } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_research_slot= 6
+ } 
+
+ } 
+
+#Focus for Turkestan Industry
+focus = { 
+id = SOV_turkestanindustry
+icon = GFX_goal_generic_construction2
+x = 10
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_beginafiveyearplan } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+random_owned_controlled_state={
  limit = {
  free_building_slots = {
  building = industrial_complex
@@ -292,336 +302,341 @@ random_owned_controlled_state={
 
  set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
  }
-		}
-	}
+ } 
 
-	#Focus for Dnieper Daugava Line
-	focus = {
-		id = SOV_dnieperdaugavaline
-		icon = GFX_goal_generic_construct_military
-		x = 8
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_beginafiveyearplan }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+ } 
 
-	#Focus for Return of Zapata
-	focus = {
-		id = SOV_returnofzapata
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
-		x = 19
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_defendcolombia }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			MEX = {start_civil_war= {
+#Focus for Dnieper Daugava Line
+focus = { 
+id = SOV_dnieperdaugavaline
+icon = GFX_goal_generic_construct_military
+x = 8
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_beginafiveyearplan } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Return of Zapata
+focus = { 
+id = SOV_returnofzapata
+icon = GFX_focus_mex_caudillo_private_armies
+x = 19
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_defendcolombia } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+MEX = {start_civil_war= {
  ideology = communism
 size = 25 
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Cut Down the West
-	focus = {
-		id = SOV_cutdownthewest
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
-		x = 18
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SOV_newlimericksoviet 
-		}
-		prerequisite = { 
-			focus = SOV_returnofzapata 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
+ } 
+
+#Focus for Cut Down the West
+focus = { 
+id = SOV_cutdownthewest
+icon = GFX_focus_attack_britain
+x = 18
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_newlimericksoviet } 
+prerequisite = { focus = SOV_returnofzapata } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_wargoal= { 
 type = annex_everything 
 target = ENG
 }
-		}
-	}
+ } 
 
-	#Focus for Trial of Zhdanov and Rudzutaks
-	focus = {
-		id = SOV_trialofzhdanovandrudzutaks
-		icon = GFX_goal_support_fourth_int
-		x = 3
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_trialofkirovandpostyshev }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+ } 
 
-	#Focus for Trial of Voroshilov
-	focus = {
-		id = SOV_trialofvoroshilov
-		icon = GFX_goal_support_fourth_int
-		x = 4
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SOV_trialofkuybyshevandmolotov 
-		}
-		prerequisite = { 
-			focus = SOV_trialofzhdanovandrudzutaks 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#Focus for Trial of Zhdanov and Rudzutaks
+focus = { 
+id = SOV_trialofzhdanovandrudzutaks
+icon = GFX_goal_support_fourth_int
+x = 3
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_trialofkirovandpostyshev } 
+ai_will_do = { 
+ factor = 1
+ } 
 
-	#Focus for Uncover the Berian Plot
-	focus = {
-		id = SOV_uncovertheberianplot
-		icon = GFX_goal_support_fourth_int
-		x = 4
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_trialofvoroshilov }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+ } 
 
-	#Focus for Trial of Yezhov and Mikoyan
-	focus = {
-		id = SOV_trialofyezhovandmikoyan
-		icon = GFX_goal_support_fourth_int
-		x = 5
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_greatpurge }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#Focus for Trial of Voroshilov
+focus = { 
+id = SOV_trialofvoroshilov
+icon = GFX_goal_support_fourth_int
+x = 4
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_trialofkuybyshevandmolotov } 
+prerequisite = { focus = SOV_trialofzhdanovandrudzutaks } 
+ai_will_do = { 
+ factor = 1
+ } 
 
-	#Focus for Great Purge
-	focus = {
-		id = SOV_greatpurge
-		icon = GFX_focus_generic_soviet_politics
-		x = 4
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event = { id = earlycoldwar.1 }
-		}
-	}
+ } 
 
-	#Focus for Trial of Kirov and Postyshev
-	focus = {
-		id = SOV_trialofkirovandpostyshev
-		icon = GFX_goal_support_fourth_int
-		x = 3
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_greatpurge }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#Focus for Uncover the Berian Plot
+focus = { 
+id = SOV_uncovertheberianplot
+icon = GFX_goal_support_fourth_int
+x = 4
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_trialofvoroshilov } 
+ai_will_do = { 
+ factor = 1
+ } 
 
-	#Focus for Trial of Kuybyshev and Molotov
-	focus = {
-		id = SOV_trialofkuybyshevandmolotov
-		icon = GFX_goal_support_fourth_int
-		x = 5
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_trialofyezhovandmikoyan }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+ } 
 
-	#Focus for Begin a Five Year Plan
-	focus = {
-		id = SOV_beginafiveyearplan
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 9
-		y = 1
-		cost = 1
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#Focus for Trial of Yezhov and Mikoyan
+focus = { 
+id = SOV_trialofyezhovandmikoyan
+icon = GFX_goal_support_fourth_int
+x = 5
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_greatpurge } 
+ai_will_do = { 
+ factor = 1
+ } 
 
-	#Focus for Permanent Revolution
-	focus = {
-		id = SOV_permanentrevolution
-		icon = GFX_goal_support_fourth_int
-		x = 16
-		y = 1
-		cost = 5
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
+ } 
 
-	#Focus for Guominjun Support
-	focus = {
-		id = SOV_guominjunsupport
-		icon = GFX_goal_generic_improve_relations
-		x = 15
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_easternpath }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			MEN = {add_popularity= { 
+#Focus for Great Purge
+focus = { 
+id = SOV_greatpurge
+icon = GFX_focus_generic_soviet_politics
+x = 4
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Trial of Kirov and Postyshev
+focus = { 
+id = SOV_trialofkirovandpostyshev
+icon = GFX_goal_support_fourth_int
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_greatpurge } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Trial of Kuybyshev and Molotov
+focus = { 
+id = SOV_trialofkuybyshevandmolotov
+icon = GFX_goal_support_fourth_int
+x = 5
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_trialofyezhovandmikoyan } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Begin a Five Year Plan
+focus = { 
+id = SOV_beginafiveyearplan
+icon = GFX_goal_generic_construct_civ_factory
+x = 9
+y = 1
+cost = 1
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Permanent Revolution
+focus = { 
+id = SOV_permanentrevolution
+icon = GFX_goal_support_fourth_int
+x = 16
+y = 1
+cost = 5
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Guominjun Support
+focus = { 
+id = SOV_guominjunsupport
+icon = GFX_goal_generic_improve_relations
+x = 15
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_easternpath } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+MEN = {add_popularity= { 
 ideology = communism 
 popularity = 0.25
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Eastern Path
-	focus = {
-		id = SOV_easternpath
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
-		x = 14
-		y = 2
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_permanentrevolution }
-		mutually_exclusive = { focus = SOV_westernpath }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+ } 
 
-	#Focus for Japanese Puppet Master
-	focus = {
-		id = SOV_japanesepuppetmaster
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
-		x = 14
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SOV_freeindia 
-		}
-		prerequisite = { 
-			focus = SOV_invitesinkiang 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
+#Focus for Eastern Path
+focus = { 
+id = SOV_easternpath
+icon = GFX_focus_usa_focus_on_asia
+x = 14
+y = 2
+cost = 1
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_permanentrevolution } 
+mutually_exclusive = { focus = SOV_westernpath } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Japanese Puppet Master
+focus = { 
+id = SOV_japanesepuppetmaster
+icon = GFX_focus_attack_japan
+x = 14
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_freeindia } 
+prerequisite = { focus = SOV_invitesinkiang } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_wargoal= { 
 type = annex_everything 
 target = JAP
 }
-		}
-	}
+ } 
 
-	#Focus for New Limerick Soviet
-	focus = {
-		id = SOV_newlimericksoviet
-		icon = GFX_focus_generic_self_management
-		x = 17
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_swedishpersuasion }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			IRE = {start_civil_war= {
+ } 
+
+#Focus for New Limerick Soviet
+focus = { 
+id = SOV_newlimericksoviet
+icon = GFX_focus_generic_self_management
+x = 17
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_swedishpersuasion } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+IRE = {start_civil_war= {
  ideology = communism 
 size = 25 
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Swedish Persuasion
-	focus = {
-		id = SOV_swedishpersuasion
-		icon = GFX_goal_generic_national_unity
-		x = 17
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_greekcommunism }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			SWE = {add_popularity= { 
+ } 
+
+#Focus for Swedish Persuasion
+focus = { 
+id = SOV_swedishpersuasion
+icon = GFX_goal_generic_national_unity
+x = 17
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_greekcommunism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+SWE = {add_popularity= { 
 ideology = communism 
 popularity = 0.30 
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Chilean Invitation
-	focus = {
-		id = SOV_chileaninvitation
-		icon = GFX_focus_generic_treaty
-		x = 19
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_westernpath }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_to_faction= CHL
-		}
-	}
+ } 
 
-	#Focus for Defend Colombia
-	focus = {
-		id = SOV_defendcolombia
-		icon = GFX_goal_generic_military_deal
-		x = 19
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_chileaninvitation }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			give_guarantee= COL
-		}
-	}
+#Focus for Chilean Invitation
+focus = { 
+id = SOV_chileaninvitation
+icon = GFX_focus_generic_treaty
+x = 19
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_westernpath } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_to_faction= CHL
+ } 
+
+ } 
+
+#Focus for Defend Colombia
+focus = { 
+id = SOV_defendcolombia
+icon = GFX_goal_generic_military_deal
+x = 19
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_chileaninvitation } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+give_guarantee= COL
+ } 
+
+ } 
 
 #End of focuses 
  }
