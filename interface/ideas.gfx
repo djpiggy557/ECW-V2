@@ -347,12 +347,7 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_officers_purged"
-		texturefile = "gfx/interface/ideas/officers_purged.dds"
-	}	
-	
-	spriteType = {
-		name = "GFX_idea_trotskyite_plot_purged"
+		name = "GFX_idea_Berian_plot_purged"
 		texturefile = "gfx/interface/ideas/trotskyite_plot_purged.dds"
 	}	
 
@@ -362,7 +357,7 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_trotskyite_plot"
+		name = "GFX_idea_Berian_plot"
 		texturefile = "gfx/interface/ideas/trotskyite_plot.dds"
 	}		
 	

@@ -1,0 +1,119 @@
+add_namespace = earlycoldwar
+
+##Event: Trotsky's Purge
+country_event = {
+	id = earlycoldwar.1
+	title = earlycoldwar.1.title
+	desc = earlycoldwar.1.desc
+	picture = GFX_report_event_soviet_purge_politicians
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		complete_national_focus= Great_Purge
+
+add_political_power = 120
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = earlycoldwar.1.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Trial of Kirov and Postyshev
+country_event = {
+	id = earlycoldwar.2
+	title = earlycoldwar.2.title
+	desc = earlycoldwar.2.desc
+	picture = GFX_report_event_soviet_purge_trial
+	option = {
+		name = earlycoldwar.2.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = earlycoldwar.2.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Trial of Zhdanov and Rudzutaks
+country_event = {
+	id = earlycoldwar.3
+	title = earlycoldwar.3.title
+	desc = earlycoldwar.3.desc
+	picture = GFX_report_event_poland_rejects
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = earlycoldwar.3.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = earlycoldwar.3.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Trial of Yezhov and Mikoyan
+country_event = {
+	id = earlycoldwar.4
+	title = earlycoldwar.4.title
+	desc = earlycoldwar.4.desc
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = earlycoldwar.4.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = earlycoldwar.4.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Trial of Kuybyshev and Molotov
+country_event = {
+	id = earlycoldwar.5
+	title = earlycoldwar.5.title
+	desc = earlycoldwar.5.desc
+	picture = GFX_news_event_aid_pact
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = earlycoldwar.5.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = earlycoldwar.5.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Trial of Voroshilov
+country_event = {
+	id = earlycoldwar.6
+	title = earlycoldwar.6.title
+	desc = earlycoldwar.6.desc
+	picture = GFX_news_event_023
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = earlycoldwar.6.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = earlycoldwar.6.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Execution of Beria
+country_event = {
+	id = earlycoldwar.7
+	title = earlycoldwar.7.title
+	desc = earlycoldwar.7.desc
+	picture = GFX_report_event_canadian_soldiers
+	fire_only_once = yes
+	option = {
+		name = earlycoldwar.7.a
+		ai_chance = { factor = 1}
+	}
+}

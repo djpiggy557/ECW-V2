@@ -11,7 +11,9 @@ ideas = {
 
 			modifier = {
                                 communism_drift = 0.10
-				stability_factor = 0.5
+				stability_factor = 0.05
+                                conscription = 0.007
+                                army_attack_factor = 0.05
 			}
 		}	
 
@@ -23,8 +25,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-                                local_building_slots_factor = -0.5
-				stability_factor = 0.5
+                                local_building_slots_factor = 0.2
+				stability_factor = 0.15
 			}
 		}	
 
@@ -36,8 +38,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-                                consumer_goods_factor = 0.05
-				stability_factor = 0.5
+                                consumer_goods_factor = -0.05
+				stability_factor = 0.05
 			}
 		}	
 
@@ -50,7 +52,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = -0.3
-				stability_factor = 0.5
+				stability_factor = 0.1
 			}
 		}	
 
@@ -63,7 +65,7 @@ ideas = {
 
 			modifier = {
 				foreign_subversive_activites = -0.50
-				stability_factor = 0.5
+				stability_factor = 0.05
 			}
 		}	
 

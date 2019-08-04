@@ -105,8 +105,8 @@ if = {
 
 	#purge stuff
 	unlock_national_focus = SOV_great_purge
-	remove_ideas = trotskyite_plot
-	add_ideas = trotskyite_plot_purged
+	remove_ideas = Berian_plot
+	add_ideas = Berian_plot_purged
 	set_stability = 0.75
 	add_timed_idea = {
 		idea = officers_purged_6
@@ -296,7 +296,7 @@ add_to_faction = HOL
 
 
 add_ideas = {
-	trotskyite_plot
+	Berian_plot
 	home_of_revolution
 }
 
