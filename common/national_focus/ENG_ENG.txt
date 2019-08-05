@@ -1,0 +1,323 @@
+focus_tree = {
+	id = ENG
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	#Focus for Henry Pollit
+	focus = {
+		id = ENG_henrypollit
+		icon = GFX_goal_support_communism
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_resultsofthe1931election }
+		mutually_exclusive = { 
+			focus = ENG_ramsaymacdonald 
+		}
+		mutually_exclusive = { 
+			focus = ENG_oswaldmosely 
+		}
+		mutually_exclusive = { 
+			focus = ENG_ 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = communism
+elections_allowed = yes
+}
+add_popularity= { 
+ideology = communism 
+popularity = 0.20 
+}
+		}
+	}
+
+	#Focus for a
+	focus = {
+		id = ENG_a
+		icon = GFX_goal_unknown
+		x = 32
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bury the Arcos Scandal
+	focus = {
+		id = ENG_burythearcosscandal
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_henrypollit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = communism
+popularity = 0.15 
+}
+		}
+	}
+
+	#Focus for African Communism
+	focus = {
+		id = ENG_africancommunism
+		icon = GFX_goal_tfv_saf_secure_interests_in_africa
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_burythearcosscandal }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Union of Britain
+	focus = {
+		id = ENG_unionofbritain
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ENG_selltothedutch 
+		}
+		prerequisite = { 
+			focus = ENG_selltothearabs 
+		}
+		prerequisite = { 
+			focus = ENG_selltotheitalians 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ramsay MacDonald
+	focus = {
+		id = ENG_ramsaymacdonald
+		icon = GFX_goal_support_democracy
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_resultsofthe1931election }
+		mutually_exclusive = { 
+			focus = ENG_henrypollit 
+		}
+		mutually_exclusive = { 
+			focus = ENG_oswaldmosely 
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	#Focus for Oswald Mosely
+	focus = {
+		id = ENG_oswaldmosely
+		icon = GFX_goal_support_fascism
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_resultsofthe1931election }
+		mutually_exclusive = { 
+			focus = ENG_ramsaymacdonald 
+		}
+		mutually_exclusive = { 
+			focus = ENG_henrypollit 
+		}
+		mutually_exclusive = { 
+			focus = ENG_ 
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#Focus for Merge with the Labor Party
+	focus = {
+		id = ENG_mergewiththelaborparty
+		icon = GFX_goal_tripartite_pact
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_henrypollit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50add_popularity= { 
+ideology = fascism 
+popularity = 0.20 
+}
+		}
+	}
+
+	#Focus for The Soldier's Voice
+	focus = {
+		id = ENG_thesoldiersvoice
+		icon = GFX_focus_generic_military_mission
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_henrypollit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 10
+		}
+	}
+
+	#Focus for Indian Independence
+	focus = {
+		id = ENG_indianindependence
+		icon = GFX_focus_RAJ_seek_help_from_soviet
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_thesoldiersvoice }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			RAJ = {add_popularity= { 
+ideology = communism 
+popularity = 0.90 
+}
+}
+set_politics= {
+ ruling_party = communism 
+elections_allowed = no 
+}
+		}
+	}
+
+	#Focus for Results of the 1931 Election
+	focus = {
+		id = ENG_resultsofthe1931election
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dominion Socialism
+	focus = {
+		id = ENG_dominionsocialism
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_mergewiththelaborparty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			CAN = {set_politics= {
+ ruling_party = communism 
+elections_allowed = no 
+}
+add_popularity= { 
+ideology = communism
+popularity = 0.60 
+}
+}
+AST = {set_politics= {
+ ruling_party = communism 
+elections_allowed = no 
+}
+add_popularity= { 
+ideology = communism 
+popularity = 0.50 
+}
+}
+NZL = {set_politics= {
+ ruling_party = communism 
+elections_allowed = no 
+}
+add_popularity= { 
+ideology = communism 
+popularity = 0.80 
+}
+}
+end_puppet= SAF
+		}
+	}
+
+	#Focus for Sell to the Dutch
+	focus = {
+		id = ENG_selltothedutch
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_dominionsocialism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sell to the Arabs
+	focus = {
+		id = ENG_selltothearabs
+		icon = GFX_focus_generic_treaty
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_indianindependence }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			SAU = {transfer_state= 659 658 765}
+		}
+	}
+
+	#Focus for Sell to the Italians
+	focus = {
+		id = ENG_selltotheitalians
+		icon = GFX_focus_ger_assassinate_mussolini
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_africancommunism }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			ITA = {has_government= neutrality}
+		}
+	}
+
+#End of focuses 
+ }
