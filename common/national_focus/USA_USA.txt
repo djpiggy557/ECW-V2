@@ -171,6 +171,15 @@ focus_tree = {
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_s 
+		}
+		prerequisite = { 
+			focus = USA_idealsofthefoundingfathers 
+		}
+		prerequisite = { 
+			focus = USA_sa 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -184,6 +193,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_georgiandictator }
 		ai_will_do = {
 			factor = 1
 		}
@@ -197,6 +207,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_lowerlicencefees }
 		ai_will_do = {
 			factor = 1
 		}
@@ -210,6 +221,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_lowerlicencefees }
 		ai_will_do = {
 			factor = 1
 		}
@@ -223,6 +235,7 @@ focus_tree = {
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_promoteindividualism }
 		ai_will_do = {
 			factor = 1
 		}
@@ -236,6 +249,7 @@ focus_tree = {
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_federalenforcedsegregation }
 		ai_will_do = {
 			factor = 1
 		}
@@ -249,6 +263,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_lowerlicencefees }
 		ai_will_do = {
 			factor = 1
 		}
@@ -262,6 +277,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_sidewalksofnewyork }
 		ai_will_do = {
 			factor = 1
 		}
@@ -301,6 +317,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_eugenetalmadgeelected }
 		ai_will_do = {
 			factor = 1
 		}
@@ -314,6 +331,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_eugenetalmadgeelected }
 		ai_will_do = {
 			factor = 1
 		}
@@ -327,6 +345,12 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_catholicprotestantrelations 
+		}
+		prerequisite = { 
+			focus = USA_womenssuffrage 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -340,6 +364,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_assistruralareas }
 		ai_will_do = {
 			factor = 1
 		}
@@ -353,6 +378,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = USA_assistruralareas }
 		ai_will_do = {
 			factor = 1
 		}
@@ -439,6 +465,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = USA_True_isolationism
+		}
 	}
 
 	#Focus for Second Lodge Bill
@@ -452,6 +481,9 @@ focus_tree = {
 		prerequisite = { focus = USA_strengthentheunions }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = USA_Second_lodge_bill
 		}
 	}
 
@@ -489,6 +521,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = USA_Reduce_military_budget
+		}
 	}
 
 	#Focus for Pull out of the League
@@ -502,6 +537,12 @@ focus_tree = {
 		prerequisite = { focus = USA_reducemilitarybudget }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			leave_faction = yes
+
+add_popularity
+= { ideology = communism popularity = 0.25 }
 		}
 	}
 
@@ -525,7 +566,7 @@ focus_tree = {
 create_country_leader= {
  name = "Robbert La Follette Jr."
 desc = ""
-picture = "Portrait_USA_Robert_M._La_Follette_Jr..dds" 
+picture = "Portrait_USA_Robert_M._La_Follette_Jr.dds" 
 expire = "1965.1.1"
 ideology = stalinism
 traits = {
@@ -564,6 +605,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = USA_Strengthen_the_Unions
+		}
 	}
 
 	#Focus for Wheeler Resolution
@@ -577,6 +621,9 @@ traits = {
 		prerequisite = { focus = USA_revokeindianlaws }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = USA_wheeler_resolution
 		}
 	}
 
@@ -592,6 +639,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = USA_Revoke_indian_laws
+		}
 	}
 
 	#Focus for Sidewalks of New York
@@ -602,6 +652,12 @@ traits = {
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_courtpackingplan 
+		}
+		prerequisite = { 
+			focus = USA_strengthenthelibertyleague 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -615,6 +671,12 @@ traits = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_lesstaxes 
+		}
+		prerequisite = { 
+			focus = USA_blank 
+		}
 		ai_will_do = {
 			factor = 1
 		}

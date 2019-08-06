@@ -7,6 +7,20 @@ focus_tree = {
 			tag = ENG
 		}
 	}
+	#Focus for Malaysia for Alliance
+	focus = {
+		id = ENG_malaysiaforalliance
+		icon = GFX_goal_generic_dangerous_deal
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_truerulersoftheraj }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for Henry Pollit
 	focus = {
 		id = ENG_henrypollit
@@ -85,6 +99,9 @@ popularity = 0.15
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			release= EGY release= SUD release= KEN release= UGA release= SIE release= GHA
+		}
 	}
 
 	#Focus for Union of Britain
@@ -113,7 +130,7 @@ popularity = 0.15
 	focus = {
 		id = ENG_ramsaymacdonald
 		icon = GFX_goal_support_democracy
-		x = 10
+		x = 11
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -133,7 +150,7 @@ popularity = 0.15
 	focus = {
 		id = ENG_oswaldmosely
 		icon = GFX_goal_support_fascism
-		x = 16
+		x = 17
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -150,6 +167,12 @@ popularity = 0.15
 		ai_will_do = {
 			factor = 25
 		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+		}
 	}
 
 	#Focus for Merge with the Labor Party
@@ -165,8 +188,8 @@ popularity = 0.15
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 50add_popularity= { 
-ideology = fascism 
+			add_political_power= 50 add_popularity= { 
+ideology = communism 
 popularity = 0.20 
 }
 		}
@@ -218,7 +241,7 @@ elections_allowed = no
 	focus = {
 		id = ENG_resultsofthe1931election
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 10
+		x = 11
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -271,6 +294,127 @@ end_puppet= SAF
 		}
 	}
 
+	#Focus for Mend Irish Relations
+	focus = {
+		id = ENG_mendirishrelations
+		icon = GFX_goal_tripartite_pact
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_oswaldmosely }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_opinion_modifier= { 
+target = IRE 
+modifier = large_increase
+}
+		}
+	}
+
+	#Focus for Latin American Allies
+	focus = {
+		id = ENG_latinamericanallies
+		icon = GFX_focus_generic_little_entente
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_cutawaylooseends }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for True Rulers of the Raj
+	focus = {
+		id = ENG_truerulersoftheraj
+		icon = GFX_focus_RAJ_seek_help_from_germany
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_mendirishrelations }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			RAJ = {add_popularity= { 
+ideology = fascism 
+popularity = 0.70 
+}
+set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+}
+		}
+	}
+
+	#Focus for Cut Away Loose Ends
+	focus = {
+		id = ENG_cutawaylooseends
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_purgethecommunists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			end_puppet= AST end_puppet= NZL end_puppet= CAN
+		}
+	}
+
+	#Focus for Imperial Favoritism
+	focus = {
+		id = ENG_imperialfavoritism
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_britishunionoffascists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			SAF = {add_popularity= { 
+ideology = fascism 
+popularity = 0.70 
+}
+}
+set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+		}
+	}
+
+	#Focus for Purge the Communists
+	focus = {
+		id = ENG_purgethecommunists
+		icon = GFX_goal_anti_comintern_pact
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_oswaldmosely }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 0.50
+}
+		}
+	}
+
 	#Focus for Sell to the Dutch
 	focus = {
 		id = ENG_selltothedutch
@@ -282,6 +426,18 @@ end_puppet= SAF
 		prerequisite = { focus = ENG_dominionsocialism }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			INS = {transfer_state= 333}
+MAL = {set_politics= {
+ ruling_party = communism 
+elections_allowed = no 
+}
+add_popularity= { 
+ideology = communism
+popularity = 0.90 
+}
+}
 		}
 	}
 
@@ -298,7 +454,7 @@ end_puppet= SAF
 			factor = 1
 		}
 		completion_reward = {
-			SAU = {transfer_state= 659 658 765}
+			SAU = {transfer_state= 765 transfer_state= 658 transfer_state= 659}
 		}
 	}
 
@@ -316,6 +472,29 @@ end_puppet= SAF
 		}
 		bypass = {
 			ITA = {has_government= neutrality}
+		}
+		completion_reward = {
+			ITA = {transfer_state= 116 transfer_state= 183 transfer_state= 269}
+		}
+	}
+
+	#Focus for British Union of Fascists
+	focus = {
+		id = ENG_britishunionoffascists
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_oswaldmosely }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 0.50 
+}
 		}
 	}
 
