@@ -4108,4 +4108,42 @@ spriteTypes = {
 		name = "GFX_GERRevolutionizetheschools"
 		texturefile = "gfx/interface/ideas/FRA_national_mobilization_focus.dds"
 	}
+
 }
+   ###USA stuff
+
+	spriteType = {
+		name = "GFX_USA_Strengthen_the_Unions"
+		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"
+	}
+
+}
+
+	spriteType = {
+		name = "GFX_USA_Revoke_indian_laws"
+		texturefile = "gfx/interface/ideas/usa_desegregation_2.dds"
+	}
+
+}
+	spriteType = {
+		name = "USA_Second_lodge_bill"
+		texturefile = "gfx/interface/ideas/generic_communism_drift_bonus.dds"
+	}
+
+}
+	spriteType = {
+		name = "GFX_USA_wheeler_resolution"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
+	}
+
+}
+	spriteType = {
+		name = "GFX_True_isolationism"
+		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
+	}
+
+}
+	spriteType = {
+		name = "GFX_Reduce_military_budget"
+		texturefile = "gfx/interface/ideas/reducemilitarybudget.dds"
+	}
