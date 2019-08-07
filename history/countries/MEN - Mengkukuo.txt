@@ -74,4 +74,14 @@ create_country_leader = {
 	traits = {
 		spirit_of_genghis
 	}
+
+create_country_leader = {
+	name = "Feng Yuxiang"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "GFX_portrait_men_demchugdongrub"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		spirit_of_genghis
+	}
 }

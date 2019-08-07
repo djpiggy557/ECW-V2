@@ -20,7 +20,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-release= EGY release= NGA release= TZN puppet= EGY puppet= NGA puppet= TZN
+release_puppet= TZN release_puppet= EGY release_puppet= NGA
  } 
 
  } 
@@ -95,7 +95,7 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = ENG_resultsofthe1931election } 
 mutually_exclusive = { focus = ENG_ramsaymacdonald } 
-mutually_exclusive = { focus = ENG_oswaldmosely } 
+mutually_exclusive = { focus = ENG_oswaldmosley } 
 mutually_exclusive = { focus = ENG_ } 
 ai_will_do = { 
  factor = 10
@@ -316,16 +316,16 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = ENG_resultsofthe1931election } 
 mutually_exclusive = { focus = ENG_henrypollit } 
-mutually_exclusive = { focus = ENG_oswaldmosely } 
+mutually_exclusive = { focus = ENG_oswaldmosley } 
 ai_will_do = { 
  factor = 50
  } 
 
  } 
 
-#Focus for Oswald Mosely
+#Focus for Oswald Mosley
 focus = { 
-id = ENG_oswaldmosely
+id = ENG_oswaldmosley
 icon = GFX_goal_support_fascism
 x = 16
 y = 2
@@ -481,7 +481,7 @@ x = 14
 y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = ENG_oswaldmosely } 
+prerequisite = { focus = ENG_oswaldmosley } 
 ai_will_do = { 
  factor = 1
  } 
@@ -616,7 +616,7 @@ x = 18
 y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = ENG_oswaldmosely } 
+prerequisite = { focus = ENG_oswaldmosley } 
 ai_will_do = { 
  factor = 1
  } 
@@ -694,7 +694,7 @@ x = 16
 y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = ENG_oswaldmosely } 
+prerequisite = { focus = ENG_oswaldmosley } 
 ai_will_do = { 
  factor = 1
  } 

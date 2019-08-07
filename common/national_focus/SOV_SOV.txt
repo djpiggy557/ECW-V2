@@ -20,9 +20,9 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-GRE = {add_popularity= { 
-ideology = communism 
-popularity = 0.5
+GRE = {country_event= {
+days = 1 
+id = earlycoldwar.19 
 }
 }
  } 
@@ -80,9 +80,9 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-AFG = {start_civil_war= {
- ideology = communism 
-size = 50
+AFG = {country_event= {
+days = 1 
+id = earlycoldwar.19
 }
 }
  } 
@@ -102,9 +102,9 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-IRQ = {start_civil_war= {
- ideology = communism 
-size = 50
+IRQ = {country_event= {
+days = 1 
+id = earlycoldwar.19 
 }
 }
  } 
@@ -142,9 +142,9 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-KUR = {add_popularity= { 
-ideology = communism 
-popularity = 0.25 
+KUR = {country_event= {
+days = 1 
+id = earlycoldwar.19
 }
 }
  } 
@@ -334,10 +334,9 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-MEX = {start_civil_war= {
- ideology = communism
-size = 25 
-}
+country_event= {
+days = 1 
+id = earlycoldwar.20 
 }
  } 
 
@@ -532,9 +531,9 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-MEN = {add_popularity= { 
-ideology = communism 
-popularity = 0.25
+MEN = {country_event= {
+days = 1 
+id = earlycoldwar.18
 }
 }
  } 
@@ -592,9 +591,9 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-IRE = {start_civil_war= {
- ideology = communism 
-size = 25 
+IRE = {country_event= {
+days = 1 
+id = earlycoldwar.19 
 }
 }
  } 
@@ -614,9 +613,9 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-SWE = {add_popularity= { 
-ideology = communism 
-popularity = 0.30 
+SWE = {country_event= {
+days = 1 
+id = earlycoldwar.19 
 }
 }
  } 

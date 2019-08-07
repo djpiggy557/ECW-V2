@@ -359,3 +359,170 @@ country_event = {
 	}
 }
 
+##Event: Soviet-Guominjun Treaty
+country_event = {
+ id = earlycoldwar.18
+ title = earlycoldwar.18.title
+ desc = earlycoldwar.18.desc
+ picture = GFX_report_event_soviet_tanks_snow
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.18.a
+		ai_chance = { factor = 10}
+		add_popularity= { 
+ideology = communism 
+popularity = 0.25 
+}
+set_politics= {
+ ruling_party = communism 
+elections_allowed = no 
+}
+SOV = {add_to_faction= MEN}
+	}
+	option = {
+		name = earlycoldwar.18.b
+		ai_chance = { factor = 1}
+		add_popularity= { 
+ideology = communism 
+popularity = -1 
+}
+SOV = {give_guarantee= MEN}
+	}
+}
+
+##Event: Communist Revolution
+country_event = {
+ id = earlycoldwar.19
+ title = earlycoldwar.19.title
+ desc = earlycoldwar.19.desc
+ picture = GFX_report_event_tanks_vietnam
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.19.a
+		ai_chance = { factor = 10}
+		start_civil_war= {
+ ideology = communism 
+size = 0.5 
+}
+	}
+	option = {
+		name = earlycoldwar.19.b
+		ai_chance = { factor = 1}
+		add_popularity= { 
+ideology = communism 
+popularity = 0.50 
+}
+set_politics= {
+ ruling_party = communism
+elections_allowed = no 
+}
+	}
+	option = {
+		name = earlycoldwar.19.c
+		ai_chance = { factor = 5}
+		add_popularity= { 
+ideology = communism 
+popularity = -1 
+}
+add_manpower= -1500
+	}
+}
+
+##Event: Zapata Requests Help
+country_event = {
+ id = earlycoldwar.20
+ title = earlycoldwar.20.title
+ desc = earlycoldwar.20.desc
+ picture = GFX_report_event_spain_civil_war_volunteers_02
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.20.a
+		ai_chance = { factor = 10}
+		MEX = {country_event= {
+days = 1 
+id = earlycoldwar.21
+}
+}
+	}
+	option = {
+		name = earlycoldwar.20.b
+		ai_chance = { factor = 1}
+	}
+}
+
+##Event: Zapata has returned to the Country!
+country_event = {
+ id = earlycoldwar.21
+ title = earlycoldwar.21.title
+ desc = earlycoldwar.21.desc
+ picture = GFX_report_event_fighters
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.21.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = earlycoldwar.21.b
+		ai_chance = { factor = 10}
+		country_event= {
+days = 1 
+id = earlycoldwar.22
+}
+	}
+}
+
+##Event: Zapata's Revolution
+country_event = {
+ id = earlycoldwar.22
+ title = earlycoldwar.22.title
+ desc = earlycoldwar.22.desc
+ picture = GFX_report_event_japanese_army_parade
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.22.a
+		ai_chance = { factor = 1}
+		add_popularity= { 
+ideology = communism
+popularity = 0.50
+}
+set_politics= {
+ ruling_party = communism 
+elections_allowed = no 
+}
+	}
+	option = {
+		name = earlycoldwar.22.b
+		ai_chance = { factor = 10}
+		start_civil_war= {
+ ideology = communism
+size = 0.5 
+}
+	}
+	option = {
+		name = earlycoldwar.22.c
+		ai_chance = { factor = 10}
+		add_popularity= { 
+ideology = communism
+popularity = 0.50
+}
+set_politics= {
+ ruling_party = communism 
+elections_allowed = no 
+}
+start_civil_war= {
+ ideology = democratic 
+size = 0.7 
+}
+	}
+}
+

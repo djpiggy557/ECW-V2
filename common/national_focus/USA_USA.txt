@@ -56,7 +56,7 @@ ai_will_do = {
 #Focus for Philippine's Statehood
 focus = { 
 id = USA_philippinesstatehood
-icon = GFX_goal_generic_improve_relations
+icon = GFX_goal_unknown
 x = 31
 y = 5
 cost = 10
@@ -71,7 +71,7 @@ ai_will_do = {
 #Focus for Seize the Dutch Colonies
 focus = { 
 id = USA_seizethedutchcolonies
-icon = GFX_focus_hol_oranje_boven
+icon = GFX_goal_unknown
 x = 28
 y = 6
 cost = 10
@@ -103,7 +103,7 @@ ai_will_do = {
 #Focus for State of Puerto Rico
 focus = { 
 id = USA_stateofpuertorico
-icon = GFX_goal_generic_improve_relations
+icon = GFX_goal_unknown
 x = 29
 y = 5
 cost = 10
@@ -140,6 +140,18 @@ cost = 10
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+create_country_leader= {
+ name = "Theodore Roosevelt III"
+desc = ""
+picture = "Portrait_USA_Theodore_Roosevelt_III.dds" 
+expire = "1965.1.1"
+ideology = liberalism
+traits = {
+}
+
+ }
  } 
 
  } 
@@ -194,13 +206,13 @@ ai_will_do = {
 focus = { 
 id = USA_georgiandictator
 icon = GFX_goal_unknown
-x = 20
-y = 6
+x = 21
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_s } 
 prerequisite = { focus = USA_idealsofthefoundingfathers } 
-prerequisite = { focus = USA_sa } 
+prerequisite = { focus = USA_lowerlicencefees } 
 ai_will_do = { 
  factor = 1
  } 
@@ -212,7 +224,7 @@ focus = {
 id = USA_mexicanmenace
 icon = GFX_goal_unknown
 x = 20
-y = 7
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_georgiandictator } 
@@ -226,26 +238,26 @@ ai_will_do = {
 focus = { 
 id = USA_s
 icon = GFX_goal_unknown
-x = 18
-y = 5
+x = 19
+y = 4
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = USA_lowerlicencefees } 
+prerequisite = { focus = USA_lesstaxes focus = USA_reducefemalesuffrage } 
 ai_will_do = { 
  factor = 1
  } 
 
  } 
 
-#Focus for sa
+#Focus for Lower licence fees
 focus = { 
-id = USA_sa
+id = USA_lowerlicencefees
 icon = GFX_goal_unknown
-x = 22
-y = 5
+x = 23
+y = 4
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = USA_lowerlicencefees } 
+prerequisite = { focus = USA_reducefemalesuffrage focus = USA_lesstaxes } 
 ai_will_do = { 
  factor = 1
  } 
@@ -255,8 +267,8 @@ ai_will_do = {
 #Focus for Less Taxes
 focus = { 
 id = USA_lesstaxes
-icon = GFX_focus_mex_privatisation
-x = 19
+icon = GFX_goal_unknown
+x = 20
 y = 3
 cost = 10
 available_if_capitulated = yes 
@@ -267,11 +279,11 @@ ai_will_do = {
 
  } 
 
-#Focus for blank
+#Focus for Reduce Female Suffrage
 focus = { 
-id = USA_blank
+id = USA_reducefemalesuffrage
 icon = GFX_goal_unknown
-x = 21
+x = 22
 y = 3
 cost = 10
 available_if_capitulated = yes 
@@ -286,11 +298,11 @@ ai_will_do = {
 focus = { 
 id = USA_idealsofthefoundingfathers
 icon = GFX_goal_unknown
-x = 20
-y = 5
+x = 21
+y = 4
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = USA_lowerlicencefees } 
+prerequisite = { focus = USA_reducefemalesuffrage focus = USA_lesstaxes } 
 ai_will_do = { 
  factor = 1
  } 
@@ -322,12 +334,24 @@ target = GER
 focus = { 
 id = USA_eugenetalmadgeelected
 icon = GFX_goal_support_fascism
-x = 20
+x = 21
 y = 1
 cost = 10
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+create_country_leader= {
+ name = "Eugene Talmadge"
+desc = ""
+picture = "Portrait_USA_Eugene_Talmadge.dds" 
+expire = "1965.1.1"
+ideology = Conservatism
+traits = {
+}
+
+ }
  } 
 
  } 
@@ -336,7 +360,7 @@ ai_will_do = {
 focus = { 
 id = USA_promoteindividualism
 icon = GFX_goal_unknown
-x = 19
+x = 20
 y = 2
 cost = 10
 available_if_capitulated = yes 
@@ -351,7 +375,7 @@ ai_will_do = {
 focus = { 
 id = USA_federalenforcedsegregation
 icon = GFX_focus_generic_military_academy
-x = 21
+x = 22
 y = 2
 cost = 10
 available_if_capitulated = yes 
@@ -410,6 +434,13 @@ available_if_capitulated = yes
 prerequisite = { focus = USA_assistruralareas } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_political_power
+= 150
+
+add_stability
+= 0.05
  } 
 
  } 
@@ -496,6 +527,18 @@ cost = 10
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+create_country_leader= {
+ name = "Al Smith"
+desc = ""
+picture = "Portrait_USA_Al_Smith.dds" 
+expire = "1965.1.1"
+ideology = liberalism
+traits = {
+}
+
+ }
  } 
 
  } 
@@ -730,16 +773,31 @@ random_owned_controlled_state = {
 
  } 
 
-#Focus for Lower licence fees
+#Focus for Canadian trouble
 focus = { 
-id = USA_lowerlicencefees
+id = USA_canadiantrouble
 icon = GFX_goal_unknown
-x = 20
-y = 4
+x = 22
+y = 6
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = USA_lesstaxes } 
-prerequisite = { focus = USA_blank } 
+prerequisite = { focus = USA_georgiandictator } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for North American Empire
+focus = { 
+id = USA_northamericanempire
+icon = GFX_goal_unknown
+x = 21
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = USA_mexicanmenace } 
+prerequisite = { focus = USA_canadiantrouble } 
 ai_will_do = { 
  factor = 1
  } 

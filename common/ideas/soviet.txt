@@ -119,6 +119,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
+			NOT = { 
+					has_completed_focus = SOV_trialofkuybyshevandmolotov
+				}
 			
 			traits = { smooth_talking_charmer }
 		}
