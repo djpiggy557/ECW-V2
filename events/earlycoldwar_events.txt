@@ -259,3 +259,103 @@ country_event = {
 	}
 }
 
+##Event: New Zealand Independence or Strength
+country_event = {
+ id = earlycoldwar.13
+ title = earlycoldwar.13.title
+ desc = earlycoldwar.13.desc
+ picture = GFX_report_event_generic_sign_treaty1
+ is_triggered_only = yes
+ fire_only_once = yes
+	option = {
+		name = earlycoldwar.13.a
+		ai_chance = { factor = 10}
+		set_state_owner= 636 set_state_owner= 643
+	}
+	option = {
+		name = earlycoldwar.13.b
+		ai_chance = { factor = 1}
+		ENG = {end_puppet= NZL}
+	}
+}
+
+##Event: Australian Independence or Strength
+country_event = {
+ id = earlycoldwar.14
+ title = earlycoldwar.14.title
+ desc = earlycoldwar.14.desc
+ picture = GFX_report_event_hitler_handshake
+ is_triggered_only = yes
+ fire_only_once = yes
+	option = {
+		name = earlycoldwar.14.a
+		ai_chance = { factor = 10}
+		set_state_owner= 711 set_state_owner= 712
+	}
+	option = {
+		name = earlycoldwar.14.b
+		ai_chance = { factor = 1}
+		ENG = {end_puppet= AST}
+	}
+}
+
+##Event: Canadian Independence or Strength
+country_event = {
+ id = earlycoldwar.15
+ title = earlycoldwar.15.title
+ desc = earlycoldwar.15.desc
+ picture = GFX_report_event_generic_read_write
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.15.a
+		ai_chance = { factor = 10}
+		transfer_state= 331 transfer_state= 332
+	}
+	option = {
+		name = earlycoldwar.15.b
+		ai_chance = { factor = 1}
+		ENG = {end_puppet= CAN}
+	}
+}
+
+##Event: South African Independence or Strength
+country_event = {
+ id = earlycoldwar.16
+ title = earlycoldwar.16.title
+ desc = earlycoldwar.16.desc
+ picture = GFX_report_event_generic_read_write
+ is_triggered_only = yes
+ fire_only_once = yes
+	option = {
+		name = earlycoldwar.16.a
+		ai_chance = { factor = 10}
+		set_state_owner= 542 set_state_owner= 545
+	}
+	option = {
+		name = earlycoldwar.16.b
+		ai_chance = { factor = 1}
+		ENG = {end_puppet= SAF}
+	}
+}
+
+##Event: True Indian Glory
+country_event = {
+ id = earlycoldwar.17
+ title = earlycoldwar.17.title
+ desc = earlycoldwar.17.desc
+ picture = GFX_report_event_quit_india_movement
+ is_triggered_only = yes
+ fire_only_once = yes
+	option = {
+		name = earlycoldwar.17.a
+		ai_chance = { factor = 10}
+		transfer_state= 659 transfer_state= 281 transfer_state= 422 transfer_state= 733
+	}
+	option = {
+		name = earlycoldwar.17.b
+		ai_chance = { factor = 1}
+	}
+}
+
