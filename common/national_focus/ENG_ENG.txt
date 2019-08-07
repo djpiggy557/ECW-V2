@@ -16,8 +16,16 @@ y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = ENG_truerulersoftheraj } 
+prerequisite = { focus = ENG_cutawaylooseends } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+INS = {country_event= {
+days = 1 
+id = earlycoldwar.11 
+}
+}
  } 
 
  } 
@@ -97,8 +105,21 @@ y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = ENG_imperialfavoritism } 
+prerequisite = { focus = ENG_cutawaylooseends } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+IRE = {country_event= {
+days = 1 
+id = earlycoldwar.12
+}
+}
+ROM = {country_event= {
+days = 1 
+id = earlycoldwar.12 
+}
+}
  } 
 
  } 
@@ -151,6 +172,9 @@ prerequisite = { focus = ENG_selltothearabs }
 prerequisite = { focus = ENG_selltotheitalians } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+leave_faction= ENG
  } 
 
  } 
@@ -355,6 +379,33 @@ prerequisite = { focus = ENG_cutawaylooseends }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+GUA = {country_event= {
+days = 1 
+id = earlycoldwar.12 
+}
+}
+DOM = {country_event= {
+days = 1 
+id = earlycoldwar.12
+}
+}
+VEN = {country_event= {
+days = 1 
+id = earlycoldwar.12 
+}
+}
+PRU = {country_event= {
+days = 1 
+id = earlycoldwar.12
+}
+}
+ELS = {country_event= {
+days = 1 
+id = earlycoldwar.12
+}
+}
+ } 
 
  } 
 
@@ -371,13 +422,14 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-RAJ = {add_popularity= { 
-ideology = fascism 
-popularity = 0.70 
+RAJ = {country_event= {
+days = 1 
+id = earlycoldwar.10 
 }
-set_politics= {
- ruling_party = fascism 
-elections_allowed = no 
+}
+MAL = {country_event= {
+days = 1 
+id = earlycoldwar.10
 }
 }
  } 
@@ -397,7 +449,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-end_puppet= AST end_puppet= NZL end_puppet= CAN
+create_faction= New English Empire end_puppet= AST end_puppet= NZL end_puppet= CAN
  } 
 
  } 
@@ -415,14 +467,15 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-SAF = {add_popularity= { 
-ideology = fascism 
-popularity = 0.70 
+release= EGY puppet= EGY SAF = {country_event= {
+days = 1 
+id = earlycoldwar.10
 }
 }
-set_politics= {
- ruling_party = fascism 
-elections_allowed = no 
+EGY = {country_event= {
+days = 1 
+id = earlycoldwar.10 
+}
 }
  } 
 
@@ -463,15 +516,6 @@ ai_will_do = {
  } 
 completion_reward = { 
 INS = {transfer_state= 333}
-MAL = {set_politics= {
- ruling_party = communism 
-elections_allowed = no 
-}
-add_popularity= { 
-ideology = communism
-popularity = 0.90 
-}
-}
  } 
 
  } 

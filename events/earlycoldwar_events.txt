@@ -184,3 +184,78 @@ elections_allowed = no
 	}
 }
 
+##Event: Oswald's Empire
+country_event = {
+ id = earlycoldwar.10
+ title = earlycoldwar.10.title
+ desc = earlycoldwar.10.desc
+ picture = GFX_report_event_german_troops
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.10.a
+		ai_chance = { factor = 20}
+		add_popularity= { 
+ideology = fascism 
+popularity = 0.50
+}
+set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+	}
+	option = {
+		name = earlycoldwar.10.b
+		ai_chance = { factor = 1}
+		ENG = {end_puppet= ROOT}
+	}
+}
+
+##Event: Malaysia for Alliance
+country_event = {
+ id = earlycoldwar.11
+ title = earlycoldwar.11.title
+ desc = earlycoldwar.11.desc
+ picture = GFX_report_event_saf_civil_war
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.11.a
+		ai_chance = { factor = 10}
+		set_state_owner= 333 add_popularity= { 
+ideology = fascism 
+popularity = 0.50
+}
+set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+add_to_faction= ENG
+	}
+	option = {
+		name = earlycoldwar.11.b
+		ai_chance = { factor = 1}
+	}
+}
+
+##Event: Join the new Alliance
+country_event = {
+ id = earlycoldwar.12
+ title = earlycoldwar.12.title
+ desc = earlycoldwar.12.desc
+ picture = GFX_report_event_saf_civil_war
+ is_triggered_only = yes
+ fire_only_once = yes
+	option = {
+		name = earlycoldwar.12.a
+		ai_chance = { factor = 10}
+		ENG = {add_to_faction= ROOT}
+	}
+	option = {
+		name = earlycoldwar.12.b
+		ai_chance = { factor = 1}
+	}
+}
+
