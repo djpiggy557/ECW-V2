@@ -294,16 +294,13 @@ ideas = {
 	}
 	
 	political_advisor = {
-		todt = {
+		GER_georg_ledebour = {
 
 			
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_west_wall
-			}
-			
+
 			traits = { fortification_engineer }
 
 			ai_will_do = {
@@ -321,16 +318,12 @@ ideas = {
 			traits = { armaments_organizer }
 		}
 		
-		hjalmar_schacht = {
+		GER_erich_muhsam = {
 
 			cost = 75
 			
 			allowed = {
 				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_four_year_plan
-				NOT = { has_completed_focus = GER_demand_sudetenland }
 			}
 			
 			traits = { captain_of_industry }
@@ -339,7 +332,7 @@ ideas = {
 			}
 		}
 		
-		walther_funk = {
+		GER_paul_levi = {
 
 			
 			allowed = {
@@ -496,7 +489,7 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 		
-		jGER_kostja_zetkin = {
+		GER_kostja_zetkin = {
 
 			
 			allowed = {

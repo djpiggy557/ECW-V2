@@ -37,6 +37,9 @@ mutually_exclusive = { focus = ENG_ }
 ai_will_do = { 
  factor = 10
  } 
+available = { 
+has_government= communism
+ } 
 completion_reward = { 
 set_politics= {
  ruling_party = communism
@@ -130,7 +133,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-release= EGY release= SUD release= KEN release= UGA release= SIE release= GHA
+release= BOT release= EGY release= GHA release= ISR release= JOR release= KEN release= SIE release= MLW release= NGA release= SUD release= TZN release= UGA release= ZAM release= ZIM
  } 
 
  } 
@@ -183,6 +186,9 @@ mutually_exclusive = { focus = ENG_henrypollit }
 mutually_exclusive = { focus = ENG_ } 
 ai_will_do = { 
  factor = 25
+ } 
+available = { 
+has_government= fascism
  } 
 completion_reward = { 
 set_politics= {
@@ -245,14 +251,15 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-RAJ = {add_popularity= { 
-ideology = communism 
-popularity = 0.90 
+RAJ = {country_event= {
+days = 1 
+id = commonwealth.1
 }
 }
-set_politics= {
- ruling_party = communism 
-elections_allowed = no 
+MAL = {country_event= {
+days = 1 
+id = commonwealth.1 
+}
 }
  } 
 
@@ -264,10 +271,16 @@ id = ENG_resultsofthe1931election
 icon = GFX_goal_tfv_strengthen_commonwealth_ties
 x = 11
 y = 1
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+country_event= {
+days = 1 
+id = earlycoldwar.9
+}
  } 
 
  } 
@@ -285,34 +298,26 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-CAN = {set_politics= {
- ruling_party = communism 
-elections_allowed = no 
-}
-add_popularity= { 
-ideology = communism
-popularity = 0.60 
+CAN = {country_event= {
+days = 1 
+id = commonwealth.1 
 }
 }
-AST = {set_politics= {
- ruling_party = communism 
-elections_allowed = no 
-}
-add_popularity= { 
-ideology = communism 
-popularity = 0.50 
+AST = {country_event= {
+days = 1 
+id = commonwealth.1 
 }
 }
-NZL = {set_politics= {
- ruling_party = communism 
-elections_allowed = no 
-}
-add_popularity= { 
-ideology = communism 
-popularity = 0.80 
+NZL = {country_event= {
+days = 1 
+id = commonwealth.1 
 }
 }
-end_puppet= SAF
+SAF = {country_event= {
+days = 1 
+id = commonwealth.1 
+}
+}
  } 
 
  } 

@@ -2,36 +2,32 @@ add_namespace = earlycoldwar
 
 ##Event: Trotsky's Purge
 country_event = {
-	id = earlycoldwar.1
-	title = earlycoldwar.1.title
-	desc = earlycoldwar.1.desc
-	picture = GFX_report_event_soviet_purge_politicians
-	is_triggered_only = yes
-	fire_only_once = yes
-	trigger = {
-		complete_national_focus= Great_Purge
+ id = earlycoldwar.1
+ title = earlycoldwar.1.title
+ desc = earlycoldwar.1.desc
+ picture = GFX_report_event_soviet_purge_politicians
+ is_triggered_only = yes
+ fire_only_once = yes
+ trigger = {
+complete_national_focus= Great_Purge
 
 add_political_power = 120
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
+	}	mean_time_to_happen = { days = 1}
 	option = {
 		name = earlycoldwar.1.a
 		ai_chance = { factor = 1}
 	}
 }
+
 ##Event: Trial of Kirov and Postyshev
 country_event = {
-	id = earlycoldwar.2
-	title = earlycoldwar.2.title
-	desc = earlycoldwar.2.desc
-	picture = GFX_report_event_soviet_purge_trial
-	is_triggered_only = yes
-	fire_only_once = yes
-	mean_time_to_happen = {
-		days = 1
-	}
+ id = earlycoldwar.2
+ title = earlycoldwar.2.title
+ desc = earlycoldwar.2.desc
+ picture = GFX_report_event_soviet_purge_trial
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
 	option = {
 		name = earlycoldwar.2.a
 		ai_chance = { factor = 1}
@@ -41,14 +37,15 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
+
 ##Event: Trial of Zhdanov and Rudzutaks
 country_event = {
-	id = earlycoldwar.3
-	title = earlycoldwar.3.title
-	desc = earlycoldwar.3.desc
-	picture = GFX_report_event_poland_rejects
-	is_triggered_only = yes
-	fire_only_once = yes
+ id = earlycoldwar.3
+ title = earlycoldwar.3.title
+ desc = earlycoldwar.3.desc
+ picture = GFX_report_event_poland_rejects
+ is_triggered_only = yes
+ fire_only_once = yes
 	option = {
 		name = earlycoldwar.3.a
 		ai_chance = { factor = 1}
@@ -58,14 +55,15 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
+
 ##Event: Trial of Yezhov and Mikoyan
 country_event = {
-	id = earlycoldwar.4
-	title = earlycoldwar.4.title
-	desc = earlycoldwar.4.desc
-	picture = GFX_report_event_journalists_speech
-	is_triggered_only = yes
-	fire_only_once = yes
+ id = earlycoldwar.4
+ title = earlycoldwar.4.title
+ desc = earlycoldwar.4.desc
+ picture = GFX_report_event_journalists_speech
+ is_triggered_only = yes
+ fire_only_once = yes
 	option = {
 		name = earlycoldwar.4.a
 		ai_chance = { factor = 1}
@@ -75,14 +73,15 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
+
 ##Event: Trial of Kuybyshev and Molotov
 country_event = {
-	id = earlycoldwar.5
-	title = earlycoldwar.5.title
-	desc = earlycoldwar.5.desc
-	picture = GFX_news_event_aid_pact
-	is_triggered_only = yes
-	fire_only_once = yes
+ id = earlycoldwar.5
+ title = earlycoldwar.5.title
+ desc = earlycoldwar.5.desc
+ picture = GFX_news_event_aid_pact
+ is_triggered_only = yes
+ fire_only_once = yes
 	option = {
 		name = earlycoldwar.5.a
 		ai_chance = { factor = 1}
@@ -92,15 +91,15 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
+
 ##Event: Trial of Voroshilov
 country_event = {
-	id = earlycoldwar.6
-	title = earlycoldwar.6.title
-	desc = earlycoldwar.6.desc
-	picture = GFX_news_event_023
-	is_triggered_only = yes
-	fire_only_once = yes
-	major = yes
+ id = earlycoldwar.6
+ title = earlycoldwar.6.title
+ desc = earlycoldwar.6.desc
+ picture = GFX_news_event_023
+ is_triggered_only = yes
+ fire_only_once = yes
 	option = {
 		name = earlycoldwar.6.a
 		ai_chance = { factor = 1}
@@ -110,15 +109,78 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
+
 ##Event: Execution of Beria
 country_event = {
-	id = earlycoldwar.7
-	title = earlycoldwar.7.title
-	desc = earlycoldwar.7.desc
-	picture = GFX_report_event_canadian_soldiers
-	fire_only_once = yes
+ id = earlycoldwar.7
+ title = earlycoldwar.7.title
+ desc = earlycoldwar.7.desc
+ picture = GFX_report_event_canadian_soldiers
+ is_triggered_only = yes
+ fire_only_once = yes
 	option = {
 		name = earlycoldwar.7.a
 		ai_chance = { factor = 1}
 	}
 }
+
+##Event: Chilean Junta
+country_event = {
+ id = earlycoldwar.8
+ title = earlycoldwar.8.title
+ desc = earlycoldwar.8.desc
+ picture = GFX_report_event_chinese_soldiers_fighting
+ fire_only_once = yes
+ major = yes
+	mean_time_to_happen = { days = 152}
+	option = {
+		name = earlycoldwar.8.a
+		ai_chance = { factor = 1}
+		CHL = {start_civil_war= {
+ ideology = communism 
+size = 0.5 
+}
+}
+	}
+}
+
+##Event: The Results of the 1931 Election
+country_event = {
+ id = earlycoldwar.9
+ title = earlycoldwar.9.title
+ desc = earlycoldwar.9.desc
+ picture = GFX_report_event_generic_read_write
+ is_triggered_only = yes
+ fire_only_once = yes
+ trigger = {
+has_completed_focus= ENG_resultsofthe1931election
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.9.a
+		ai_chance = { factor = 20}
+		complete_national_focus= ENG_henrypollit
+	}
+	option = {
+		name = earlycoldwar.9.b
+		ai_chance = { factor = 30}
+		complete_national_focus= ENG_oswaldmosely
+	}
+	option = {
+		name = earlycoldwar.9.c
+		ai_chance = { factor = 50}
+		complete_national_focus= ENG_ramsaymacdonald
+	}
+	option = {
+		name = earlycoldwar.9.d
+		ai_chance = { factor = 10}
+		add_popularity= { 
+ideology = neutrality 
+popularity = 0.50
+}
+set_politics= {
+ ruling_party = neutrality
+elections_allowed = no 
+}
+	}
+}
+

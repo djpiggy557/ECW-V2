@@ -199,9 +199,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Lázaro Cárdenas"
+	name = "Abelardo L. Rodríguez"
 	desc = "POLITICS_LAZARO_CARDENAS_DESC"
-	picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
+	picture = "portrait_mex_alberto_rodriguez.dds"
 	expire = "1965.1.1"
 	ideology = moderatism
 	traits = {

@@ -1,0 +1,30 @@
+add_namespace = commonwealth
+country_event = {
+    id = commonwealth.1
+    title = "Dominion Socialism"
+    desc = "commonwealth.1.desc"
+
+    is_triggered_only = yes
+
+    fire_only_once = no
+
+    option = {
+        name = "Follow the English"
+        set_politics= {
+            ruling_party = communism 
+            elections_allowed = no 
+        }
+        add_popularity= { 
+            ideology = communism
+            popularity = 0.60 
+        }
+    }
+
+
+    option = {
+        name = "Break Away from these Vermin"
+        ENG = {
+            end_puppet = ROOT
+        }
+    }
+}

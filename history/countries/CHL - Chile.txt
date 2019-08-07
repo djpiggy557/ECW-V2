@@ -115,17 +115,17 @@ set_convoys = 20
 }
 
 set_politics = {
-		ruling_party = communism
+		ruling_party = democratic
 		last_election = "1938.10.25"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 
 	set_popularities = {
-		communism = 55
+		communism = 20
 		fascism = 5
-		democratic = 20
-		neutrality = 20
+		democratic = 50
+		neutrality = 25
 	}
 
 create_country_leader = {
@@ -138,21 +138,6 @@ create_country_leader = {
 		#
 	}
 }
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = communism
-		last_election = "1938.10.25"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-
-	set_popularities = {
-		communism = 55
-		fascism = 5
-		democratic = 20
-		neutrality = 20
-	}
 
 	create_country_leader = {
 		name = "Pedro Aguirre Cerda"

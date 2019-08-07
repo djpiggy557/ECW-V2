@@ -61,22 +61,22 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 15
-	fascism = 5
-	communism = 10
-	neutrality = 70
+	democratic = 70
+	fascism = 10
+	communism = 5
+	neutrality = 15
 }
 
 create_country_leader = {
-	name = "Juan Bautista Sacasa"
+	name = "José María Moncada"
 	desc = "POLITICS_JUAN_BAUTISTA_SACASA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	picture = "portrait_nic_jose_moncada.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

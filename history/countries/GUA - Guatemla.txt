@@ -59,22 +59,22 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1931.2.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 30
-	neutrality = 70
+	fascism = 70
+	neutrality = 30
 }
 
 create_country_leader = {
 	name = "Jorge Ubico"
 	desc = "POLITICS_JORGE_UBICO_DESC"
-	picture = "GFX_portrait_guatemala_jorge_ubico"
+	picture = "portrait_gua_jorge_ubico.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
