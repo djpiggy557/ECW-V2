@@ -11,8 +11,8 @@ tag = USA
 focus = { 
 id = USA_purchasegreenlandorbaja
 icon = GFX_goal_unknown
-x = 30
-y = 6
+x = 36
+y = 7
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_finishthebananawars focus = USA_philippinesstatehood focus = USA_stateofpuertorico } 
@@ -26,8 +26,8 @@ ai_will_do = {
 focus = { 
 id = USA_preemptivestrike
 icon = GFX_goal_unknown
-x = 29
-y = 7
+x = 35
+y = 8
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_seizethedutchcolonies } 
@@ -42,8 +42,8 @@ ai_will_do = {
 focus = { 
 id = USA_finishthebananawars
 icon = GFX_goal_unknown
-x = 27
-y = 5
+x = 33
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_increaseprivateindustry } 
@@ -57,8 +57,8 @@ ai_will_do = {
 focus = { 
 id = USA_philippinesstatehood
 icon = GFX_goal_unknown
-x = 31
-y = 5
+x = 37
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_expansionofoilfields } 
@@ -72,8 +72,8 @@ ai_will_do = {
 focus = { 
 id = USA_seizethedutchcolonies
 icon = GFX_goal_unknown
-x = 28
-y = 6
+x = 34
+y = 7
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_finishthebananawars } 
@@ -89,8 +89,8 @@ ai_will_do = {
 focus = { 
 id = USA_expansionofoilfields
 icon = GFX_goal_generic_oil_refinery
-x = 30
-y = 4
+x = 36
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_economicprivatization } 
@@ -104,8 +104,8 @@ ai_will_do = {
 focus = { 
 id = USA_stateofpuertorico
 icon = GFX_goal_unknown
-x = 29
-y = 5
+x = 35
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_increaseprivateindustry focus = USA_expansionofoilfields } 
@@ -119,8 +119,8 @@ ai_will_do = {
 focus = { 
 id = USA_increaseprivateindustry
 icon = GFX_goal_generic_construct_civ_factory
-x = 28
-y = 4
+x = 34
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_economicprivatization } 
@@ -134,10 +134,13 @@ ai_will_do = {
 focus = { 
 id = USA_rooseveltiiielected
 icon = GFX_goal_support_democracy
-x = 29
-y = 1
+x = 35
+y = 2
 cost = 10
 available_if_capitulated = yes 
+mutually_exclusive = { focus = USA_alsmithelected } 
+mutually_exclusive = { focus = USA_robbertlafollettejrelected } 
+mutually_exclusive = { focus = USA_eugenetalmadgeelected } 
 ai_will_do = { 
  factor = 1
  } 
@@ -160,8 +163,8 @@ traits = {
 focus = { 
 id = USA_newbullmooseparty
 icon = GFX_goal_unknown
-x = 28
-y = 2
+x = 34
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_rooseveltiiielected } 
@@ -175,8 +178,8 @@ ai_will_do = {
 focus = { 
 id = USA_newamericanexpeditionaryforce
 icon = GFX_focus_generic_military_mission
-x = 30
-y = 2
+x = 36
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_rooseveltiiielected } 
@@ -190,8 +193,8 @@ ai_will_do = {
 focus = { 
 id = USA_economicprivatization
 icon = GFX_goal_generic_consumer_goods
-x = 29
-y = 3
+x = 35
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_newbullmooseparty } 
@@ -206,8 +209,8 @@ ai_will_do = {
 focus = { 
 id = USA_georgiandictator
 icon = GFX_goal_unknown
-x = 21
-y = 5
+x = 26
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_s } 
@@ -223,8 +226,8 @@ ai_will_do = {
 focus = { 
 id = USA_mexicanmenace
 icon = GFX_goal_unknown
-x = 20
-y = 6
+x = 25
+y = 7
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_georgiandictator } 
@@ -238,8 +241,8 @@ ai_will_do = {
 focus = { 
 id = USA_s
 icon = GFX_goal_unknown
-x = 19
-y = 4
+x = 24
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_lesstaxes focus = USA_reducefemalesuffrage } 
@@ -253,8 +256,8 @@ ai_will_do = {
 focus = { 
 id = USA_lowerlicencefees
 icon = GFX_goal_unknown
-x = 23
-y = 4
+x = 28
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_reducefemalesuffrage focus = USA_lesstaxes } 
@@ -268,8 +271,8 @@ ai_will_do = {
 focus = { 
 id = USA_lesstaxes
 icon = GFX_goal_unknown
-x = 20
-y = 3
+x = 25
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_promoteindividualism } 
@@ -283,8 +286,8 @@ ai_will_do = {
 focus = { 
 id = USA_reducefemalesuffrage
 icon = GFX_goal_unknown
-x = 22
-y = 3
+x = 27
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_federalenforcedsegregation } 
@@ -298,8 +301,8 @@ ai_will_do = {
 focus = { 
 id = USA_idealsofthefoundingfathers
 icon = GFX_goal_unknown
-x = 21
-y = 4
+x = 26
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_reducefemalesuffrage focus = USA_lesstaxes } 
@@ -313,8 +316,8 @@ ai_will_do = {
 focus = { 
 id = USA_iterumtransrhenum
 icon = GFX_goal_unknown
-x = 13
-y = 7
+x = 18
+y = 8
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_sidewalksofnewyork } 
@@ -334,10 +337,14 @@ target = GER
 focus = { 
 id = USA_eugenetalmadgeelected
 icon = GFX_goal_support_fascism
-x = 21
-y = 1
+x = 26
+y = 2
 cost = 10
 available_if_capitulated = yes 
+mutually_exclusive = { focus = USA_alsmithelected } 
+mutually_exclusive = { focus = USA_robbertlafollettejrelected } 
+mutually_exclusive = { focus = USA_rooseveltiiielected } 
+mutually_exclusive = { focus = USA_ } 
 ai_will_do = { 
  factor = 1
  } 
@@ -360,8 +367,8 @@ traits = {
 focus = { 
 id = USA_promoteindividualism
 icon = GFX_goal_unknown
-x = 20
-y = 2
+x = 25
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_eugenetalmadgeelected } 
@@ -375,8 +382,8 @@ ai_will_do = {
 focus = { 
 id = USA_federalenforcedsegregation
 icon = GFX_focus_generic_military_academy
-x = 22
-y = 2
+x = 27
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_eugenetalmadgeelected } 
@@ -390,8 +397,8 @@ ai_will_do = {
 focus = { 
 id = USA_assistruralareas
 icon = GFX_goal_unknown
-x = 13
-y = 4
+x = 18
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_catholicprotestantrelations } 
@@ -409,8 +416,8 @@ add_ideas = USA_Assist_Rural_Areas
 focus = { 
 id = USA_courtpackingplan
 icon = GFX_focus_generic_self_management
-x = 12
-y = 5
+x = 17
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_assistruralareas } 
@@ -427,8 +434,8 @@ add_ideas = USA_Court_Packing_Plan
 focus = { 
 id = USA_strengthenthelibertyleague
 icon = GFX_goal_unknown
-x = 14
-y = 5
+x = 19
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_assistruralareas } 
@@ -449,8 +456,8 @@ add_stability
 focus = { 
 id = USA_nomorefactoryincidents
 icon = GFX_goal_generic_improve_relations
-x = 12
-y = 2
+x = 17
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_alsmithelected } 
@@ -467,8 +474,8 @@ add_ideas = USA_No_More_Factory_Incidents
 focus = { 
 id = USA_bootprohibition
 icon = GFX_goal_unknown
-x = 14
-y = 2
+x = 19
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_alsmithelected } 
@@ -485,8 +492,8 @@ add_ideas = USA_Boot_Prohibition
 focus = { 
 id = USA_catholicprotestantrelations
 icon = GFX_goal_unknown
-x = 12
-y = 3
+x = 17
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_nomorefactoryincidents } 
@@ -503,8 +510,8 @@ add_ideas = USA_Catholic-Protestant_Relations
 focus = { 
 id = USA_womenssuffrage
 icon = GFX_goal_unknown
-x = 14
-y = 3
+x = 19
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_bootprohibition } 
@@ -521,10 +528,14 @@ add_ideas = USA_Women's_Suffrage
 focus = { 
 id = USA_alsmithelected
 icon = GFX_goal_support_democracy
-x = 13
-y = 1
+x = 18
+y = 2
 cost = 10
 available_if_capitulated = yes 
+mutually_exclusive = { focus = USA_eugenetalmadgeelected } 
+mutually_exclusive = { focus = USA_rooseveltiiielected } 
+mutually_exclusive = { focus = USA_robbertlafollettejrelected } 
+mutually_exclusive = { focus = USA_ } 
 ai_will_do = { 
  factor = 1
  } 
@@ -547,8 +558,8 @@ traits = {
 focus = { 
 id = USA_trueisolationism
 icon = GFX_goal_unknown
-x = 5
-y = 6
+x = 10
+y = 7
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_pulloutoftheleague } 
@@ -565,8 +576,8 @@ add_ideas = USA_True_isolationism
 focus = { 
 id = USA_secondlodgebill
 icon = GFX_focus_generic_treaty
-x = 5
-y = 3
+x = 10
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_strengthentheunions } 
@@ -583,8 +594,8 @@ add_ideas = USA_Second_lodge_bill
 focus = { 
 id = USA_strengtheningtieswithgermany
 icon = GFX_goal_unknown
-x = 3
-y = 3
+x = 8
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_revokemonroedoctrine } 
@@ -598,8 +609,8 @@ ai_will_do = {
 focus = { 
 id = USA_reducemilitarybudget
 icon = GFX_goal_unknown
-x = 5
-y = 4
+x = 10
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_strengtheningtieswithgermany } 
@@ -618,8 +629,8 @@ add_ideas = USA_Reduce_military_budget
 focus = { 
 id = USA_pulloutoftheleague
 icon = GFX_goal_unknown
-x = 5
-y = 5
+x = 10
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_reducemilitarybudget } 
@@ -639,10 +650,14 @@ add_popularity
 focus = { 
 id = USA_robbertlafollettejrelected
 icon = GFX_goal_support_communism
-x = 5
-y = 1
+x = 10
+y = 2
 cost = 10
 available_if_capitulated = yes 
+mutually_exclusive = { focus = USA_alsmithelected } 
+mutually_exclusive = { focus = USA_eugenetalmadgeelected } 
+mutually_exclusive = { focus = USA_rooseveltiiielected } 
+mutually_exclusive = { focus = USA_ } 
 ai_will_do = { 
  factor = 1
  } 
@@ -670,8 +685,8 @@ traits = {
 focus = { 
 id = USA_revokemonroedoctrine
 icon = GFX_goal_generic_intelligence_exchange
-x = 3
-y = 2
+x = 8
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_robbertlafollettejrelected } 
@@ -688,8 +703,8 @@ USA = { remove_guarantee = MEX }
 focus = { 
 id = USA_strengthentheunions
 icon = GFX_goal_tripartite_pact
-x = 5
-y = 2
+x = 10
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_robbertlafollettejrelected } 
@@ -706,8 +721,8 @@ add_ideas = USA_Strengthen_the_Unions
 focus = { 
 id = USA_wheelerresolution
 icon = GFX_goal_generic_major_alliance
-x = 7
-y = 3
+x = 12
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_revokeindianlaws } 
@@ -724,8 +739,8 @@ add_ideas = USA_wheeler_resolution
 focus = { 
 id = USA_revokeindianlaws
 icon = GFX_goal_unknown
-x = 7
-y = 2
+x = 12
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_robbertlafollettejrelected } 
@@ -742,8 +757,8 @@ add_ideas = USA_Revoke_indian_laws
 focus = { 
 id = USA_sidewalksofnewyork
 icon = GFX_goal_unknown
-x = 13
-y = 6
+x = 18
+y = 7
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_courtpackingplan } 
@@ -753,7 +768,7 @@ ai_will_do = {
  } 
 completion_reward = { 
 random_owned_controlled_state = {
-				prioritize = { 361 }
+				prioritize = { 358 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -762,7 +777,7 @@ random_owned_controlled_state = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = USA_sidewalksofnewyork
@@ -777,8 +792,8 @@ random_owned_controlled_state = {
 focus = { 
 id = USA_canadiantrouble
 icon = GFX_goal_unknown
-x = 22
-y = 6
+x = 27
+y = 7
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_georgiandictator } 
@@ -792,8 +807,8 @@ ai_will_do = {
 focus = { 
 id = USA_northamericanempire
 icon = GFX_goal_unknown
-x = 21
-y = 7
+x = 26
+y = 8
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = USA_mexicanmenace } 

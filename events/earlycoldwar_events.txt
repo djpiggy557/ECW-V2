@@ -122,6 +122,14 @@ country_event = {
 		name = earlycoldwar.7.a
 		ai_chance = { factor = 1}
 	}
+	option = {
+		name = earlycoldwar.7.b
+		ai_chance = { factor = 1}
+		start_civil_war= {
+ ideology = communism
+size = 0.5 
+}
+	}
 }
 
 ##Event: Chilean Junta
@@ -523,6 +531,63 @@ start_civil_war= {
  ideology = democratic 
 size = 0.7 
 }
+	}
+}
+
+##Event: Future of Hungary
+country_event = {
+ id = earlycoldwar.23
+ title = earlycoldwar.23.title
+ desc = earlycoldwar.23.desc
+ picture = GFX_report_event_soldiers_marching
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.23.a
+		ai_chance = { factor = 10}
+		complete_national_focus= HUN_stickwithbelakun
+	}
+	option = {
+		name = earlycoldwar.23.b
+		ai_chance = { factor = 1}
+		complete_national_focus= HUN_rakosicoup
+	}
+	option = {
+		name = earlycoldwar.23.c
+		ai_chance = { factor = 1}
+		complete_national_focus= HUN_backtotherepublic
+	}
+}
+
+##Event: 1932 Election Results
+country_event = {
+ id = earlycoldwar.24
+ title = earlycoldwar.24.title
+ desc = earlycoldwar.24.desc
+ picture = GFX_report_event_usa_election_generic
+ is_triggered_only = yes
+ fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = earlycoldwar.24.a
+		ai_chance = { factor = 1}
+		set_country_flag= la_follette
+	}
+	option = {
+		name = earlycoldwar.24.b
+		ai_chance = { factor = 1}
+		set_country_flag= eugene_talmadge
+	}
+	option = {
+		name = earlycoldwar.24.c
+		ai_chance = { factor = 10}
+		set_country_flag= al_smith
+	}
+	option = {
+		name = earlycoldwar.24.d
+		ai_chance = { factor = 1}
+		set_country_flag= roosevelt_iii
 	}
 }
 

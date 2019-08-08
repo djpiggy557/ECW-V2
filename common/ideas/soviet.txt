@@ -95,36 +95,28 @@ ideas = {
 			picture = generic_army_europe_4
 			
 			allowed = {
-				original_tag = SOV
-			}
-
-			available = 
-			{
-				custom_trigger_tooltip = {
-					tooltip =  SOV_beria_idea
-					has_country_flag = purge_2_group_a
-				}
-				NOT = { 
-					has_country_flag = counter_purge
-				}
-			}
+                original_tag = SOV
+            }
+            available = {
+                NOT = { has_completed_focus = SOV_uncovertheberianplot }
+            }
 			
 			traits = { ideological_crusader }
 		}
 
 		SOV_vyacheslav_molotov = {
-			
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = SOV
-			}
-			NOT = { 
-					has_completed_focus = SOV_trialofkuybyshevandmolotov
-				}
-			
-			traits = { smooth_talking_charmer }
-		}
+
+            picture = generic_political_advisor_europe_1
+
+            allowed = {
+                original_tag = SOV
+            }
+            available = {
+                NOT = { has_completed_focus = SOV_trialofkuybyshevandmolotov }
+            }
+
+            traits = { smooth_talking_charmer }
+        }
 
 		SOV_nikolai_voznesensky = {
 			
@@ -141,15 +133,12 @@ ideas = {
 			
 			picture = generic_army_europe_2
 			
-			allowed = {
-				original_tag = SOV
-			}
-
-			available = 
-			{
-				NOT = { has_country_flag = counter_purge }
-				NOT = { has_country_flag = purge_2_group_a }
-			}
+			aallowed = {
+                original_tag = SOV
+            }
+            available = {
+                NOT = { has_completed_focus = SOV_trialofyezhovandmikoyan }
+            }
 			
 			traits = { prince_of_terror }
 		}
@@ -281,23 +270,11 @@ ideas = {
 			#Also unit leader: 405
 			
 			allowed = {
-				original_tag = SOV
+                original_tag = SOV
+            }
+            available = {
+                NOT = { has_completed_focus = SOV_trialofvoroshilov}
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_b }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 405
-						} 
-					}
-				}
-			}
-			
-
 			
 			traits = { army_chief_drill_1 }
 			

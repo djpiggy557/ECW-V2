@@ -11,11 +11,11 @@ tag = HUN
 focus = { 
 id = HUN_slovakexpulsionfromthesouth
 icon = GFX_goal_generic_demand_territory
-x = 32
+x = 20
 y = 2
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = HUN_magyarization } 
+prerequisite = { focus = HUN_balkanminorities } 
 ai_will_do = { 
  factor = 1
  } 
@@ -43,7 +43,7 @@ ai_will_do = {
 focus = { 
 id = HUN_solidifythesovietstate
 icon = GFX_focus_generic_join_comintern
-x = 13
+x = 11
 y = 1
 cost = 5
 available_if_capitulated = yes 
@@ -51,7 +51,10 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-add_political_power= 50
+country_event= {
+days = 1 
+id = earlycoldwar.23 
+}
  } 
 
  } 
@@ -60,7 +63,7 @@ add_political_power= 50
 focus = { 
 id = HUN_removedfromcrisana
 icon = GFX_goal_generic_demand_territory
-x = 36
+x = 24
 y = 5
 cost = 10
 available_if_capitulated = yes 
@@ -74,11 +77,11 @@ ROM = {remove_state_core= 83}
 
  } 
 
-#Focus for Magyarization
+#Focus for Balkan Minorities
 focus = { 
-id = HUN_magyarization
+id = HUN_balkanminorities
 icon = GFX_focus_generic_military_mission
-x = 34
+x = 22
 y = 1
 cost = 5
 available_if_capitulated = yes 
@@ -92,7 +95,7 @@ ai_will_do = {
 focus = { 
 id = HUN_removedfromsoutherntransylvania
 icon = GFX_goal_generic_demand_territory
-x = 36
+x = 24
 y = 4
 cost = 10
 available_if_capitulated = yes 
@@ -110,11 +113,11 @@ ROM = {remove_state_core= 84}
 focus = { 
 id = HUN_begintheromaniandeportaion
 icon = GFX_goal_generic_demand_territory
-x = 36
+x = 24
 y = 2
 cost = 5
 available_if_capitulated = yes 
-prerequisite = { focus = HUN_magyarization } 
+prerequisite = { focus = HUN_balkanminorities } 
 ai_will_do = { 
  factor = 1
  } 
@@ -125,7 +128,7 @@ ai_will_do = {
 focus = { 
 id = HUN_removedfromnortherntransylvania
 icon = GFX_goal_generic_demand_territory
-x = 36
+x = 24
 y = 3
 cost = 10
 available_if_capitulated = yes 
@@ -167,6 +170,9 @@ mutually_exclusive = { focus = HUN_stickwithbelakun }
 mutually_exclusive = { focus = HUN_ } 
 ai_will_do = { 
  factor = 1
+ } 
+available = { 
+has_government= fascism
  } 
 completion_reward = { 
 kill_country_leader= yes
@@ -244,7 +250,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-leave_faction= HUN
+SOV = {remove_from_faction= HUN}
  } 
 
  } 
@@ -264,6 +270,9 @@ mutually_exclusive = { focus = HUN_ }
 ai_will_do = { 
  factor = 1
  } 
+available = { 
+has_government= fascism
+ } 
 
  } 
 
@@ -271,7 +280,7 @@ ai_will_do = {
 focus = { 
 id = HUN_liberatethecroats
 icon = GFX_focus_YUG_banovina_of_croatia
-x = 32
+x = 20
 y = 7
 cost = 10
 available_if_capitulated = yes 
@@ -292,7 +301,7 @@ target = CRO
 focus = { 
 id = HUN_removeserbsfrombanat
 icon = GFX_goal_generic_demand_territory
-x = 32
+x = 20
 y = 5
 cost = 10
 available_if_capitulated = yes 
@@ -310,7 +319,7 @@ SER = {remove_state_core= 764}
 focus = { 
 id = HUN_removeserbsfromvojvodina
 icon = GFX_goal_generic_demand_territory
-x = 32
+x = 20
 y = 6
 cost = 10
 available_if_capitulated = yes 
@@ -328,7 +337,7 @@ SER = {remove_state_core= 45}
 focus = { 
 id = HUN_backtotherepublic
 icon = GFX_goal_anti_comintern_pact
-x = 22
+x = 15
 y = 2
 cost = 10
 available_if_capitulated = yes 
@@ -338,6 +347,25 @@ mutually_exclusive = { focus = HUN_stickwithbelakun }
 ai_will_do = { 
  factor = 1
  } 
+available = { 
+has_government= fascism
+ } 
+completion_reward = { 
+set_politics= {
+ ruling_party = democratic 
+elections_allowed = yes 
+}
+create_country_leader= {
+ name = "István Friedrich" 
+desc =   
+picture = "portrait_hun_istvan_friedrich.dds" 
+expire = '1965.1.1' 
+ideology = socialism 
+traits = {
+}
+
+ }
+ } 
 
  } 
 
@@ -345,7 +373,7 @@ ai_will_do = {
 focus = { 
 id = HUN_removedfrombanat
 icon = GFX_goal_generic_demand_territory
-x = 36
+x = 24
 y = 6
 cost = 10
 available_if_capitulated = yes 
@@ -378,7 +406,7 @@ ai_will_do = {
 focus = { 
 id = HUN_slovakexpulsionfromcarpathia
 icon = GFX_goal_generic_demand_territory
-x = 32
+x = 20
 y = 3
 cost = 10
 available_if_capitulated = yes 
@@ -396,7 +424,7 @@ SLO = {remove_state_core= 73}
 focus = { 
 id = HUN_crushcodreanu
 icon = GFX_goal_generic_demand_territory
-x = 36
+x = 24
 y = 7
 cost = 10
 available_if_capitulated = yes 
@@ -417,7 +445,7 @@ target = ROM
 focus = { 
 id = HUN_austrianquestion
 icon = GFX_goal_generic_demand_territory
-x = 32
+x = 20
 y = 4
 cost = 10
 available_if_capitulated = yes 
@@ -439,6 +467,12 @@ available_if_capitulated = yes
 prerequisite = { focus = HUN_stickwithbelakun } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
+ideology = democratic 
+popularity = -1 
+}
  } 
 
  } 
