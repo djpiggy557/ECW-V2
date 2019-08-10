@@ -521,104 +521,169 @@ focus_tree = {
 	ruling_party = communism
 	elections_allowed = yes
 }
-
 create_country_leader= {
- name = "Robbert La Follette Jr."
-desc = ""
-picture = ".dds" 
-expire = "1965.1.1"
-ideology = stalinism
+ name = "Robert La Follette Jr" 
+desc = 'POLITICS_PETER_II_DESC' 
+picture = "portrait_usa_robert_la_follette_jr.dds" 
+expire = '1965.1.1' 
+ideology = marxism 
 traits = {
 }
 
  }
-		}
-	}
+ } 
 
-	#Focus for Revoke Monroe Doctrine
-	focus = {
-		id = USA_revokemonroedoctrine
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 3
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_robbertlafollettejrelected }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			USA = { remove_guarantee = MEX }
-		}
-	}
+ } 
 
-	#Focus for Strengthen the Unions
-	focus = {
-		id = USA_strengthentheunions
-		icon = GFX_goal_tripartite_pact
-		x = 5
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_robbertlafollettejrelected }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#Focus for Strengthen the Unions
+focus = { 
+id = USA_strengthentheunions
+icon = GFX_goal_generic_construct_civ_factory
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = USA_robbertlafollettejrelected } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
+ideology = communism 
+popularity = 0.5
+}
+ } 
 
-	#Focus for Wheeler Resolution
-	focus = {
-		id = USA_wheelerresolution
-		icon = GFX_goal_generic_major_alliance
-		x = 7
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_revokeindianlaws }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+ } 
 
-	#Focus for Revoke Indian Laws
-	focus = {
-		id = USA_revokeindianlaws
-		icon = GFX_revokeindianlaws
-		x = 7
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_robbertlafollettejrelected }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#Focus for Preemptive Strike
+focus = { 
+id = USA_preemptivestrike
+icon = GFX_goal_unknown
+x = 20
+y = 7
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
 
-	#Focus for Sidewalks of New York
-	focus = {
-		id = USA_sidewalksofnewyork
-		icon = GFX_sidewalksofnewyork
-		x = 13
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
+ } 
 
-	#Focus for Lower licence fees
-	focus = {
-		id = USA_lowerlicencefees
-		icon = GFX_lowerlicencefees
-		x = 20
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#Focus for Friends from the East
+focus = { 
+id = USA_friendsfromtheeast
+icon = GFX_focus_chi_mission_to_the_soviet_union
+x = 4
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = USA_pulloutoftheleague } 
+mutually_exclusive = { focus = USA_trueisolationism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+SOV = {add_to_faction= USA}
+ } 
+
+ } 
+
+#Focus for Results of the 1932 Presidential Election
+focus = { 
+id = USA_resultsofthe1932presidentialelection
+icon = GFX_goal_generic_national_unity
+x = 12
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+country_event= {
+days = 1 
+id = earlycoldwar.24 
+}
+ } 
+
+ } 
+
+#Focus for Revoke Monroe Doctrine
+focus = { 
+id = USA_revokemonroedoctrine
+icon = GFX_focus_renounce_the_treaty_of_trianon
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = USA_robbertlafollettejrelected } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+diplomatic_relation= { 
+country = BRA
+relation = non_aggression_pact
+active = no
+}
+ } 
+
+ } 
+
+#Focus for Second Lodge Bill
+focus = { 
+id = USA_secondlodgebill
+icon = GFX_goal_continuous_increase_nu
+x = 5
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = USA_revokeantiindianlaws } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
+ideology = communism 
+popularity = 0.5 
+}
+add_manpower= 8000
+ } 
+
+ } 
+
+#Focus for Al Smith Elected
+focus = { 
+id = USA_alsmithelected
+icon = GFX_goal_unknown
+x = 9
+y = 1
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = USA_rooseveltiiielected } 
+mutually_exclusive = { focus = USA_robbertlafollettejrelected } 
+mutually_exclusive = { focus = USA_eugenetalmadgeelected } 
+mutually_exclusive = { focus = USA_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Federal Enforced Segregation
+focus = { 
+id = USA_federalenforcedsegregation
+icon = GFX_goal_unknown
+x = 15
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
 
 #End of focuses 
  }
