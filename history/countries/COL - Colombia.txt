@@ -113,9 +113,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Alfonso López Pumarejo"
+	name = "Enrique Olaya Herrera"
 	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
-	picture = "GFX_Portrait_columbia_alfonso_lopez"
+	picture = "portrait_col_enrique_olaya_herrera.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

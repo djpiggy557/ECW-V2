@@ -7,6 +7,21 @@ add = 10
 tag = FIN 
 } 
 } 
+#Focus for Depend Less on Russian Imports
+focus = { 
+id = FIN_dependlessonrussianimports
+icon = GFX_goal_generic_trade
+x = 12
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = FIN_standardizingcollectiveagreements } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
 #Focus for a
 focus = { 
 id = FIN_a

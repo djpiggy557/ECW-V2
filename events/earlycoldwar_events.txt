@@ -546,17 +546,17 @@ country_event = {
 	option = {
 		name = earlycoldwar.23.a
 		ai_chance = { factor = 10}
-		complete_national_focus= HUN_stickwithbelakun
+		set_country_flag= HUN_stickwithbelakun
 	}
 	option = {
 		name = earlycoldwar.23.b
 		ai_chance = { factor = 1}
-		complete_national_focus= HUN_rakosicoup
+		set_country_flag= HUN_rakosicoup
 	}
 	option = {
 		name = earlycoldwar.23.c
 		ai_chance = { factor = 1}
-		complete_national_focus= HUN_backtotherepublic
+		set_country_flag= HUN_backtotherepublic
 	}
 }
 

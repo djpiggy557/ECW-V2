@@ -45,7 +45,7 @@ id = HUN_solidifythesovietstate
 icon = GFX_focus_generic_join_comintern
 x = 11
 y = 1
-cost = 5
+cost = 1
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
@@ -162,9 +162,8 @@ id = HUN_rakosicoup
 icon = GFX_goal_generic_dangerous_deal
 x = 11
 y = 2
-cost = 10
+cost = 1
 available_if_capitulated = yes 
-prerequisite = { focus = HUN_solidifythesovietstate } 
 mutually_exclusive = { focus = HUN_backtotherepublic } 
 mutually_exclusive = { focus = HUN_stickwithbelakun } 
 mutually_exclusive = { focus = HUN_ } 
@@ -172,7 +171,7 @@ ai_will_do = {
  factor = 1
  } 
 available = { 
-has_government= fascism
+has_country_flag= HUN_rakosicoup
  } 
 completion_reward = { 
 kill_country_leader= yes
@@ -180,7 +179,7 @@ kill_country_leader= yes
 create_country_leader = {
 	name = "Mátyás Rákosi"
 	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
-	picture = "Portrait_Hungary_matyas_rakosi.dds"
+	picture = "portrait_hun_matyas_rakosi.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -261,9 +260,8 @@ id = HUN_stickwithbelakun
 icon = GFX_focus_generic_soviet_politics
 x = 7
 y = 2
-cost = 10
+cost = 1
 available_if_capitulated = yes 
-prerequisite = { focus = HUN_solidifythesovietstate } 
 mutually_exclusive = { focus = HUN_backtotherepublic } 
 mutually_exclusive = { focus = HUN_rakosicoup } 
 mutually_exclusive = { focus = HUN_ } 
@@ -271,7 +269,7 @@ ai_will_do = {
  factor = 1
  } 
 available = { 
-has_government= fascism
+has_country_flag= HUN_stickwithbelakun
  } 
 
  } 
@@ -339,16 +337,15 @@ id = HUN_backtotherepublic
 icon = GFX_goal_anti_comintern_pact
 x = 15
 y = 2
-cost = 10
+cost = 1
 available_if_capitulated = yes 
-prerequisite = { focus = HUN_solidifythesovietstate } 
 mutually_exclusive = { focus = HUN_rakosicoup } 
 mutually_exclusive = { focus = HUN_stickwithbelakun } 
 ai_will_do = { 
  factor = 1
  } 
 available = { 
-has_government= fascism
+has_country_flag= HUN_backtotherepublic
  } 
 completion_reward = { 
 set_politics= {
