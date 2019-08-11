@@ -1,5 +1,5 @@
 focus_tree = { 
-id = USAa
+id = USA
 country = { 
 factor = 0 
 modifier = { 
@@ -43,11 +43,13 @@ popularity = 0.1
 #Focus for Seize the Dutch Colonies
 focus = { 
 id = USA_seizethedutchcolonies
-icon = GFX_goal_unknown
-x = 19
+icon = GFX_focus_hol_oranje_boven
+x = 20
 y = 6
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_stateofpuertorico } 
+prerequisite = { focus = USA_finishthebananawars } 
 ai_will_do = { 
  factor = 1
  } 
@@ -57,11 +59,13 @@ ai_will_do = {
 #Focus for Purchase Greenland or Baja
 focus = { 
 id = USA_purchasegreenlandorbaja
-icon = GFX_goal_unknown
-x = 21
+icon = GFX_focus_mex_privatisation
+x = 22
 y = 6
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_finishthebananawars } 
+prerequisite = { focus = USA_philippinesstatehood } 
 ai_will_do = { 
  factor = 1
  } 
@@ -71,11 +75,12 @@ ai_will_do = {
 #Focus for Finish the Banana Wars
 focus = { 
 id = USA_finishthebananawars
-icon = GFX_goal_unknown
-x = 18
+icon = GFX_goal_generic_army_doctrines
+x = 21
 y = 5
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_increaseprivateindustry focus = USA_expansionofoilandrubberproduction } 
 ai_will_do = { 
  factor = 1
  } 
@@ -85,11 +90,12 @@ ai_will_do = {
 #Focus for Philippine's Statehood
 focus = { 
 id = USA_philippinesstatehood
-icon = GFX_goal_unknown
-x = 22
+icon = GFX_goal_generic_cavalry
+x = 23
 y = 5
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_expansionofoilandrubberproduction } 
 ai_will_do = { 
  factor = 1
  } 
@@ -99,25 +105,27 @@ ai_will_do = {
 #Focus for State of Puerto Rico
 focus = { 
 id = USA_stateofpuertorico
-icon = GFX_goal_unknown
-x = 20
+icon = GFX_goal_generic_cavalry
+x = 19
 y = 5
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_increaseprivateindustry } 
 ai_will_do = { 
  factor = 1
  } 
 
  } 
 
-#Focus for Expansion of Oil Fields
+#Focus for Expansion of Oil and Rubber Production
 focus = { 
-id = USA_expansionofoilfields
-icon = GFX_goal_unknown
-x = 21
+id = USA_expansionofoilandrubberproduction
+icon = GFX_goal_generic_oil_refinery
+x = 22
 y = 4
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_newamericanexpeditionaryforce } 
 ai_will_do = { 
  factor = 1
  } 
@@ -127,11 +135,12 @@ ai_will_do = {
 #Focus for Increase Private Industry
 focus = { 
 id = USA_increaseprivateindustry
-icon = GFX_goal_unknown
-x = 19
+icon = GFX_goal_generic_construction2
+x = 20
 y = 4
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_newamericanexpeditionaryforce } 
 ai_will_do = { 
  factor = 1
  } 
@@ -141,11 +150,13 @@ ai_will_do = {
 #Focus for New American Expeditionary Force
 focus = { 
 id = USA_newamericanexpeditionaryforce
-icon = GFX_goal_unknown
+icon = GFX_focus_generic_commonwealth_build_infantry
 x = 21
-y = 2
+y = 3
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_newbullmooseparty } 
+prerequisite = { focus = USA_economicprivatization } 
 ai_will_do = { 
  factor = 1
  } 
@@ -155,11 +166,12 @@ ai_will_do = {
 #Focus for Economic Privatization
 focus = { 
 id = USA_economicprivatization
-icon = GFX_goal_unknown
-x = 20
-y = 3
+icon = GFX_goal_generic_defence
+x = 22
+y = 2
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_rooseveltiiielected } 
 ai_will_do = { 
  factor = 1
  } 
@@ -169,10 +181,10 @@ ai_will_do = {
 #Focus for Roosevelt III Elected
 focus = { 
 id = USA_rooseveltiiielected
-icon = GFX_goal_unknown
-x = 20
+icon = GFX_focus_usa_recruit_the_free_corps
+x = 21
 y = 1
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 mutually_exclusive = { focus = USA_robbertlafollettejrelected } 
 mutually_exclusive = { focus = USA_alsmithelected } 
@@ -180,17 +192,33 @@ mutually_exclusive = { focus = USA_eugenetalmadgeelected }
 ai_will_do = { 
  factor = 1
  } 
+available = { 
+has_country_flag= roosevelt_iii
+ } 
+completion_reward = { 
+kill_country_leader= yes create_country_leader= {
+ name = "Theodore Roosevelt III" 
+desc = 'POLITICS_PETER_II_DESC' 
+picture = "portrait_usa_roosevelt_iii.dds" 
+expire = '1965.1.1' 
+ideology = liberalism
+traits = {
+}
+
+ }
+ } 
 
  } 
 
-#Focus for New Bull-Moose Party
+#Focus for New Bull Moose Party
 focus = { 
 id = USA_newbullmooseparty
-icon = GFX_goal_unknown
-x = 19
+icon = GFX_goal_generic_political_pressure
+x = 20
 y = 2
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_rooseveltiiielected } 
 ai_will_do = { 
  factor = 1
  } 
@@ -200,13 +228,32 @@ ai_will_do = {
 #Focus for Georgian Dictator
 focus = { 
 id = USA_georgiandictator
-icon = GFX_goal_unknown
-x = 14
+icon = GFX_goal_generic_CAS
+x = 15
 y = 5
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_assassinatelong } 
+prerequisite = { focus = USA_idealsofthefoundingfathers } 
+prerequisite = { focus = USA_lowerlicensefees } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+create_country_leader= {
+ name = "Eugene Talmadge" 
+desc = 'POLITICS_PETER_II_DESC' 
+picture = "portrait_usa_eugene_talmadge.dds" 
+expire = '1965.1.1' 
+ideology = fascism_ideology 
+traits = {
+}
+
+ }
  } 
 
  } 
@@ -214,55 +261,84 @@ ai_will_do = {
 #Focus for North American Empire
 focus = { 
 id = USA_northamericanempire
-icon = GFX_goal_unknown
-x = 14
+icon = GFX_focus_mex_jefe_maximo
+x = 15
 y = 6
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_georgiandictator } 
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+create_wargoal= { 
+type = annex_everything 
+target = MEX
+}
+create_wargoal= { 
+type = annex_everything 
+target = CAN
+}
+ } 
 
  } 
 
-#Focus for Lower licence fees
+#Focus for Lower License Fees
 focus = { 
-id = USA_lowerlicencefees
-icon = GFX_goal_unknown
-x = 16
+id = USA_lowerlicensefees
+icon = GFX_goal_generic_intelligence_exchange
+x = 17
 y = 4
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_federalenforcedsegregation } 
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+add_stability= 0.05
+ } 
 
  } 
 
-#Focus for s
+#Focus for Assassinate Long
 focus = { 
-id = USA_s
-icon = GFX_goal_unknown
-x = 12
-y = 4
-cost = 10
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Less Taxes
-focus = { 
-id = USA_lesstaxes
-icon = GFX_goal_unknown
+id = USA_assassinatelong
+icon = GFX_goal_continuous_suppression
 x = 13
-y = 3
+y = 4
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_reducefemalesuffrage } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+country_event= {
+days = 1 
+id = earlycoldwar.27 
+}
+ } 
+
+ } 
+
+#Focus for Less Taxes for Southerners
+focus = { 
+id = USA_lesstaxesforsoutherners
+icon = GFX_focus_usa_reestablish_the_gold_standard
+x = 14
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = USA_eugenetalmadgeelected } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
+ideology = fascism 
+popularity = 0.5 
+}
  } 
 
  } 
@@ -270,13 +346,17 @@ ai_will_do = {
 #Focus for Reduce Female Suffrage
 focus = { 
 id = USA_reducefemalesuffrage
-icon = GFX_goal_unknown
-x = 15
+icon = GFX_goal_generic_forceful_treaty
+x = 14
 y = 3
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_lesstaxesforsoutherners } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_manpower= -500
  } 
 
  } 
@@ -284,27 +364,38 @@ ai_will_do = {
 #Focus for Ideals of the Founding Fathers
 focus = { 
 id = USA_idealsofthefoundingfathers
-icon = GFX_goal_unknown
-x = 14
+icon = GFX_goal_generic_demand_territory
+x = 15
 y = 4
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_reducefemalesuffrage focus = USA_federalenforcedsegregation } 
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+add_popularity= { 
+ideology = fascism 
+popularity = 0.50 
+}
+ } 
 
  } 
 
-#Focus for Promote individualism
+#Focus for Promote Individualism
 focus = { 
 id = USA_promoteindividualism
-icon = GFX_goal_unknown
-x = 13
+icon = GFX_goal_generic_propaganda
+x = 16
 y = 2
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_eugenetalmadgeelected } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_political_power= 50
  } 
 
  } 
@@ -312,10 +403,10 @@ ai_will_do = {
 #Focus for Eugene Talmadge Elected
 focus = { 
 id = USA_eugenetalmadgeelected
-icon = GFX_goal_unknown
-x = 14
+icon = GFX_goal_support_fascism
+x = 15
 y = 1
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 mutually_exclusive = { focus = USA_alsmithelected } 
 mutually_exclusive = { focus = USA_robbertlafollettejrelected } 
@@ -324,17 +415,33 @@ mutually_exclusive = { focus = USA_ }
 ai_will_do = { 
  factor = 1
  } 
+available = { 
+has_country_flag= eugene_talmadge
+ } 
+completion_reward = { 
+kill_country_leader= yes create_country_leader= {
+ name = "Eugene Talmadge" 
+desc = 'POLITICS_PETER_II_DESC' 
+picture = "portrait_usa_eugene_talmadge.dds" 
+expire = '1965.1.1' 
+ideology = liberalism 
+traits = {
+}
+
+ }
+ } 
 
  } 
 
-#Focus for Iterum trans Rhenum
+#Focus for Iterum Trans Rhenum
 focus = { 
 id = USA_iterumtransrhenum
-icon = GFX_goal_unknown
+icon = GFX_focus_ger_strike_at_the_source
 x = 9
 y = 7
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_sidewalksofnewyork } 
 ai_will_do = { 
  factor = 1
  } 
@@ -344,11 +451,12 @@ ai_will_do = {
 #Focus for Strengthen the Liberty League
 focus = { 
 id = USA_strengthenthelibertyleague
-icon = GFX_goal_unknown
+icon = GFX_focus_eng_concessions_to_the_trade_unions
 x = 10
 y = 5
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_assistruralareas } 
 ai_will_do = { 
  factor = 1
  } 
@@ -358,11 +466,13 @@ ai_will_do = {
 #Focus for Sidewalks of New York
 focus = { 
 id = USA_sidewalksofnewyork
-icon = GFX_goal_unknown
+icon = GFX_focus_generic_the_giant_wakes
 x = 9
 y = 6
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_courtpackingplan } 
+prerequisite = { focus = USA_strengthenthelibertyleague } 
 ai_will_do = { 
  factor = 1
  } 
@@ -372,11 +482,13 @@ ai_will_do = {
 #Focus for Assist Rural Areas
 focus = { 
 id = USA_assistruralareas
-icon = GFX_goal_unknown
+icon = GFX_goal_generic_construction2
 x = 9
 y = 4
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_womenssuffrage } 
+prerequisite = { focus = USA_bootprohibition } 
 ai_will_do = { 
  factor = 1
  } 
@@ -386,11 +498,12 @@ ai_will_do = {
 #Focus for Court Packing Plan
 focus = { 
 id = USA_courtpackingplan
-icon = GFX_goal_unknown
+icon = GFX_focus_generic_self_management
 x = 8
 y = 5
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_assistruralareas } 
 ai_will_do = { 
  factor = 1
  } 
@@ -400,27 +513,38 @@ ai_will_do = {
 #Focus for Women's Suffrage
 focus = { 
 id = USA_womenssuffrage
-icon = GFX_goal_unknown
-x = 10
-y = 3
-cost = 10
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Catholic-Protestant Relations
-focus = { 
-id = USA_catholicprotestantrelations
-icon = GFX_goal_unknown
+icon = GFX_focus_hol_the_foundations_of_defense
 x = 8
 y = 3
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_nomorefactoryincidents } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_manpower= 400
+ } 
+
+ } 
+
+#Focus for Catholic Protestant Relations
+focus = { 
+id = USA_catholicprotestantrelations
+icon = GFX_goal_generic_dangerous_deal
+x = 10
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = USA_alsmithelected } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
+ideology = democratic
+popularity = 0.10 
+}
  } 
 
  } 
@@ -428,13 +552,17 @@ ai_will_do = {
 #Focus for No More Factory Incidents
 focus = { 
 id = USA_nomorefactoryincidents
-icon = GFX_goal_unknown
+icon = GFX_goal_generic_construction2
 x = 8
 y = 2
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_alsmithelected } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_manpower= 8000
  } 
 
  } 
@@ -442,13 +570,17 @@ ai_will_do = {
 #Focus for Boot Prohibition
 focus = { 
 id = USA_bootprohibition
-icon = GFX_goal_unknown
+icon = GFX_goal_generic_forceful_treaty
 x = 10
-y = 2
+y = 3
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_catholicprotestantrelations } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_stability= 0.20
  } 
 
  } 
@@ -472,7 +604,7 @@ create_faction= "North American Comintern"
 
  } 
 
-#Focus for Reduce military budget
+#Focus for Reduce Military Budget
 focus = { 
 id = USA_reducemilitarybudget
 icon = GFX_goal_generic_construct_mil_factory
@@ -510,7 +642,7 @@ BEL = {remove_from_faction= USA}
 #Focus for Wheeler Resolution
 focus = { 
 id = USA_wheelerresolution
-icon = GFX_goal_generic_construct_infrastructure
+icon = GFX_goal_generic_radar
 x = 3
 y = 3
 cost = 10
@@ -527,7 +659,7 @@ modify_building_resources= { building = synthetic_refinery
 
  } 
 
-#Focus for Strengthening ties with Germany
+#Focus for Strengthening Ties With Germany
 focus = { 
 id = USA_strengtheningtieswithgermany
 icon = GFX_focus_ger_great_red_menace
@@ -564,7 +696,7 @@ available = {
 has_country_flag= la_follette
  } 
 completion_reward = { 
-kill_country_leader= yesset_politics= {
+kill_country_leader= yes set_politics= {
  ruling_party = communism
 elections_allowed = no 
 }
@@ -606,11 +738,13 @@ popularity = 0.5
 #Focus for Preemptive Strike
 focus = { 
 id = USA_preemptivestrike
-icon = GFX_goal_unknown
-x = 20
+icon = GFX_focus_attack_japan
+x = 21
 y = 7
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_seizethedutchcolonies } 
+prerequisite = { focus = USA_purchasegreenlandorbaja } 
 ai_will_do = { 
  factor = 1
  } 
@@ -642,7 +776,7 @@ id = USA_resultsofthe1932presidentialelection
 icon = GFX_goal_generic_national_unity
 x = 12
 y = 0
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
@@ -703,10 +837,10 @@ add_manpower= 8000
 #Focus for Al Smith Elected
 focus = { 
 id = USA_alsmithelected
-icon = GFX_goal_unknown
+icon = GFX_goal_support_democracy
 x = 9
 y = 1
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 mutually_exclusive = { focus = USA_rooseveltiiielected } 
 mutually_exclusive = { focus = USA_robbertlafollettejrelected } 
@@ -715,19 +849,41 @@ mutually_exclusive = { focus = USA_ }
 ai_will_do = { 
  factor = 1
  } 
+available = { 
+has_country_flag= al_smith
+ } 
+completion_reward = { 
+kill_country_leader= yes create_country_leader= {
+ name = "Al Smith" 
+desc = 'POLITICS_PETER_II_DESC' 
+picture = "portrait_usa_al_smith.dds" 
+expire = '1965.1.1' 
+ideology = liberalism 
+traits = {
+}
+
+ }
+ } 
 
  } 
 
 #Focus for Federal Enforced Segregation
 focus = { 
 id = USA_federalenforcedsegregation
-icon = GFX_goal_unknown
-x = 15
-y = 2
+icon = GFX_focus_eng_move_to_secure_the_dominions
+x = 16
+y = 3
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = USA_promoteindividualism } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+country_event= {
+days = 1 
+id = earlycoldwar.25
+}
  } 
 
  } 

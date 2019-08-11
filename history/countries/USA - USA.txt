@@ -120,6 +120,12 @@ give_guarantee = ARG
 give_guarantee = URG
 give_guarantee = RHI
 
+puppet = CUB
+puppet = HAI
+puppet = NIC
+puppet = PAN
+puppet = DOM
+
 1939.1.1 = {
 
 	add_political_power = 1199
