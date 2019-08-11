@@ -1,0 +1,44 @@
+﻿division= {			
+		division_name = { # First Philippine Division
+			is_name_ordered = yes
+			name_order = 100
+		}
+		location = 1415
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+division= {			
+		division_name = { # Second Philippine Division
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 10280
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+division= {			
+		division_name = { # Third Philippine Division
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 4423
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+division= {			
+		division_name = { # Fourth Philippine Division
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location = 1388
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}				
