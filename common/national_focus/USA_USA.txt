@@ -53,6 +53,12 @@ prerequisite = { focus = USA_finishthebananawars }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+country_event= {
+days = 1 
+id = earlycoldwar.30
+}
+ } 
 
  } 
 
@@ -69,6 +75,12 @@ prerequisite = { focus = USA_philippinesstatehood }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+country_event= {
+days = 1 
+id = earlycoldwar.31 
+}
+ } 
 
  } 
 
@@ -83,6 +95,24 @@ available_if_capitulated = yes
 prerequisite = { focus = USA_increaseprivateindustry focus = USA_expansionofoilandrubberproduction } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+create_wargoal= { 
+type = annex_everything 
+target = GUA
+}
+create_wargoal= { 
+type = annex_everything 
+target = ELS
+}
+create_wargoal= { 
+type = annex_everything 
+target = HON
+}
+create_wargoal= { 
+type = annex_everything 
+target = COS
+}
  } 
 
  } 
@@ -99,6 +129,13 @@ prerequisite = { focus = USA_expansionofoilandrubberproduction }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+PHI = {country_event= {
+days = 1 
+id = earlycoldwar.29
+}
+}
+ } 
 
  } 
 
@@ -113,6 +150,9 @@ available_if_capitulated = yes
 prerequisite = { focus = USA_increaseprivateindustry } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+PUE = {remove_state_core= 686}
  } 
 
  } 
@@ -129,6 +169,18 @@ prerequisite = { focus = USA_newamericanexpeditionaryforce }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+add_resource= { 
+type = oil 
+amount = 8 
+state = 375 
+}
+add_resource= { 
+type = rubber 
+amount = 8 
+state = 686
+}
+ } 
 
  } 
 
@@ -143,6 +195,27 @@ available_if_capitulated = yes
 prerequisite = { focus = USA_newamericanexpeditionaryforce } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+396={
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = industrial_complex
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
  } 
 
  } 
@@ -159,6 +232,12 @@ prerequisite = { focus = USA_newbullmooseparty }
 prerequisite = { focus = USA_economicprivatization } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_manpower= 8000 send_equipment= {
+ target = USA 
+type = infantry_equipment amount = 800 
+}
  } 
 
  } 
@@ -221,6 +300,12 @@ available_if_capitulated = yes
 prerequisite = { focus = USA_rooseveltiiielected } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
+ideology = neutrality 
+popularity = 0.20 
+}
  } 
 
  } 
@@ -337,7 +422,7 @@ ai_will_do = {
 completion_reward = { 
 add_popularity= { 
 ideology = fascism 
-popularity = 0.5 
+popularity = 0.05 
 }
  } 
 
@@ -747,6 +832,12 @@ prerequisite = { focus = USA_seizethedutchcolonies }
 prerequisite = { focus = USA_purchasegreenlandorbaja } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+create_wargoal= { 
+type = annex_everything 
+target = JAP
+}
  } 
 
  } 
