@@ -1,0 +1,22 @@
+state={
+	id=802
+	name="Jabal Shammar"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = JBS
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = JBS 
+	}
+
+	provinces={ 8101 10815 10901 4974 2057 5058 4968 5027 12749 10923 10850 
+		 
+	}
+}

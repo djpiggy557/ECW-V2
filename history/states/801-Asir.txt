@@ -1,0 +1,22 @@
+state={
+	id=801
+	name="Asir"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = ASR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ASR
+	}
+
+	provinces={ 5006 8073 10786 1923 
+		 
+	}
+}
