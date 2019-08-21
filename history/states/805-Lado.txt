@@ -1,0 +1,23 @@
+state={
+	id=805
+	name="Lado"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = BEL
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ENG
+		add_core_of = BEL 
+	}
+
+	provinces={ 7133 
+		 
+	}
+}

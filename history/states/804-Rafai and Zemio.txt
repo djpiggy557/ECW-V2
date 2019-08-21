@@ -1,0 +1,23 @@
+state={
+	id=804
+	name="Rafai and Zemio"
+	manpower = 1415800
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			
+		}
+		owner = BEL
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = FRA
+		add_core_of = BEL 
+	}
+
+	provinces={ 12719  
+		 
+	}
+}
