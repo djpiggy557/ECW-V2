@@ -1,0 +1,7 @@
+spriteTypes = { 
+##Icon For: 1215441
+ SpriteType = { 
+ name = "GFX_chinesecheckas" 
+ texturefile = "gfx/interface/goals/GFX_chinesecheckas.tga" 
+ } 
+ }

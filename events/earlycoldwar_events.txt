@@ -669,6 +669,7 @@ country_event = {
  title = earlycoldwar.29.title
  desc = earlycoldwar.29.desc
  picture = GFX_report_event_usa_election_generic
+ is_triggered_only = yes
  fire_only_once = yes
 	option = {
 		name = earlycoldwar.29.a
@@ -806,6 +807,82 @@ country_event = {
 	}
 	option = {
 		name = earlycoldwar.34.b
+		ai_chance = { factor = 1}
+	}
+}
+
+##Event: Results of the 1932 Legislative Election
+country_event = {
+ id = earlycoldwar.35
+ title = earlycoldwar.35.title
+ desc = earlycoldwar.35.desc
+ picture = GFX_report_event_generic_sign_treaty2
+ is_triggered_only = yes
+ fire_only_once = yes
+	option = {
+		name = earlycoldwar.35.a
+		ai_chance = { factor = 1}
+		set_country_flag= edouard_herriot
+	}
+	option = {
+		name = earlycoldwar.35.b
+		ai_chance = { factor = 1}
+		set_country_flag= andre_tardieu
+	}
+	option = {
+		name = earlycoldwar.35.c
+		ai_chance = { factor = 1}
+		set_country_flag= maurice_thorez
+	}
+	option = {
+		name = earlycoldwar.35.d
+		ai_chance = { factor = 1}
+		set_country_flag= maurice_pujo
+	}
+}
+
+##Event: King of France
+country_event = {
+ id = earlycoldwar.36
+ title = earlycoldwar.36.title
+ desc = earlycoldwar.36.desc
+ picture = GFX_report_event_pierre_laval
+ is_triggered_only = yes
+ fire_only_once = yes
+	option = {
+		name = earlycoldwar.36.a
+		ai_chance = { factor = 1}
+		set_country_flag= jean_orlean
+	}
+	option = {
+		name = earlycoldwar.36.b
+		ai_chance = { factor = 1}
+		set_country_flag= alfonso_xiii
+	}
+	option = {
+		name = earlycoldwar.36.c
+		ai_chance = { factor = 1}
+		set_country_flag= louis_napoleon
+	}
+}
+
+##Event: Chaco War
+news_event = {
+ id = earlycoldwar.37
+ title = earlycoldwar.37.title
+ desc = earlycoldwar.37.desc
+ picture = GFX_news_event_039
+ fire_only_once = yes
+ major = yes
+ trigger = {
+BOL = {declare_war_on= { 
+target = PAR 
+type = annex_everything 
+}
+}
+	}	mean_time_to_happen = { days = 122}
+	option = {
+		name = earlycoldwar.37.a
 		ai_chance = { factor = 1}
 	}
 }

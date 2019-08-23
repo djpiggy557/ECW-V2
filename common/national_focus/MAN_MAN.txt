@@ -1,0 +1,592 @@
+focus_tree = { 
+id = MAN
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = MAN 
+} 
+} 
+#Focus for Bandit Situation
+focus = { 
+id = MAN_banditsituation
+icon = GFX_focus_prc_infiltration
+x = 12
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_militarysituation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Raid their camps
+focus = { 
+id = MAN_raidtheircamps
+icon = GFX_focus_secret_rearmament
+x = 11
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_banditsituation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Sponsor local Militias
+focus = { 
+id = MAN_sponsorlocalmilitias
+icon = GFX_goal_continuous_reduce_training_time
+x = 13
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_banditsituation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for End their terror
+focus = { 
+id = MAN_endtheirterror
+icon = GFX_goal_generic_political_pressure
+x = 12
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_raidtheircamps } 
+prerequisite = { focus = MAN_sponsorlocalmilitias } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A Japanese Puppet?
+focus = { 
+id = MAN_ajapanesepuppet
+icon = GFX_goal_generic_demand_territory
+x = 18
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Loyalty to the Japanese
+focus = { 
+id = MAN_loyaltytothejapanese
+icon = GFX_goal_generic_improve_relations
+x = 17
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_ajapanesepuppet } 
+mutually_exclusive = { focus = MAN_moreautonomy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for More autonomy
+focus = { 
+id = MAN_moreautonomy
+icon = GFX_goal_generic_intelligence_exchange
+x = 19
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_ajapanesepuppet } 
+mutually_exclusive = { focus = MAN_loyaltytothejapanese } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Invite Japanese Investors
+focus = { 
+id = MAN_invitejapaneseinvestors
+icon = GFX_goal_generic_construct_civ_factory
+x = 17
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_loyaltytothejapanese focus = MAN_moreautonomy } 
+mutually_exclusive = { focus = MAN_industryofourown } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Let in Japanese Settlers
+focus = { 
+id = MAN_letinjapanesesettlers
+icon = GFX_goal_unknown
+x = 17
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_invitejapaneseinvestors focus = MAN_industryofourown } 
+mutually_exclusive = { focus = MAN_separate } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Separate!
+focus = { 
+id = MAN_separate
+icon = GFX_goal_generic_political_pressure
+x = 19
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_invitejapaneseinvestors focus = MAN_industryofourown } 
+mutually_exclusive = { focus = MAN_letinjapanesesettlers } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Independence!
+focus = { 
+id = MAN_independence
+icon = GFX_goal_unknown
+x = 22
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_separate } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+declare_war_on= { 
+target = JAP
+type = annex_everything 
+}
+ } 
+
+ } 
+
+#Focus for Home brewed army
+focus = { 
+id = MAN_homebrewedarmy
+icon = GFX_goal_generic_small_arms
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_militarysituation } 
+mutually_exclusive = { focus = MAN_japanesetraining } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A Japanese Lapdog
+focus = { 
+id = MAN_ajapaneselapdog
+icon = GFX_goal_tripartite_pact
+x = 14
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_letinjapanesesettlers } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Japanese Training
+focus = { 
+id = MAN_japanesetraining
+icon = GFX_goal_generic_improve_relations
+x = 7
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_militarysituation } 
+mutually_exclusive = { focus = MAN_homebrewedarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Import Japanese Armaments
+focus = { 
+id = MAN_importjapanesearmaments
+icon = GFX_goal_generic_construct_mil_factory
+x = 6
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_japanesetraining } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Japanese Officers
+focus = { 
+id = MAN_japaneseofficers
+icon = GFX_goal_unknown
+x = 8
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_japanesetraining } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Japanese Doctrine
+focus = { 
+id = MAN_japanesedoctrine
+icon = GFX_goal_unknown
+x = 7
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_importjapanesearmaments } 
+prerequisite = { focus = MAN_japaneseofficers } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Hire Qing officers
+focus = { 
+id = MAN_hireqingofficers
+icon = GFX_goal_unknown
+x = 2
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_homebrewedarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Chinese Leadership
+focus = { 
+id = MAN_chineseleadership
+icon = GFX_focus_generic_china1
+x = 1
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_chinesedoctrine } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Japanese Leadership
+focus = { 
+id = MAN_japaneseleadership
+icon = GFX_focus_jap_pacific_guardian
+x = 7
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_japanesedoctrine } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Chinese Doctrine
+focus = { 
+id = MAN_chinesedoctrine
+icon = GFX_goal_unknown
+x = 1
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_restoreqingarmories } 
+prerequisite = { focus = MAN_hireqingofficers } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Military Situation
+focus = { 
+id = MAN_militarysituation
+icon = GFX_goal_rhineland
+x = 4
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+army_experience= 15
+ } 
+
+ } 
+
+#Focus for Restore Qing Armories
+focus = { 
+id = MAN_restoreqingarmories
+icon = GFX_goal_unknown
+x = 0
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_homebrewedarmy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Industry of our own
+focus = { 
+id = MAN_industryofourown
+icon = GFX_goal_generic_construct_civilian
+x = 19
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_loyaltytothejapanese focus = MAN_moreautonomy } 
+mutually_exclusive = { focus = MAN_invitejapaneseinvestors } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Forbidden City
+focus = { 
+id = MAN_theforbiddencity
+icon = GFX_goal_unknown
+x = 19
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_restoretheqingdynasty } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+set_capital= 608
+
+add_political_power
+= 50
+
+add_stability
+= 0.10
+ } 
+
+ } 
+
+#Focus for Restore the Qing Dynasty
+focus = { 
+id = MAN_restoretheqingdynasty
+icon = GFX_goal_unknown
+x = 19
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_independence } 
+mutually_exclusive = { focus = MAN_continuexueliangsplan } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+set_politics= {
+ ruling_party = neutrality 
+elections_allowed = no 
+}
+ } 
+
+ } 
+
+#Focus for Continue Xueliang's plan
+focus = { 
+id = MAN_continuexueliangsplan
+icon = GFX_goal_generic_wolf_pack
+x = 25
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_independence } 
+mutually_exclusive = { focus = MAN_restoretheqingdynasty } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Restore China
+focus = { 
+id = MAN_restorechina
+icon = GFX_goal_anschluss
+x = 22
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_imperialguards focus = MAN_blankk focus = MAN_a focus = MAN_sa } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_wargoal= { 
+type = annex_everything 
+target = MEN
+}
+create_wargoal= { 
+type = annex_everything 
+target = SHX
+}
+create_wargoal= { 
+type = annex_everything 
+target = GXC
+}
+create_wargoal= { 
+type = annex_everything 
+target = PRC
+}
+create_wargoal= { 
+type = annex_everything 
+target = CHI
+}
+create_wargoal= { 
+type = annex_everything 
+target = YUN
+}
+create_wargoal= { 
+type = annex_everything 
+target = XSM
+}
+ } 
+
+ } 
+
+#Focus for sa
+focus = { 
+id = MAN_sa
+icon = GFX_goal_unknown
+x = 26
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_industrializeruralareas } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for a
+focus = { 
+id = MAN_a
+icon = GFX_goal_unknown
+x = 24
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_industrializeruralareas } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Purge Japanese relations
+focus = { 
+id = MAN_purgejapaneserelations
+icon = GFX_goal_generic_major_war
+x = 22
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_restoretheqingdynasty focus = MAN_continuexueliangsplan } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Imperial Guards
+focus = { 
+id = MAN_imperialguards
+icon = GFX_goal_unknown
+x = 18
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_theforbiddencity } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_manpower= 15000
+
+add_stability
+= 0.05
+ } 
+
+ } 
+
+#Focus for blankk
+focus = { 
+id = MAN_blankk
+icon = GFX_goal_unknown
+x = 20
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_theforbiddencity } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Industrialize Rural Areas
+focus = { 
+id = MAN_industrializeruralareas
+icon = GFX_goal_unknown
+x = 25
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = MAN_continuexueliangsplan } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

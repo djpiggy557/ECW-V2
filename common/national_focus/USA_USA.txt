@@ -87,7 +87,7 @@ id = earlycoldwar.31
 #Focus for Finish the Banana Wars
 focus = { 
 id = USA_finishthebananawars
-icon = GFX_goal_generic_army_doctrines
+icon = GFX_goal_unknown
 x = 21
 y = 5
 cost = 10
@@ -120,7 +120,7 @@ target = COS
 #Focus for Philippine's Statehood
 focus = { 
 id = USA_philippinesstatehood
-icon = GFX_goal_generic_cavalry
+icon = GFX_goal_unknown
 x = 23
 y = 5
 cost = 10
@@ -142,7 +142,7 @@ id = earlycoldwar.29
 #Focus for State of Puerto Rico
 focus = { 
 id = USA_stateofpuertorico
-icon = GFX_goal_generic_cavalry
+icon = GFX_goal_unknown
 x = 19
 y = 5
 cost = 10
@@ -313,7 +313,7 @@ popularity = 0.20
 #Focus for Georgian Dictator
 focus = { 
 id = USA_georgiandictator
-icon = GFX_goal_generic_CAS
+icon = GFX_goal_unknown
 x = 15
 y = 5
 cost = 10
@@ -346,7 +346,7 @@ traits = {
 #Focus for North American Empire
 focus = { 
 id = USA_northamericanempire
-icon = GFX_focus_mex_jefe_maximo
+icon = GFX_goal_unknown
 x = 15
 y = 6
 cost = 10
@@ -431,7 +431,7 @@ popularity = 0.05
 #Focus for Reduce Female Suffrage
 focus = { 
 id = USA_reducefemalesuffrage
-icon = GFX_goal_generic_forceful_treaty
+icon = GFX_goal_unknown
 x = 14
 y = 3
 cost = 10
@@ -449,7 +449,7 @@ add_manpower= -500
 #Focus for Ideals of the Founding Fathers
 focus = { 
 id = USA_idealsofthefoundingfathers
-icon = GFX_goal_generic_demand_territory
+icon = GFX_goal_unknown
 x = 15
 y = 4
 cost = 10
@@ -598,7 +598,7 @@ ai_will_do = {
 #Focus for Women's Suffrage
 focus = { 
 id = USA_womenssuffrage
-icon = GFX_focus_hol_the_foundations_of_defense
+icon = GFX_goal_unknown
 x = 8
 y = 3
 cost = 10
@@ -616,7 +616,7 @@ add_manpower= 400
 #Focus for Catholic Protestant Relations
 focus = { 
 id = USA_catholicprotestantrelations
-icon = GFX_goal_generic_dangerous_deal
+icon = GFX_goal_unknown
 x = 10
 y = 2
 cost = 10
@@ -655,7 +655,7 @@ add_manpower= 8000
 #Focus for Boot Prohibition
 focus = { 
 id = USA_bootprohibition
-icon = GFX_goal_generic_forceful_treaty
+icon = GFX_goal_unknown
 x = 10
 y = 3
 cost = 10

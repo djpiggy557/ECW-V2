@@ -72,9 +72,9 @@ set_popularities = {
 
 # Mohammad Hashim Khan (Prime Minister) other potential candidate
 create_country_leader = {
-	name = "Mohammed Zahir Shah"
+	name = "Mohammed Nadir Shah"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+	picture = "portrait_afg_mohammed_nadir_shah.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
