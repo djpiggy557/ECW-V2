@@ -94,9 +94,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Long Yun"
+	name = "Tang Jiyao"
 	desc = "POLITICS_LONG_YUN_DESC"
-	picture = "GFX_portrait_yun_long_yun"
+	picture = "portrait_yun_tang_jiyao.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

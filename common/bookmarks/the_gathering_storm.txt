@@ -135,7 +135,7 @@ bookmarks = {
 			}	
 		}
 
-		"GXC"={
+		"ZHI"={
 			history = "GXC_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {

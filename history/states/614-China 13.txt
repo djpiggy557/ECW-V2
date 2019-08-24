@@ -7,9 +7,11 @@ state={
 	state_category = town
 
 	history={
-		owner = MAN
+		owner = ZHI
 		add_core_of = CHI
 		add_core_of = PRC
+		add_core_of = ZHI
+		add_core_of = MAN
 		buildings = {
 			infrastructure = 4
 		}
@@ -20,6 +22,6 @@ state={
 	}
 
 	provinces={
-		1169 1188 4032 4058 4093 4190 4208 7000 7092 7109 10003 10022 10053 10119 11944 11980 11996 12062 
+		1169 1188 4032 4058 4093 4190 4208 7000 7092 7109 10053 12062 
 	}
 }

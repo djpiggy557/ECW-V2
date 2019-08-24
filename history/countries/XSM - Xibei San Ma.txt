@@ -113,9 +113,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Ma Bufang"
+	name = "Ma Hongkui"
 	desc = ""
-	picture = "GFX_portrait_xsm_ma_bufang"
+	picture = "portrait_xsm_ma_hongkui.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

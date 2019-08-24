@@ -2,15 +2,16 @@ state={
 	id=751
 	name="STATE_751"
 	provinces={
-		1999 2067 7294 10726 10841 12141 12819 
+		1999 2067 7294 10726 10841 12141 12819 8126 4937 
 	}
 	manpower=300000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	history={
-		owner = YUN
+		owner = XKC
 		add_core_of = CHI
 		add_core_of = PRC
+		add_core_of = XKC
 		buildings = {
 			infrastructure = 1
 
