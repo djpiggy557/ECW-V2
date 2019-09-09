@@ -79,9 +79,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Manuel Luis Quezón"
+	name = "Dwight F. Davis"
 	desc = "POLITICS_MANUEL_LUIS_QUEZON_DESC"
-	picture = "gfx/leaders/PHI/Portrait_Philippines_Manuel_Luis_Quezon.dds"
+	picture = "portrait_phi_dwight_f_davis.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
