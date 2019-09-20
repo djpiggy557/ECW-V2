@@ -342,6 +342,7 @@ x = 18
 y = 5
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = FRA_supportthespanishworkers focus = FRA_nationalizekeyindustries } 
 ai_will_do = { 
  factor = 1
  } 
@@ -457,6 +458,7 @@ x = 16
 y = 5
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = FRA_supportthespanishworkers focus = FRA_nationalizekeyindustries } 
 ai_will_do = { 
  factor = 1
  } 
@@ -471,6 +473,7 @@ x = 20
 y = 5
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = FRA_nationalizekeyindustries } 
 ai_will_do = { 
  factor = 1
  } 
@@ -596,6 +599,7 @@ x = 18
 y = 4
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = FRA_supportthecoalminers focus = FRA_bringleftistsintothefold } 
 ai_will_do = { 
  factor = 1
  } 
@@ -610,6 +614,7 @@ x = 16
 y = 4
 cost = 10
 available_if_capitulated = yes 
+prerequisite = { focus = FRA_bringleftistsintothefold } 
 ai_will_do = { 
  factor = 1
  } 

@@ -1,0 +1,335 @@
+focus_tree = { 
+id = CHI
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = CHI 
+} 
+} 
+#Focus for a
+focus = { 
+id = CHI_a
+icon = GFX_goal_unknown
+x = 26
+y = 10
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Japanese Support
+focus = { 
+id = CHI_japanesesupport
+icon = GFX_goal_unknown
+x = 19
+y = 3
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = CHI_americansupport } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Ultimatum to Guizhou
+focus = { 
+id = CHI_ultimatumtoguizhou
+icon = GFX_goal_unknown
+x = 16
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for March on the Maoists
+focus = { 
+id = CHI_marchonthemaoists
+icon = GFX_goal_unknown
+x = 18
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Japanese Naval Support
+focus = { 
+id = CHI_japanesenavalsupport
+icon = GFX_goal_unknown
+x = 18
+y = 4
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for American Planes
+focus = { 
+id = CHI_americanplanes
+icon = GFX_goal_unknown
+x = 16
+y = 4
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for American Supervisors
+focus = { 
+id = CHI_americansupervisors
+icon = GFX_goal_unknown
+x = 14
+y = 4
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Final Push
+focus = { 
+id = CHI_thefinalpush
+icon = GFX_goal_unknown
+x = 17
+y = 7
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Industrial Investment
+focus = { 
+id = CHI_industrialinvestment
+icon = GFX_goal_unknown
+x = 23
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Arms Development
+focus = { 
+id = CHI_armsdevelopment
+icon = GFX_goal_unknown
+x = 23
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Education Reform
+focus = { 
+id = CHI_educationreform
+icon = GFX_goal_unknown
+x = 21
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Tank Factories
+focus = { 
+id = CHI_tankfactories
+icon = GFX_goal_unknown
+x = 22
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Factory Tools
+focus = { 
+id = CHI_factorytools
+icon = GFX_goal_unknown
+x = 24
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Chinese United Front
+focus = { 
+id = CHI_chineseunitedfront
+icon = GFX_goal_unknown
+x = 6
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for a
+focus = { 
+id = CHI_a
+icon = GFX_goal_unknown
+x = 2
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A Divided China
+focus = { 
+id = CHI_adividedchina
+icon = GFX_goal_unknown
+x = 11
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Path of Sun Yat-sen
+focus = { 
+id = CHI_thepathofsunyatsen
+icon = GFX_goal_unknown
+x = 6
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Wang Jingwei's Contacts
+focus = { 
+id = CHI_wangjingweiscontacts
+icon = GFX_goal_unknown
+x = 17
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for March on Guangxi
+focus = { 
+id = CHI_marchonguangxi
+icon = GFX_goal_unknown
+x = 17
+y = 5
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for American Support
+focus = { 
+id = CHI_americansupport
+icon = GFX_goal_unknown
+x = 15
+y = 3
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = CHI_japanesesupport } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Japanese Supervisors
+focus = { 
+id = CHI_japanesesupervisors
+icon = GFX_goal_unknown
+x = 20
+y = 4
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian Development
+focus = { 
+id = CHI_civiliandevelopment
+icon = GFX_goal_unknown
+x = 25
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for s
+focus = { 
+id = CHI_s
+icon = GFX_goal_unknown
+x = 10
+y = 3
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

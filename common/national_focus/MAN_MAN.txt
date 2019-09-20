@@ -455,7 +455,7 @@ x = 22
 y = 9
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = MAN_imperialguards focus = MAN_blankk focus = MAN_a focus = MAN_sa } 
+prerequisite = { focus = MAN_imperialguards focus = MAN_imperialbureaucrats focus = MAN_a focus = MAN_sa } 
 ai_will_do = { 
  factor = 1
  } 
@@ -558,9 +558,9 @@ add_stability
 
  } 
 
-#Focus for blankk
+#Focus for Imperial Bureaucrats
 focus = { 
-id = MAN_blankk
+id = MAN_imperialbureaucrats
 icon = GFX_goal_unknown
 x = 20
 y = 8
@@ -582,6 +582,104 @@ y = 7
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = MAN_continuexueliangsplan } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Japanese Classes
+focus = { 
+id = MAN_japaneseclasses
+icon = GFX_goal_unknown
+x = 16
+y = 7
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Crackdown on Minoritys
+focus = { 
+id = MAN_crackdownonminoritys
+icon = GFX_goal_unknown
+x = 16
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Another Tokyo
+focus = { 
+id = MAN_anothertokyo
+icon = GFX_goal_unknown
+x = 14
+y = 8
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Replace Xueliang
+focus = { 
+id = MAN_replacexueliang
+icon = GFX_goal_unknown
+x = 14
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Japanese Tourism
+focus = { 
+id = MAN_japanesetourism
+icon = GFX_goal_unknown
+x = 12
+y = 7
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Loyal Officers
+focus = { 
+id = MAN_loyalofficers
+icon = GFX_goal_unknown
+x = 14
+y = 7
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Sino-Japanese Friendship
+focus = { 
+id = MAN_sinojapanesefriendship
+icon = GFX_goal_unknown
+x = 12
+y = 6
+cost = 10
+available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
  } 

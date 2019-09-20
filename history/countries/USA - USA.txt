@@ -304,7 +304,6 @@ add_to_faction = CUB
 add_to_faction = DEN
 add_to_faction = GRE
 add_to_faction = HAI
-add_to_faction = HON
 add_to_faction = ITA
 add_to_faction = LUX
 add_to_faction = LIB
@@ -315,7 +314,6 @@ add_to_faction = POR
 add_to_faction = SIA
 add_to_faction = SWI
 add_to_faction = SWE
-add_to_faction = COS
 add_to_faction = USA
 add_to_faction = INS
 
