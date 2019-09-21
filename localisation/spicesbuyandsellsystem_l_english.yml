@@ -1,0 +1,21 @@
+﻿l_english:
+ sellandbuy:0 "Buy Wholesale Infantry Equipment."
+ sellandbuy_light_tank:0 "Buy Wholesale Tank Lots."
+ sellandbuy_artillery:0 "Buy Wholesale Artillery Equipment."
+ sellandbuy_motorized:0 "Buy Wholesale Motorized Lots."
+ sellandbuy_mechanized:0 "Buy Wholesale Mechanized Lots."
+ sellandbuysupport:0 "Buy Wholesale Support Equipment."
+ global_black_market_category:0 "(B)Global Equipment Market"
+ sellandbuy_plane:0 "Buy Wholesale Aircraft Lots."
+ 
+ ###
+ 
+ 1sellandbuy:0 "Sell Wholesale Infantry Equipment."
+ 1sellandbuy_plane:0 "Sell Wholesale Aircraft Lots."
+ 1sellandbuy_light_tank:0 "Sell Wholesale Tank Lots."
+ 1sellandbuy_artillery:0 "Sell Wholesale Artillery Equipment."
+ 1sellandbuy_motorized:0 "Sell Wholesale Motorized Lots."
+ 1sellandbuy_mechanized:0 "Sell Wholesale Mechanized Lots."
+ 1sellandbuysupport:0 "Sell Wholesale Support Equipment."
+ 1global_black_market_category:0 "(S)Global Equipment Market"
+ 

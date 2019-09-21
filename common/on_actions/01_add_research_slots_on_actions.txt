@@ -1,0 +1,13 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			random_country = {
+				limit = {
+					is_ai = no
+				}
+
+				country_event = { id = add_research_slots.1 }
+			}
+		}
+	}
+}
