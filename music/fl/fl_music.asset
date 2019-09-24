@@ -1,0 +1,7 @@
+#fl
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "ok.ogg"
+	volume = 0.90
+}

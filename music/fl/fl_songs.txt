@@ -1,0 +1,13 @@
+
+music_station = "fl"
+
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
