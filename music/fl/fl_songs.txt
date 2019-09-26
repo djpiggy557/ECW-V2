@@ -11,3 +11,13 @@ music = {
 	}
 }
 
+music = {
+	song = "The Main Menu Music"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
