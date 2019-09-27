@@ -1,6 +1,8 @@
 ﻿name="Kommissarreich"
 path="mod/EC/ECW-V2"
 replace_path="music"
+replace_path="events"
+replace_path="common/national_focus"
 tags={
 	"Alternative History"
 	"Events"

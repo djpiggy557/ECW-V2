@@ -7,7 +7,87 @@ music = {
 }
 
 music = {
-	name = "The Main Menu Music"
+	name = "The Main Menu Music Backup"
 	file = "maintheme.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Dschinghis Khan Moskau"
+	file = "Dschinghis_Khan_-_Moskau_1979.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Echelon's song"
+	file = "Echelon_song.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "German Democratic Republic Der offene Aufmarsch"
+	file = "German_Democratic_Republic_1949-1990_Der_offene_Aufmarsch.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Red Army Choir Oh Fields My Fields"
+	file = "Red_Army_Choir__Oh_Fields__My_fields.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Red Army Choir Moscow Nights"
+	file = "Red_Army_Choir_Moscow_Nights.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Red Army Choir My Army"
+	file = "Red_Army_Choir_My_Army.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Red Army Choir Partisans Song"
+	file = "Red_Army_Choir_Partisans_Song.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Red Army Choir Smuglianka"
+	file = "Red_Army_Choir_Smuglianka.ogg"
+	volume = 0.65
+}
+
+
+music = {
+	name = "Red Army Choir Varchavianka"
+	file = "Red_Army_Choir_Varchavianka.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Rush For Berlin"
+	file = "Rush_For_Berlin.ogg"
+	volume = 0.65
+}
+
+
+music = {
+	name = "World At War Theme"
+	file = "WAW_THEME.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "The Red Army Is the Strongest"
+	file = "The_Red_Army_Is_the_Strongest.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Katyusha Red Army Choir"
+	file = "(Katyusha)_-_Red_Army_Choir.ogg"
 	volume = 0.65
 }

@@ -12,7 +12,138 @@ music = {
 }
 
 music = {
-	song = "The Main Menu Music"
+	song = "The Main Menu Music Backup"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Dschinghis Khan Moskau"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Echelon's song"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "German Democratic Republic Der offene Aufmarsch"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Red Army Choir Oh Fields My Fields"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Red Army Choir Moscow Nights"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Red Army Choir My Army"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Red Army Choir Partisans Song"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Red Army Choir Smuglianka"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Red Army Choir Varchavianka"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Rush For Berlin"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+
+music = {
+	song = "World At War Theme"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "The Red Army Is the Strongest"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Katyusha Red Army Choir"
 	
 	chance = {
 		modifier = {
