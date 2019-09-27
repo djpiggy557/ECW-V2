@@ -135,11 +135,7 @@ ideas = {
 			
 			aallowed = {
                 original_tag = SOV
-            }
-            available = {
-                NOT = has_completed_focus= SOV_trialofyezhovandmikoyan
-            }
-			
+
 			traits = { prince_of_terror }
 		}
 
