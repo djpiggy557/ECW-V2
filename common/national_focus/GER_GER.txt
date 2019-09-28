@@ -179,6 +179,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power= 50
+		}
 	}
 
 	#Focus for Revolution in the Factories
@@ -276,7 +279,7 @@ remove_ideas = GER_red_army
 	#Focus for Restaff the Military
 	focus = {
 		id = GER_restaffthemilitary
-		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		icon = GFX_restaffthemilitary
 		x = 10
 		y = 7
 		cost = 10
@@ -349,7 +352,7 @@ remove_ideas = GER_Purged_Reichstag
 		ai_will_do = {
 			factor = 1
 		}
-		complete_tooltip = {
+		completion_reward = {
 			add_ideas = disarmed_nation
 		}
 	}
@@ -365,6 +368,9 @@ remove_ideas = GER_Purged_Reichstag
 		prerequisite = { focus = GER_karlliebknechtsuccession }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
 		}
 	}
 
@@ -523,19 +529,6 @@ traits = {
 		}
 	}
 
-	#Focus for block
-	focus = {
-		id = GER_block
-		icon = GFX_goal_unknown
-		x = 45
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for The Uprising
 	focus = {
 		id = GER_theuprising
@@ -553,6 +546,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			country_event = kommissarreich.14
+		}
 	}
 
 	#Focus for Spread Socialism to France
@@ -567,6 +563,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			country_event = kommissarreich.13
+		}
 	}
 
 	#Focus for Spread Socialism to Italy
@@ -580,6 +579,9 @@ traits = {
 		prerequisite = { focus = GER_revolutionbypropaganda }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = kommissarreich.12
 		}
 	}
 
@@ -603,7 +605,7 @@ traits = {
 		completion_reward = {
 			create_wargoal= { 
 type = annex_everything 
-target = POL
+target = FRA
 }
 		}
 	}
@@ -619,6 +621,9 @@ target = POL
 		prerequisite = { focus = GER_aggressiverevolution }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = kommissarreich.17
 		}
 	}
 
@@ -673,6 +678,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_war_support= .1
+		}
 	}
 
 	#Focus for Revolution by propaganda
@@ -687,6 +695,9 @@ traits = {
 		mutually_exclusive = { focus = GER_aggressiverevolution }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
 		}
 	}
 
@@ -704,7 +715,7 @@ traits = {
 		}
 		completion_reward = {
 			add_stability
-= 0.3
+= 0.25
 		}
 	}
 
@@ -865,6 +876,9 @@ add_political_power
 		prerequisite = { focus = GER_aggressiverevolution }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = kommissarreich.18
 		}
 	}
 

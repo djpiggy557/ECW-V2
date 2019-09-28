@@ -1,4 +1,4 @@
-add_namespace = kommissarreich
+﻿add_namespace = kommissarreich
 
 ##Event: May Day Celebrations!
 country_event = {
@@ -21,6 +21,7 @@ country_event = {
 ideology = communism
 popularity = 0.05 
 }
+
 add_national_unity= 0.05
 	}
 }
@@ -33,7 +34,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
-		complete_national_focus= GER_AutonomyforMinority's?
+		complete_national_focus = GER_AutonomyforMinority's?
 	}
 	option = {
 		name = kommissarreich.2.a
@@ -225,16 +226,199 @@ country_event = {
 		add_ideas = Ger_Detained_Rivals
 	}
 }
-##Event: Demand Annexation
+##Event: Germany Demand The Rhine!
 country_event = {
 	id = kommissarreich.10
 	title = kommissarreich.10.title
 	desc = kommissarreich.10.desc
-	picture = GFX_news_event_german_soldiers
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_german_troops
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = kommissarreich.10.a
 		ai_chance = { factor = 1}
+		GER = {
+transfer_state = 42
+transfer_state = 51
+}
+	}
+	option = {
+		name = kommissarreich.10.b
+		ai_chance = { factor = 1}
+		{ GER = create_wargoal = { 
+type = annex_everything 
+target = RHI
+}
+	}
+}
+##Event: Germany Demand Schleswig!
+country_event = {
+	id = kommissarreich.11
+	title = kommissarreich.11.title
+	desc = kommissarreich.11.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_german_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = kommissarreich.11.a
+		ai_chance = { factor = 1}
+		GER = {
+transfer_state = 58
+}
+	}
+	option = {
+		name = kommissarreich.11.b
+		ai_chance = { factor = 1}
+		{ GER = create_wargoal = { 
+type = annex_everything 
+target = DEN
+}
+	}
+}
+##Event: Italian Socialism
+country_event = {
+	id = kommissarreich.12
+	title = kommissarreich.12.title
+	desc = kommissarreich.12.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_vienna_award_negotiations
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = kommissarreich.12.a
+		ai_chance = { factor = 1}
+             ITA = { add_popularity = {
+	        ideology = communism
+	        popularity = 0.15 }
+               }
+	}
+}
+##Event: French Socialism
+country_event = {
+	id = kommissarreich.13
+	title = kommissarreich.13.title
+	desc = kommissarreich.13.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_vienna_award_hungary
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		complete_national_focus = GER_spreadsocialismtofrance
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = kommissarreich.13.a
+		ai_chance = { factor = 1}
+             FRA = { add_popularity = {
+	        ideology = communism
+	        popularity = 0.15 }
+               }
+	}
+}
+##Event: The Revolution
+country_event = {
+	id = kommissarreich.14
+	title = kommissarreich.14.title
+	desc = kommissarreich.14.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_soviet_purge_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = kommissarreich.14.a
+		ai_chance = { factor = 1}
+                ITA = { country_event = kommissarreich.16 }
+		FRA = { country_event = kommissarreich.15 }
+               }
+	}
+}
+##Event: Protesters demand a Communist Government
+country_event = {
+	id = kommissarreich.15
+	title = kommissarreich.15.title
+	desc = kommissarreich.15.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_india_protests
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kommissarreich.15.a
+		ai_chance = { factor = 1}
+		set_politics
+= { ruling_party = communism
+elections_allowed = yes }
+	}
+	option = {
+		name = kommissarreich.15.b
+		ai_chance = { factor = 1}
+		FRA = { start_civil_war= {
+ ideology = communism
+size = 0.5 }
+               }
+	}
+}
+##Event: Protests demanding the Overthrow of the Monarchy
+country_event = {
+	id = kommissarreich.16
+	title = kommissarreich.16.title
+	desc = kommissarreich.16.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_india_protests2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kommissarreich.16.a
+		ai_chance = { factor = 1}
+		set_politics
+= { ruling_party = communism
+elections_allowed = yes }
+	}
+	option = {
+		name = kommissarreich.16.b
+		ai_chance = { factor = 1}
+		ITA = { start_civil_war= {
+ ideology = communism
+size = 0.5 }
+               }
+	}
+}
+##Event: Return Of the Rhine
+country_event = {
+	id = kommissarreich.17
+	title = kommissarreich.17.title
+	desc = kommissarreich.17.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_soldiers_marching
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = kommissarreich.17.a
+		ai_chance = { factor = 1}
+		RHI = { country_event = kommissarreich.10 }
+	}
+}
+##Event: Return Of Hamburg
+country_event = {
+	id = kommissarreich.18
+	title = kommissarreich.18.title
+	desc = kommissarreich.18.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_soviet_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = kommissarreich.18.a
+		ai_chance = { factor = 1}
+		DEN = { country_event = kommissarreich.11 }
 	}
 }
