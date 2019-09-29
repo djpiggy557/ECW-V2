@@ -43,25 +43,25 @@ units = {
 	### 29 Juntuan (highly-reinforced corps) ###
 	division = {
 		name = "37 Bubing Shi"
-		location = 1169
+		location = 9843
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "38 Bubing Shi"
-		location = 7109
+		location = 10068
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "132 Bubing Shi"
-		location = 4208
+		location = 11761
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "143 Bubing Shi"
-		location = 4032
+		location = 4140
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 	}
@@ -146,7 +146,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 7222
+		location = 1069
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -156,7 +156,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7222
+		location = 1069
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -166,7 +166,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 7222
+		location = 1069
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -223,7 +223,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 410
 		}
-		location = 7222
+		location = 10043
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -234,7 +234,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 483
 		}
-		location = 7222
+		location = 10043
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -247,7 +247,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12019
+		location = 7027
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -262,14 +262,14 @@ units = {
 	}
 	division = {
 		name = "2 Fujian Jingbei"
-		location = 12019
+		location = 4169
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "3 Fujian Jingbei"
-		location = 12019
+		location = 4196
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
@@ -562,7 +562,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 7222
+		location = 10000
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -570,7 +570,7 @@ units = {
 	}
 	division = {
 		name = "Qingdao Jingbei"
-		location = 7222
+		location = 10000
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
@@ -581,7 +581,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 7222
+		location = 4205
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -592,7 +592,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 40
 		}
-		location = 7222
+		location = 4205
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
