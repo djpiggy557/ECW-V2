@@ -671,6 +671,8 @@
  SAF_democratic_ADJ:0 "South African"
  SAF_neutrality_ADJ:0 "South African"
  SAF_communism_ADJ:0 "South African"
+ DES_neutrality:0 "Rub al Khali"
+ DES_neutrality_DEF:0 "The Rub al Khali"
  SAU_fascism:0 "Arabic Empire"
  SAU_fascism_DEF:0 "the Arabic Empire"
  SAU_democratic:0 "Arabian Republic"
