@@ -1,121 +1,113 @@
-focus_tree = { 
-id = FRA
-country = { 
-factor = 0 
-modifier = { 
-add = 10 
-tag = FRA 
-} 
-} 
-#Focus for a
-focus = { 
-id = FRA_a
-icon = GFX_goal_unknown
-x = 28
-y = 11
-cost = 10
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
+focus_tree = {
+	id = FRA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	#Focus for Cooperate with the Socialists
+	focus = {
+		id = FRA_cooperatewiththesocialists
+		icon = GFX_goal_generic_improve_relations
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_increasefidhfunding 
+			focus = FRA_frenchsovietrelations 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for French-Soviet Relations
+	focus = {
+		id = FRA_frenchsovietrelations
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_thefhmeuroffrance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Cooperate with the Socialists
-focus = { 
-id = FRA_cooperatewiththesocialists
-icon = GFX_goal_generic_improve_relations
-x = 6
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_increasefidhfunding focus = FRA_frenchsovietrelations } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Increase FIDH Funding
+	focus = {
+		id = FRA_increasefidhfunding
+		icon = GFX_goal_generic_propaganda
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_frenchsecularism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for The Fühmeur of France
+	focus = {
+		id = FRA_thefhmeuroffrance
+		icon = GFX_goal_generic_political_pressure
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_douardherriot }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for French-Soviet Relations
-focus = { 
-id = FRA_frenchsovietrelations
-icon = GFX_focus_chi_mission_to_the_soviet_union
-x = 7
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_thefhmeuroffrance } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for French Secularism
+	focus = {
+		id = FRA_frenchsecularism
+		icon = GFX_goal_tripartite_pact
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_douardherriot }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
-
-#Focus for Increase FIDH Funding
-focus = { 
-id = FRA_increasefidhfunding
-icon = GFX_goal_generic_propaganda
-x = 5
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_frenchsecularism } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for The Fühmeur of France
-focus = { 
-id = FRA_thefhmeuroffrance
-icon = GFX_goal_generic_political_pressure
-x = 7
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_douardherriot } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for French Secularism
-focus = { 
-id = FRA_frenchsecularism
-icon = GFX_goal_tripartite_pact
-x = 5
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_douardherriot } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Édouard Herriot
-focus = { 
-id = FRA_douardherriot
-icon = GFX_goal_support_democracy
-x = 6
-y = 2
-cost = 1
-available_if_capitulated = yes 
-mutually_exclusive = { focus = FRA_andrtardieu } 
-mutually_exclusive = { focus = FRA_mauricethorez } 
-mutually_exclusive = { focus = FRA_ } 
-mutually_exclusive = { focus = FRA_mauricepujo } 
-ai_will_do = { 
- factor = 1
- } 
-available = { 
-has_country_flag= edouard_herriot
- } 
-completion_reward = { 
-kill_country_leader= yes create_country_leader= {
+	#Focus for Édouard Herriot
+	focus = {
+		id = FRA_douardherriot
+		icon = GFX_goal_support_democracy
+		x = 6
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = FRA_andrtardieu 
+		}
+		mutually_exclusive = { 
+			focus = FRA_mauricethorez 
+		}
+		mutually_exclusive = { 
+			focus = FRA_ 
+		}
+		mutually_exclusive = { 
+			focus = FRA_mauricepujo 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag= edouard_herriot
+		}
+		completion_reward = {
+			kill_country_leader= yes create_country_leader= {
  name = "Edouard Harriot" 
 desc = 'POLITICS_PETER_II_DESC' 
 picture = "portrait_fra_edouard_herriot.dds" 
@@ -125,142 +117,150 @@ traits = {
 }
 
  }
- } 
+		}
+	}
 
- } 
-
-#Focus for Results of the 1932 Election
-focus = { 
-id = FRA_resultsofthe1932election
-icon = GFX_goal_generic_national_unity
-x = 12
-y = 1
-cost = 1
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-country_event= {
+	#Focus for Results of the 1932 Election
+	focus = {
+		id = FRA_resultsofthe1932election
+		icon = GFX_goal_generic_national_unity
+		x = 12
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
 days = 1 
 id = earlycoldwar.35 
 }
- } 
+		}
+	}
 
- } 
+	#Focus for Fund the Rhineland
+	focus = {
+		id = FRA_fundtherhineland
+		icon = GFX_goal_rhineland
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_introducewelfaremeasures }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Fund the Rhineland
-focus = { 
-id = FRA_fundtherhineland
-icon = GFX_goal_rhineland
-x = 11
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_introducewelfaremeasures } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Push for Dynamic Capitalism
+	focus = {
+		id = FRA_pushfordynamiccapitalism
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_andrtardieu }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Crush Breton Separatists
+	focus = {
+		id = FRA_crushbretonseparatists
+		icon = GFX_focus_rom_parties_end
+		x = 7
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_cooperatewiththesocialists 
+		}
+		prerequisite = { 
+			focus = FRA_dealwiththestaviskyaffair 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Push for Dynamic Capitalism
-focus = { 
-id = FRA_pushfordynamiccapitalism
-icon = GFX_goal_generic_positive_trade_relations
-x = 13
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_andrtardieu } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Cut off Vatican Ties
+	focus = {
+		id = FRA_cutoffvaticanties
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 5
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_cooperatewiththesocialists 
+		}
+		prerequisite = { 
+			focus = FRA_settlethestrikes 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Settle the Strikes
+	focus = {
+		id = FRA_settlethestrikes
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_increasefidhfunding }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Crush Breton Separatists
-focus = { 
-id = FRA_crushbretonseparatists
-icon = GFX_focus_rom_parties_end
-x = 7
-y = 6
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_cooperatewiththesocialists } 
-prerequisite = { focus = FRA_dealwiththestaviskyaffair } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Introduce Welfare Measures
+	focus = {
+		id = FRA_introducewelfaremeasures
+		icon = GFX_focus_mex_privatisation
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_andrtardieu }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
-
-#Focus for Cut off Vatican Ties
-focus = { 
-id = FRA_cutoffvaticanties
-icon = GFX_focus_mex_triumph_over_the_cristeros
-x = 5
-y = 6
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_cooperatewiththesocialists } 
-prerequisite = { focus = FRA_settlethestrikes } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Settle the Strikes
-focus = { 
-id = FRA_settlethestrikes
-icon = GFX_goal_generic_intelligence_exchange
-x = 4
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_increasefidhfunding } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Introduce Welfare Measures
-focus = { 
-id = FRA_introducewelfaremeasures
-icon = GFX_focus_mex_privatisation
-x = 11
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_andrtardieu } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for André Tardieu
-focus = { 
-id = FRA_andrtardieu
-icon = GFX_goal_generic_propaganda
-x = 12
-y = 2
-cost = 10
-available_if_capitulated = yes 
-mutually_exclusive = { focus = FRA_douardherriot } 
-mutually_exclusive = { focus = FRA_mauricethorez } 
-mutually_exclusive = { focus = FRA_ } 
-mutually_exclusive = { focus = FRA_mauricepujo } 
-ai_will_do = { 
- factor = 1
- } 
-available = { 
-has_country_flag= andre_tardieu
- } 
-completion_reward = { 
-kill_country_leader= yes create_country_leader= {
+	#Focus for André Tardieu
+	focus = {
+		id = FRA_andrtardieu
+		icon = GFX_goal_generic_propaganda
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = FRA_douardherriot 
+		}
+		mutually_exclusive = { 
+			focus = FRA_mauricethorez 
+		}
+		mutually_exclusive = { 
+			focus = FRA_ 
+		}
+		mutually_exclusive = { 
+			focus = FRA_mauricepujo 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag= andre_tardieu
+		}
+		completion_reward = {
+			kill_country_leader= yes create_country_leader= {
  name = "André Tardieu" 
 desc = 'POLITICS_PETER_II_DESC' 
 picture = "portrait_fra_andre_tardieu.dds" 
@@ -270,250 +270,281 @@ traits = {
 }
 
  }
- } 
+		}
+	}
 
- } 
+	#Focus for Deal with the Stavisky Affair
+	focus = {
+		id = FRA_dealwiththestaviskyaffair
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_frenchsovietrelations }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Deal with the Stavisky Affair
-focus = { 
-id = FRA_dealwiththestaviskyaffair
-icon = GFX_focus_renounce_the_treaty_of_trianon
-x = 8
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_frenchsovietrelations } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Create the Young Plan
+	focus = {
+		id = FRA_createtheyoungplan
+		icon = GFX_goal_generic_trade
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_pushfordynamiccapitalism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Build the Maginot Line
+	focus = {
+		id = FRA_buildthemaginotline
+		icon = GFX_goal_generic_fortify_city
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_fundtherhineland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Create the Young Plan
-focus = { 
-id = FRA_createtheyoungplan
-icon = GFX_goal_generic_trade
-x = 13
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_pushfordynamiccapitalism } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Briand's Europe
+	focus = {
+		id = FRA_briandseurope
+		icon = GFX_focus_usa_focus_on_europe
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_fundtherhineland 
+			focus = FRA_createtheyoungplan 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Decolonization
+	focus = {
+		id = FRA_decolonization
+		icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_supportthespanishworkers 
+			focus = FRA_nationalizekeyindustries 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Build the Maginot Line
-focus = { 
-id = FRA_buildthemaginotline
-icon = GFX_goal_generic_fortify_city
-x = 10
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_fundtherhineland } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for King Napoleon VI
+	focus = {
+		id = FRA_kingnapoleonvi
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 25
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_mauricepujo }
+		mutually_exclusive = { 
+			focus = FRA_kinghenryvi 
+		}
+		mutually_exclusive = { 
+			focus = FRA_kingjeaniii 
+		}
+		mutually_exclusive = { 
+			focus = FRA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag= louis_napoleon
+		}
+	}
 
- } 
+	#Focus for King Henry VI
+	focus = {
+		id = FRA_kinghenryvi
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_mauricepujo }
+		mutually_exclusive = { 
+			focus = FRA_kingnapoleonvi 
+		}
+		mutually_exclusive = { 
+			focus = FRA_kingjeaniii 
+		}
+		mutually_exclusive = { 
+			focus = FRA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag= alfonso_xiii
+		}
+	}
 
-#Focus for Briand's Europe
-focus = { 
-id = FRA_briandseurope
-icon = GFX_focus_usa_focus_on_europe
-x = 12
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_fundtherhineland focus = FRA_createtheyoungplan } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for King Jean III
+	focus = {
+		id = FRA_kingjeaniii
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 23
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_mauricepujo }
+		mutually_exclusive = { 
+			focus = FRA_kingnapoleonvi 
+		}
+		mutually_exclusive = { 
+			focus = FRA_kinghenryvi 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag= jean_orlean
+		}
+	}
 
- } 
-
-#Focus for Decolonization
-focus = { 
-id = FRA_decolonization
-icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
-x = 18
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_supportthespanishworkers focus = FRA_nationalizekeyindustries } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for King Napoleon VI
-focus = { 
-id = FRA_kingnapoleonvi
-icon = GFX_goal_tfv_strengthen_commonwealth_ties
-x = 24
-y = 5
-cost = 10
-available_if_capitulated = yes 
-mutually_exclusive = { focus = FRA_kinghenryvi } 
-mutually_exclusive = { focus = FRA_kingjeaniii } 
-mutually_exclusive = { focus = FRA_ } 
-ai_will_do = { 
- factor = 1
- } 
-available = { 
-has_country_flag= louis_napoleon
- } 
-
- } 
-
-#Focus for King Henry VI
-focus = { 
-id = FRA_kinghenryvi
-icon = GFX_goal_tfv_strengthen_commonwealth_ties
-x = 26
-y = 5
-cost = 10
-available_if_capitulated = yes 
-mutually_exclusive = { focus = FRA_kingnapoleonvi } 
-mutually_exclusive = { focus = FRA_kingjeaniii } 
-mutually_exclusive = { focus = FRA_ } 
-ai_will_do = { 
- factor = 1
- } 
-available = { 
-has_country_flag= alfonso_xiii
- } 
-
- } 
-
-#Focus for King Jean III
-focus = { 
-id = FRA_kingjeaniii
-icon = GFX_goal_tfv_strengthen_commonwealth_ties
-x = 22
-y = 5
-cost = 10
-available_if_capitulated = yes 
-mutually_exclusive = { focus = FRA_kingnapoleonvi } 
-mutually_exclusive = { focus = FRA_kinghenryvi } 
-ai_will_do = { 
- factor = 1
- } 
-available = { 
-has_country_flag= jean_orlean
- } 
-
- } 
-
-#Focus for Maurice Pujo
-focus = { 
-id = FRA_mauricepujo
-icon = GFX_goal_support_fascism
-x = 24
-y = 2
-cost = 1
-available_if_capitulated = yes 
-mutually_exclusive = { focus = FRA_douardherriot } 
-mutually_exclusive = { focus = FRA_andrtardieu } 
-mutually_exclusive = { focus = FRA_mauricethorez } 
-mutually_exclusive = { focus = FRA_ } 
-ai_will_do = { 
- factor = 1
- } 
-available = { 
-has_country_flag= maurice_pujo
- } 
-completion_reward = { 
-country_event= {
+	#Focus for Maurice Pujo
+	focus = {
+		id = FRA_mauricepujo
+		icon = GFX_goal_support_fascism
+		x = 25
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = FRA_douardherriot 
+		}
+		mutually_exclusive = { 
+			focus = FRA_andrtardieu 
+		}
+		mutually_exclusive = { 
+			focus = FRA_mauricethorez 
+		}
+		mutually_exclusive = { 
+			focus = FRA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag= maurice_pujo
+		}
+		completion_reward = {
+			country_event= {
 days = 1 
 id = earlycoldwar.36 
 }
- } 
+		}
+	}
 
- } 
+	#Focus for Support the Coal Miners
+	focus = {
+		id = FRA_supportthecoalminers
+		icon = GFX_goal_generic_construction2
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_mauricethorez }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Support the Coal Miners
-focus = { 
-id = FRA_supportthecoalminers
-icon = GFX_goal_generic_construction2
-x = 19
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_mauricethorez } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for New Syrian Revolt
+	focus = {
+		id = FRA_newsyrianrevolt
+		icon = GFX_goal_generic_political_pressure
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_supportthespanishworkers 
+			focus = FRA_nationalizekeyindustries 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Return of the War in the Rif
+	focus = {
+		id = FRA_returnofthewarintherif
+		icon = GFX_goal_generic_occupy_start_war
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_nationalizekeyindustries 
+			focus = FRA_expandlowcountrycommunism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for New Syrian Revolt
-focus = { 
-id = FRA_newsyrianrevolt
-icon = GFX_goal_generic_political_pressure
-x = 16
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_supportthespanishworkers focus = FRA_nationalizekeyindustries } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Bring Leftists into the Fold
+	focus = {
+		id = FRA_bringleftistsintothefold
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_mauricethorez }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
-
-#Focus for Return of the War in the Rif
-focus = { 
-id = FRA_returnofthewarintherif
-icon = GFX_goal_generic_occupy_start_war
-x = 20
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_nationalizekeyindustries } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Bring Leftists into the Fold
-focus = { 
-id = FRA_bringleftistsintothefold
-icon = GFX_focus_prc_agrarian_socialism
-x = 17
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_mauricethorez } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Maurice Thorez
-focus = { 
-id = FRA_mauricethorez
-icon = GFX_goal_support_communism
-x = 18
-y = 2
-cost = 1
-available_if_capitulated = yes 
-mutually_exclusive = { focus = FRA_douardherriot } 
-mutually_exclusive = { focus = FRA_andrtardieu } 
-mutually_exclusive = { focus = FRA_mauricepujo } 
-ai_will_do = { 
- factor = 1
- } 
-available = { 
-has_country_flag= maurice_thorez
- } 
-completion_reward = { 
-kill_country_leader= yes create_country_leader= {
+	#Focus for Maurice Thorez
+	focus = {
+		id = FRA_mauricethorez
+		icon = GFX_goal_support_communism
+		x = 18
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = FRA_douardherriot 
+		}
+		mutually_exclusive = { 
+			focus = FRA_andrtardieu 
+		}
+		mutually_exclusive = { 
+			focus = FRA_mauricepujo 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag= maurice_thorez
+		}
+		completion_reward = {
+			kill_country_leader= yes create_country_leader= {
  name = "Maurice Thorez" 
 desc = 'POLITICS_PETER_II_DESC' 
 picture = "portrait_fra_maurice_thorez.dds" 
@@ -523,103 +554,233 @@ traits = {
 }
 
  }
- } 
+		}
+	}
 
- } 
+	#Focus for Invite the Italians
+	focus = {
+		id = FRA_invitetheitalians
+		icon = GFX_focus_generic_italy_first
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_briandseurope 
+		}
+		prerequisite = { 
+			focus = FRA_buildthemaginotline 
+		}
+		prerequisite = { 
+			focus = FRA_lpisauveralefranc 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Invite the Italians
-focus = { 
-id = FRA_invitetheitalians
-icon = GFX_focus_generic_italy_first
-x = 12
-y = 6
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_briandseurope } 
-prerequisite = { focus = FRA_buildthemaginotline } 
-prerequisite = { focus = FRA_lpisauveralefranc } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Invite the Rhine
+	focus = {
+		id = FRA_invitetherhine
+		icon = GFX_goal_rhineland
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_buildthemaginotline 
+		}
+		prerequisite = { 
+			focus = FRA_briandseurope 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Invite the Low Countries
+	focus = {
+		id = FRA_invitethelowcountries
+		icon = GFX_goal_generic_position_armies
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_lpisauveralefranc 
+		}
+		prerequisite = { 
+			focus = FRA_briandseurope 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Invite the Rhine
-focus = { 
-id = FRA_invitetherhine
-icon = GFX_goal_rhineland
-x = 10
-y = 6
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_buildthemaginotline } 
-prerequisite = { focus = FRA_briandseurope } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for L'épi Sauvera le Franc
+	focus = {
+		id = FRA_lpisauveralefranc
+		icon = GFX_goal_generic_construction2
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_createtheyoungplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Nationalize Key Industries
+	focus = {
+		id = FRA_nationalizekeyindustries
+		icon = GFX_goal_continuous_repairments
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_supportthecoalminers 
+			focus = FRA_bringleftistsintothefold 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Invite the Low Countries
-focus = { 
-id = FRA_invitethelowcountries
-icon = GFX_goal_generic_position_armies
-x = 14
-y = 6
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_lpisauveralefranc } 
-prerequisite = { focus = FRA_briandseurope } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Support the Spanish Workers
+	focus = {
+		id = FRA_supportthespanishworkers
+		icon = GFX_focus_generic_military_academy
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_bringleftistsintothefold }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Reforge the Carlists
+	focus = {
+		id = FRA_reforgethecarlists
+		icon = GFX_goal_generic_propaganda
+		x = 25
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_increasecolonialgarrisons }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = SPR
+}
+		}
+	}
 
-#Focus for L'épi Sauvera le Franc
-focus = { 
-id = FRA_lpisauveralefranc
-icon = GFX_goal_generic_construction2
-x = 14
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_createtheyoungplan } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Recreate the Helvetic Republic
+	focus = {
+		id = FRA_recreatethehelveticrepublic
+		icon = GFX_focus_attack_switzerland
+		x = 25
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_reforgethecarlists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = SWI
+}
+		}
+	}
 
- } 
+	#Focus for Increase Colonial Garrisons
+	focus = {
+		id = FRA_increasecolonialgarrisons
+		icon = GFX_goal_generic_political_pressure
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_kingnapoleonvi }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Nationalize Key Industries
-focus = { 
-id = FRA_nationalizekeyindustries
-icon = GFX_goal_unknown
-x = 18
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_supportthecoalminers focus = FRA_bringleftistsintothefold } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Fascist Coup on Pujo
+	focus = {
+		id = FRA_fascistcouponpujo
+		icon = GFX_goal_support_fascism
+		x = 23
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_supportcentraleuropeminors }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Support Central Europe Minors
+	focus = {
+		id = FRA_supportcentraleuropeminors
+		icon = GFX_goal_rhineland
+		x = 23
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_placejeanasapuppet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Support the Spanish Workers
-focus = { 
-id = FRA_supportthespanishworkers
-icon = GFX_goal_unknown
-x = 16
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_bringleftistsintothefold } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Place Jean as a Puppet
+	focus = {
+		id = FRA_placejeanasapuppet
+		icon = GFX_focus_generic_home_defense
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_kingjeaniii }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Expand Low Country Communism
+	focus = {
+		id = FRA_expandlowcountrycommunism
+		icon = GFX_focus_hol_gateway_to_europe
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_supportthecoalminers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = LUX
+}
+create_wargoal= { 
+type = annex_everything 
+target = BEL
+}
+		}
+	}
 
 #End of focuses 
  }
