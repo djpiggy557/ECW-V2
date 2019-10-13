@@ -41,6 +41,10 @@ AUS = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
 }
+DES = {
+	color = rgb { 160 160 230 }
+	color_ui = rgb { 255 255 255 }
+}
 LIT = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 255 255 155 }
