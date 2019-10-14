@@ -1,0 +1,111 @@
+focus_tree = { 
+id = FIN
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = FIN 
+} 
+} 
+#Focus for Depend Less on Russian Imports
+focus = { 
+id = FIN_dependlessonrussianimports
+icon = GFX_goal_generic_trade
+x = 12
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = FIN_standardizingcollectiveagreements } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for a
+focus = { 
+id = FIN_a
+icon = GFX_goal_unknown
+x = 40
+y = 14
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Revolution Anniversary
+focus = { 
+id = FIN_revolutionanniversary
+icon = GFX_goal_support_communism
+x = 10
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power= 50
+ } 
+
+ } 
+
+#Focus for Reform the Red Guard
+focus = { 
+id = FIN_reformtheredguard
+icon = GFX_focus_generic_military_academy
+x = 8
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = FIN_revolutionanniversary } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+army_experience= 50
+ } 
+
+ } 
+
+#Focus for Standardizing Collective Agreements
+focus = { 
+id = FIN_standardizingcollectiveagreements
+icon = GFX_goal_tripartite_pact
+x = 12
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = FIN_revolutionanniversary } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = industrial_complex
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+ } 
+
+ } 
+
+#End of focuses 
+ }

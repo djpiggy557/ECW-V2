@@ -177,6 +177,11 @@ ideas = {
 			traits = { captain_of_industry }
 		}
 
+		SOV_nikolai_yezhov = {
+			
+			picture = generic_army_europe_2
+			
+			aallowed = {
                 original_tag = SOV
 
 			traits = { prince_of_terror }
