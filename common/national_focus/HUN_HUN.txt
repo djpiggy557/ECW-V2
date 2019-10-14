@@ -7,19 +7,6 @@ focus_tree = {
 			tag = HUN
 		}
 	}
-	#Focus for a
-	focus = {
-		id = HUN_a
-		icon = GFX_goal_unknown
-		x = 0
-		y = 0
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Other Foregin Policy
 	focus = {
 		id = HUN_otherforeginpolicy
@@ -34,19 +21,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 50
-		}
-	}
-
-	#Focus for filler
-	focus = {
-		id = HUN_filler
-		icon = GFX_goal_unknown
-		x = 46
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
 		}
 	}
 
@@ -373,7 +347,7 @@ popularity = -1
 	#Focus for March on Budapest
 	focus = {
 		id = HUN_marchonbudapest
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		x = 12
 		y = 6
 		cost = 10
@@ -395,7 +369,7 @@ popularity = -1
 	#Focus for Slash the Kunists party
 	focus = {
 		id = HUN_slashthekunistsparty
-		icon = GFX_goal_unknown
+		icon = GFX_goal_demand_sudetenland
 		x = 11
 		y = 4
 		cost = 10
@@ -409,7 +383,7 @@ popularity = -1
 	#Focus for Compromise with the Social Democrats
 	focus = {
 		id = HUN_compromisewiththesocialdemocrats
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		x = 13
 		y = 4
 		cost = 10
@@ -475,7 +449,7 @@ SER = {remove_state_core= 764}
 	#Focus for Balkan Question
 	focus = {
 		id = HUN_balkanquestion
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		x = 20
 		y = 2
 		cost = 10

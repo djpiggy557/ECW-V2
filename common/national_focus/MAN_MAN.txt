@@ -19,6 +19,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			army_experience= 15
+		}
 	}
 
 	#Focus for Raid their camps
@@ -33,6 +36,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+     remove_idea = MAN_banditry
+     add_idea = MAN_banditry_1
+}
+		}
 	}
 
 	#Focus for Sponsor local Militias
@@ -46,6 +55,11 @@ focus_tree = {
 		prerequisite = { focus = MAN_banditsituation }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -50
+
+add_manpower= 2500
 		}
 	}
 
@@ -66,6 +80,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			remove_ideas = MAN_banditry_1
+		}
 	}
 
 	#Focus for A Japanese Puppet?
@@ -78,6 +95,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
 		}
 	}
 
@@ -94,6 +114,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 0.1 
+}
+add_political_power= 50
+		}
 	}
 
 	#Focus for More autonomy
@@ -108,6 +135,12 @@ focus_tree = {
 		mutually_exclusive = { focus = MAN_loyaltytothejapanese }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_autonomy_ratio = {
+	value = 0.45
+        localization = MAN_the_two_emperors
+			}
 		}
 	}
 
@@ -127,6 +160,38 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Focus for Let in Japanese Settlers
@@ -144,6 +209,15 @@ focus_tree = {
 		mutually_exclusive = { focus = MAN_separate }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			328 = {
+add_manpower=5000
+}
+716 = {
+add_manpower=5000
+}
+add_manpower=2500
 		}
 	}
 
@@ -178,10 +252,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = JAP
-type = annex_everything 
+			JAP = { set_autonomy= { 
+target = MAN
+autonomy_state = autonomy_free 
 }
+declare_war_on= { 
+target = MAN
+type = annex_everything 
+} }
 		}
 	}
 
@@ -198,6 +276,9 @@ type = annex_everything
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = MAN_Home_Army
+		}
 	}
 
 	#Focus for A Japanese Lapdog
@@ -211,6 +292,9 @@ type = annex_everything
 		prerequisite = { focus = MAN_letinjapanesesettlers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
 		}
 	}
 
@@ -227,6 +311,9 @@ type = annex_everything
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			army_experience= 5
+		}
 	}
 
 	#Focus for Import Japanese Armaments
@@ -241,6 +328,68 @@ type = annex_everything
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Focus for Japanese Officers
@@ -254,6 +403,9 @@ type = annex_everything
 		prerequisite = { focus = MAN_japanesetraining }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = MAN_Japanese_Adivsors
 		}
 	}
 
@@ -274,6 +426,13 @@ type = annex_everything
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+		}
 	}
 
 	#Focus for Hire Qing officers
@@ -287,6 +446,9 @@ type = annex_everything
 		prerequisite = { focus = MAN_homebrewedarmy }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			army_experience= 10
 		}
 	}
 
@@ -302,6 +464,9 @@ type = annex_everything
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = MAN_Chinese_Leadership
+		}
 	}
 
 	#Focus for Japanese Leadership
@@ -315,6 +480,9 @@ type = annex_everything
 		prerequisite = { focus = MAN_japanesedoctrine }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = MAN_Japanese_Leadership
 		}
 	}
 
@@ -334,6 +502,13 @@ type = annex_everything
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
 		}
 	}
 
@@ -364,6 +539,68 @@ type = annex_everything
 		prerequisite = { focus = MAN_homebrewedarmy }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -451,6 +688,9 @@ traits = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power= 50
+		}
 	}
 
 	#Focus for Restore China
@@ -499,6 +739,18 @@ create_wargoal= {
 type = annex_everything 
 target = XSM
 }
+create_wargoal= { 
+type = annex_everything 
+target = ZHI
+}
+create_wargoal= { 
+type = annex_everything 
+target = GUI
+}
+create_wargoal= { 
+type = annex_everything 
+target = XKC
+}
 		}
 	}
 
@@ -514,6 +766,9 @@ target = XSM
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_manpower= 8000
+		}
 	}
 
 	#Focus for Recruit White Army Officals
@@ -527,6 +782,9 @@ target = XSM
 		prerequisite = { focus = MAN_industrializeruralareas }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = MAN_White_Army
 		}
 	}
 
@@ -544,6 +802,9 @@ target = XSM
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = MAN_kwantung_veto
 		}
 	}
 
@@ -579,6 +840,9 @@ add_stability
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = MAN_Imperial_Bureacrats
+		}
 	}
 
 	#Focus for Industrialize Rural Areas
@@ -592,6 +856,68 @@ add_stability
 		prerequisite = { focus = MAN_continuexueliangsplan }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -643,6 +969,10 @@ add_stability
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability
+= 0.10
+		}
 	}
 
 	#Focus for Replace Xueliang
@@ -670,6 +1000,14 @@ add_stability
 		prerequisite = { focus = MAN_sinojapanesefriendship }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			328 = {
+add_manpower=5000
+}
+716 = {
+add_manpower=5000
+}
 		}
 	}
 
