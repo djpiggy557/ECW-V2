@@ -1,43 +1,44 @@
-focus_tree = {
-	id = ENG
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = ENG
-		}
-	}
-	#Focus for New Dominions
-	focus = {
-		id = ENG_newdominions
-		icon = GFX_focus_generic_treaty
-		x = 8
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_englishdisarmament }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			release_puppet= TZN release_puppet= EGY release_puppet= NGA
-		}
-	}
+focus_tree = { 
+id = ENG
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = ENG 
+} 
+} 
+#Focus for New Dominions
+focus = { 
+id = ENG_newdominions
+icon = GFX_focus_generic_treaty
+x = 8
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_englishdisarmament } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+release_puppet= TZN release_puppet= EGY release_puppet= NGA
+ } 
 
-	#Focus for Independence or Strength
-	focus = {
-		id = ENG_independenceorstrength
-		icon = GFX_focus_chi_british_cooperation
-		x = 10
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_disassociatefromcommunism }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			NZL = {country_event= {
+ } 
+
+#Focus for Independence or Strength
+focus = { 
+id = ENG_independenceorstrength
+icon = GFX_focus_chi_british_cooperation
+x = 10
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_disassociatefromcommunism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+NZL = {country_event= {
 days = 1 
 id = earlycoldwar.13
 }
@@ -57,61 +58,53 @@ days = 1
 id = earlycoldwar.16
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Malaysia for Alliance
-	focus = {
-		id = ENG_malaysiaforalliance
-		icon = GFX_goal_generic_dangerous_deal
-		x = 14
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ENG_truerulersoftheraj 
-		}
-		prerequisite = { 
-			focus = ENG_cutawaylooseends 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			INS = {country_event= {
+ } 
+
+#Focus for Malaysia for Alliance
+focus = { 
+id = ENG_malaysiaforalliance
+icon = GFX_goal_generic_dangerous_deal
+x = 14
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_truerulersoftheraj } 
+prerequisite = { focus = ENG_cutawaylooseends } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+INS = {country_event= {
 days = 1 
 id = earlycoldwar.11 
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Henry Pollit
-	focus = {
-		id = ENG_henrypollit
-		icon = GFX_goal_support_communism
-		x = 4
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_resultsofthe1931election }
-		mutually_exclusive = { 
-			focus = ENG_ramsaymacdonald 
-		}
-		mutually_exclusive = { 
-			focus = ENG_oswaldmosley 
-		}
-		mutually_exclusive = { 
-			focus = ENG_ 
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			has_country_flag= henrypollit
-		}
-		completion_reward = {
-			set_politics= {
+ } 
+
+#Focus for Henry Pollit
+focus = { 
+id = ENG_henrypollit
+icon = GFX_goal_support_communism
+x = 4
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_resultsofthe1931election } 
+mutually_exclusive = { focus = ENG_ramsaymacdonald } 
+mutually_exclusive = { focus = ENG_oswaldmosley } 
+mutually_exclusive = { focus = ENG_ } 
+ai_will_do = { 
+ factor = 10
+ } 
+available = { 
+has_government= communism
+ } 
+completion_reward = { 
+set_politics= {
  ruling_party = communism
 elections_allowed = yes
 }
@@ -119,159 +112,132 @@ add_popularity= {
 ideology = communism 
 popularity = 0.20 
 }
-		}
-	}
+ } 
 
-	#Focus for English Disarmament
-	focus = {
-		id = ENG_englishdisarmament
-		icon = GFX_goal_generic_defence
-		x = 8
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_pushforhomerule }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			set_equipment_fraction= 0.35
-		}
-	}
+ } 
 
-	#Focus for Rule Britannia
-	focus = {
-		id = ENG_rulebritannia
-		icon = GFX_focus_eng_the_sun_never_sets
-		x = 10
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ENG_independenceorstrength 
-		}
-		prerequisite = { 
-			focus = ENG_newdominions 
-		}
-		prerequisite = { 
-			focus = ENG_trueindianglory 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power= 500
-		}
-	}
+#Focus for English Disarmament
+focus = { 
+id = ENG_englishdisarmament
+icon = GFX_goal_generic_defence
+x = 8
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_pushforhomerule } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+set_equipment_fraction= 0.35
+ } 
 
-	#Focus for Convert the Royal Arsenal
-	focus = {
-		id = ENG_converttheroyalarsenal
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 10
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_ramsaymacdonald }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			126={
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
+ } 
 
- }
+#Focus for Rule Britannia
+focus = { 
+id = ENG_rulebritannia
+icon = GFX_focus_eng_the_sun_never_sets
+x = 10
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_independenceorstrength } 
+prerequisite = { focus = ENG_newdominions } 
+prerequisite = { focus = ENG_trueindianglory } 
+ai_will_do = { 
+ factor = 1
+ } 
 
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = industrial_complex
- level = 3
- instant_build = yes
- }
+ } 
 
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-		}
-	}
+#Focus for Convert the Royal Arsenal
+focus = { 
+id = ENG_converttheroyalarsenal
+icon = GFX_goal_generic_construct_civ_factory
+x = 10
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_ramsaymacdonald } 
+ai_will_do = { 
+ factor = 1
+ } 
 
-	#Focus for Arabs Over Jews
-	focus = {
-		id = ENG_arabsoverjews
-		icon = GFX_focus_generic_support_the_left_right
-		x = 12
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_ramsaymacdonald }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			release_puppet= PAL release_puppet= JOR
-		}
-	}
+ } 
 
-	#Focus for Support the Japanese
-	focus = {
-		id = ENG_supportthejapanese
-		icon = GFX_focus_chi_collaboration_with_the_japanese
-		x = 12
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_arabsoverjews }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			give_guarantee= MAN
-		}
-	}
+#Focus for Arabs Over Jews
+focus = { 
+id = ENG_arabsoverjews
+icon = GFX_focus_generic_support_the_left_right
+x = 12
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_ramsaymacdonald } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+release_puppet= PAL release_puppet= JOR
+ } 
 
-	#Focus for Bury the Arcos Scandal
-	focus = {
-		id = ENG_burythearcosscandal
-		icon = GFX_goal_generic_forceful_treaty
-		x = 6
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_henrypollit }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_popularity= { 
+ } 
+
+#Focus for Support the Japanese
+focus = { 
+id = ENG_supportthejapanese
+icon = GFX_focus_chi_collaboration_with_the_japanese
+x = 12
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_arabsoverjews } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+give_guarantee= MAN
+ } 
+
+ } 
+
+#Focus for Bury the Arcos Scandal
+focus = { 
+id = ENG_burythearcosscandal
+icon = GFX_goal_generic_forceful_treaty
+x = 6
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_henrypollit } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
 ideology = communism
 popularity = 0.15 
 }
-		}
-	}
+ } 
 
-	#Focus for Protect the Minors
-	focus = {
-		id = ENG_protecttheminors
-		icon = GFX_focus_rom_preserve_romania
-		x = 16
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ENG_imperialfavoritism 
-		}
-		prerequisite = { 
-			focus = ENG_cutawaylooseends 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			IRE = {country_event= {
+ } 
+
+#Focus for Protect the Minors
+focus = { 
+id = ENG_protecttheminors
+icon = GFX_focus_rom_preserve_romania
+x = 16
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_imperialfavoritism } 
+prerequisite = { focus = ENG_cutawaylooseends } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+IRE = {country_event= {
 days = 1 
 id = earlycoldwar.12
 }
@@ -281,185 +247,162 @@ days = 1
 id = earlycoldwar.12 
 }
 }
-		}
-	}
+ } 
 
-	#Focus for New British Empire
-	focus = {
-		id = ENG_newbritishempire
-		icon = GFX_focus_ger_reichskommisariats
-		x = 16
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ENG_latinamericanallies 
-		}
-		prerequisite = { 
-			focus = ENG_protecttheminors 
-		}
-		prerequisite = { 
-			focus = ENG_malaysiaforalliance 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power= 500
-		}
-	}
+ } 
 
-	#Focus for African Communism
-	focus = {
-		id = ENG_africancommunism
-		icon = GFX_goal_tfv_saf_secure_interests_in_africa
-		x = 6
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_burythearcosscandal }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			release= BOT release= EGY release= GHA release= ISR release= JOR release= KEN release= SIE release= MLW release= NGA release= SUD release= TZN release= UGA release= ZAM release= ZIM
-		}
-	}
+#Focus for New British Empire
+focus = { 
+id = ENG_newbritishempire
+icon = GFX_focus_ger_reichskommisariats
+x = 16
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_latinamericanallies } 
+prerequisite = { focus = ENG_protecttheminors } 
+prerequisite = { focus = ENG_malaysiaforalliance } 
+ai_will_do = { 
+ factor = 1
+ } 
 
-	#Focus for Union of Britain
-	focus = {
-		id = ENG_unionofbritain
-		icon = GFX_focus_generic_join_comintern
-		x = 4
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ENG_selltothedutch 
-		}
-		prerequisite = { 
-			focus = ENG_selltothearabs 
-		}
-		prerequisite = { 
-			focus = ENG_selltotheitalians 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			leave_faction= ENG
-		}
-	}
+ } 
 
-	#Focus for Ramsay MacDonald
-	focus = {
-		id = ENG_ramsaymacdonald
-		icon = GFX_goal_support_democracy
-		x = 10
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_resultsofthe1931election }
-		mutually_exclusive = { 
-			focus = ENG_henrypollit 
-		}
-		mutually_exclusive = { 
-			focus = ENG_oswaldmosley 
-		}
-		mutually_exclusive = { 
-			focus = ENG_ 
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		available = {
-			has_country_flag= ramsaymacdonald
-		}
-	}
+#Focus for African Communism
+focus = { 
+id = ENG_africancommunism
+icon = GFX_goal_tfv_saf_secure_interests_in_africa
+x = 6
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_burythearcosscandal } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+release= BOT release= EGY release= GHA release= ISR release= JOR release= KEN release= SIE release= MLW release= NGA release= SUD release= TZN release= UGA release= ZAM release= ZIM
+ } 
 
-	#Focus for Oswald Mosley
-	focus = {
-		id = ENG_oswaldmosley
-		icon = GFX_goal_support_fascism
-		x = 16
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_resultsofthe1931election }
-		mutually_exclusive = { 
-			focus = ENG_ramsaymacdonald 
-		}
-		mutually_exclusive = { 
-			focus = ENG_henrypollit 
-		}
-		mutually_exclusive = { 
-			focus = ENG_ 
-		}
-		ai_will_do = {
-			factor = 25
-		}
-		available = {
-			set_country_flag= oswaldmosley
-		}
-		completion_reward = {
-			set_politics= {
+ } 
+
+#Focus for Union of Britain
+focus = { 
+id = ENG_unionofbritain
+icon = GFX_focus_generic_join_comintern
+x = 4
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_selltothedutch } 
+prerequisite = { focus = ENG_selltothearabs } 
+prerequisite = { focus = ENG_selltotheitalians } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+leave_faction= ENG
+ } 
+
+ } 
+
+#Focus for Ramsay MacDonald
+focus = { 
+id = ENG_ramsaymacdonald
+icon = GFX_goal_support_democracy
+x = 10
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_resultsofthe1931election } 
+mutually_exclusive = { focus = ENG_henrypollit } 
+mutually_exclusive = { focus = ENG_oswaldmosley } 
+ai_will_do = { 
+ factor = 50
+ } 
+
+ } 
+
+#Focus for Oswald Mosley
+focus = { 
+id = ENG_oswaldmosley
+icon = GFX_goal_support_fascism
+x = 16
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_resultsofthe1931election } 
+mutually_exclusive = { focus = ENG_ramsaymacdonald } 
+mutually_exclusive = { focus = ENG_henrypollit } 
+mutually_exclusive = { focus = ENG_ } 
+ai_will_do = { 
+ factor = 25
+ } 
+available = { 
+has_government= fascism
+ } 
+completion_reward = { 
+set_politics= {
  ruling_party = fascism 
 elections_allowed = no 
 }
-		}
-	}
+ } 
 
-	#Focus for Merge with the Labor Party
-	focus = {
-		id = ENG_mergewiththelaborparty
-		icon = GFX_goal_tripartite_pact
-		x = 2
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_henrypollit }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power= 50 add_popularity= { 
+ } 
+
+#Focus for Merge with the Labor Party
+focus = { 
+id = ENG_mergewiththelaborparty
+icon = GFX_goal_tripartite_pact
+x = 2
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_henrypollit } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power= 50 add_popularity= { 
 ideology = communism 
 popularity = 0.20 
 }
-		}
-	}
+ } 
 
-	#Focus for The Soldier's Voice
-	focus = {
-		id = ENG_thesoldiersvoice
-		icon = GFX_focus_generic_military_mission
-		x = 4
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_henrypollit }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			army_experience= 10
-		}
-	}
+ } 
 
-	#Focus for Indian Independence
-	focus = {
-		id = ENG_indianindependence
-		icon = GFX_focus_RAJ_seek_help_from_soviet
-		x = 4
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_thesoldiersvoice }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			RAJ = {country_event= {
+#Focus for The Soldier's Voice
+focus = { 
+id = ENG_thesoldiersvoice
+icon = GFX_focus_generic_military_mission
+x = 4
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_henrypollit } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+army_experience= 10
+ } 
+
+ } 
+
+#Focus for Indian Independence
+focus = { 
+id = ENG_indianindependence
+icon = GFX_focus_RAJ_seek_help_from_soviet
+x = 4
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_thesoldiersvoice } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+RAJ = {country_event= {
 days = 1 
 id = commonwealth.1
 }
@@ -469,42 +412,44 @@ days = 1
 id = commonwealth.1 
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Results of the 1931 Election
-	focus = {
-		id = ENG_resultsofthe1931election
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 10
-		y = 1
-		cost = 1
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event= {
+ } 
+
+#Focus for Results of the 1931 Election
+focus = { 
+id = ENG_resultsofthe1931election
+icon = GFX_goal_tfv_strengthen_commonwealth_ties
+x = 10
+y = 1
+cost = 1
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+country_event= {
 days = 1 
 id = earlycoldwar.9
 }
-		}
-	}
+ } 
 
-	#Focus for Dominion Socialism
-	focus = {
-		id = ENG_dominionsocialism
-		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
-		x = 2
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_mergewiththelaborparty }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			CAN = {country_event= {
+ } 
+
+#Focus for Dominion Socialism
+focus = { 
+id = ENG_dominionsocialism
+icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
+x = 2
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_mergewiththelaborparty } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+CAN = {country_event= {
 days = 1 
 id = commonwealth.1 
 }
@@ -524,43 +469,45 @@ days = 1
 id = commonwealth.1 
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Mend Irish Relations
-	focus = {
-		id = ENG_mendirishrelations
-		icon = GFX_goal_tripartite_pact
-		x = 14
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_oswaldmosley }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_opinion_modifier= { 
+ } 
+
+#Focus for Mend Irish Relations
+focus = { 
+id = ENG_mendirishrelations
+icon = GFX_goal_tripartite_pact
+x = 14
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_oswaldmosley } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_opinion_modifier= { 
 target = IRE 
 modifier = large_increase
 }
-		}
-	}
+ } 
 
-	#Focus for Latin American Allies
-	focus = {
-		id = ENG_latinamericanallies
-		icon = GFX_focus_generic_little_entente
-		x = 18
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_cutawaylooseends }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			GUA = {country_event= {
+ } 
+
+#Focus for Latin American Allies
+focus = { 
+id = ENG_latinamericanallies
+icon = GFX_focus_generic_little_entente
+x = 18
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_cutawaylooseends } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+GUA = {country_event= {
 days = 1 
 id = earlycoldwar.12 
 }
@@ -585,23 +532,24 @@ days = 1
 id = earlycoldwar.12
 }
 }
-		}
-	}
+ } 
 
-	#Focus for True Rulers of the Raj
-	focus = {
-		id = ENG_truerulersoftheraj
-		icon = GFX_focus_RAJ_seek_help_from_germany
-		x = 14
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_mendirishrelations }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			RAJ = {country_event= {
+ } 
+
+#Focus for True Rulers of the Raj
+focus = { 
+id = ENG_truerulersoftheraj
+icon = GFX_focus_RAJ_seek_help_from_germany
+x = 14
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_mendirishrelations } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+RAJ = {country_event= {
 days = 1 
 id = earlycoldwar.10 
 }
@@ -611,40 +559,42 @@ days = 1
 id = earlycoldwar.10
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Cut Away Loose Ends
-	focus = {
-		id = ENG_cutawaylooseends
-		icon = GFX_focus_eng_move_to_secure_the_dominions
-		x = 18
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_purgethecommunists }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_faction= New English Empire end_puppet= AST end_puppet= NZL end_puppet= CAN
-		}
-	}
+ } 
 
-	#Focus for Imperial Favoritism
-	focus = {
-		id = ENG_imperialfavoritism
-		icon = GFX_focus_rom_royal_dictatorship
-		x = 16
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_britishunionoffascists }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			release= EGY puppet= EGY SAF = {country_event= {
+#Focus for Cut Away Loose Ends
+focus = { 
+id = ENG_cutawaylooseends
+icon = GFX_focus_eng_move_to_secure_the_dominions
+x = 18
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_purgethecommunists } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_faction= New English Empire end_puppet= AST end_puppet= NZL end_puppet= CAN
+ } 
+
+ } 
+
+#Focus for Imperial Favoritism
+focus = { 
+id = ENG_imperialfavoritism
+icon = GFX_focus_rom_royal_dictatorship
+x = 16
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_britishunionoffascists } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+release= EGY puppet= EGY SAF = {country_event= {
 days = 1 
 id = earlycoldwar.10
 }
@@ -654,161 +604,169 @@ days = 1
 id = earlycoldwar.10 
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Purge the Communists
-	focus = {
-		id = ENG_purgethecommunists
-		icon = GFX_goal_anti_comintern_pact
-		x = 18
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_oswaldmosley }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_popularity= { 
+ } 
+
+#Focus for Purge the Communists
+focus = { 
+id = ENG_purgethecommunists
+icon = GFX_goal_anti_comintern_pact
+x = 18
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_oswaldmosley } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
 ideology = fascism 
 popularity = 0.50
 }
-		}
-	}
+ } 
 
-	#Focus for Sell to the Dutch
-	focus = {
-		id = ENG_selltothedutch
-		icon = GFX_focus_hol_oranje_boven
-		x = 2
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_dominionsocialism }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			INS = {transfer_state= 333}
-		}
-	}
+ } 
 
-	#Focus for Sell to the Arabs
-	focus = {
-		id = ENG_selltothearabs
-		icon = GFX_focus_generic_treaty
-		x = 4
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_indianindependence }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			OMA = {transfer_state= 658}
-YEM = {transfer_state= 659}
-		}
-	}
+#Focus for Sell to the Dutch
+focus = { 
+id = ENG_selltothedutch
+icon = GFX_focus_hol_oranje_boven
+x = 2
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_dominionsocialism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+INS = {transfer_state= 333}
+ } 
 
-	#Focus for Sell to the Italians
-	focus = {
-		id = ENG_selltotheitalians
-		icon = GFX_focus_ger_assassinate_mussolini
-		x = 6
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_africancommunism }
-		ai_will_do = {
-			factor = 1
-		}
-		bypass = {
-			ITA = {has_government= neutrality}
-		}
-		completion_reward = {
-			ITA = {transfer_state= 116 transfer_state= 183 transfer_state= 269}
-		}
-	}
+ } 
 
-	#Focus for British Union of Fascists
-	focus = {
-		id = ENG_britishunionoffascists
-		icon = GFX_focus_eng_organise_the_blackshirts
-		x = 16
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_oswaldmosley }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_popularity= { 
+#Focus for Sell to the Arabs
+focus = { 
+id = ENG_selltothearabs
+icon = GFX_focus_generic_treaty
+x = 4
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_indianindependence } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+SAU = {transfer_state= 765 transfer_state= 658 transfer_state= 659}
+ } 
+
+ } 
+
+#Focus for Sell to the Italians
+focus = { 
+id = ENG_selltotheitalians
+icon = GFX_focus_ger_assassinate_mussolini
+x = 6
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_africancommunism } 
+ai_will_do = { 
+ factor = 1
+ } 
+bypass = { 
+ITA = {has_government= neutrality}
+ } 
+completion_reward = { 
+ITA = {transfer_state= 116 transfer_state= 183 transfer_state= 269}
+ } 
+
+ } 
+
+#Focus for British Union of Fascists
+focus = { 
+id = ENG_britishunionoffascists
+icon = GFX_focus_eng_organise_the_blackshirts
+x = 16
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_oswaldmosley } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
 ideology = fascism 
 popularity = 0.50 
 }
-		}
-	}
+ } 
 
-	#Focus for True Indian Glory
-	focus = {
-		id = ENG_trueindianglory
-		icon = GFX_focus_RAJ_all_india_forward_bloc
-		x = 12
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_supportthejapanese }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			RAJ = {country_event= {
+ } 
+
+#Focus for True Indian Glory
+focus = { 
+id = ENG_trueindianglory
+icon = GFX_focus_RAJ_all_india_forward_bloc
+x = 12
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_supportthejapanese } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+RAJ = {country_event= {
 days = 1 
 id = earlycoldwar.17 
 }
 }
-		}
-	}
+ } 
 
-	#Focus for Push for Home Rule
-	focus = {
-		id = ENG_pushforhomerule
-		icon = GFX_goal_tripartite_pact
-		x = 8
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_ramsaymacdonald }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power= 50
-		}
-	}
+ } 
 
-	#Focus for Disassociate from Communism
-	focus = {
-		id = ENG_disassociatefromcommunism
-		icon = GFX_goal_anti_comintern_pact
-		x = 10
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ENG_converttheroyalarsenal }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_popularity= { 
+#Focus for Push for Home Rule
+focus = { 
+id = ENG_pushforhomerule
+icon = GFX_goal_tripartite_pact
+x = 8
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_ramsaymacdonald } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power= 50
+ } 
+
+ } 
+
+#Focus for Disassociate from Communism
+focus = { 
+id = ENG_disassociatefromcommunism
+icon = GFX_goal_anti_comintern_pact
+x = 10
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ENG_converttheroyalarsenal } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
 ideology = communism
-popularity = -1
+popularity = -1 
 }
-		}
-	}
+ } 
+
+ } 
 
 #End of focuses 
  }

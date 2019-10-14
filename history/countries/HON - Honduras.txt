@@ -59,14 +59,13 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1932.10.28"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 50
-	fascism = 50
+	democratic = 100
 }
 
 create_country_leader = {
@@ -74,7 +73,7 @@ create_country_leader = {
 	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
 	picture = "portrait_hon_tiburcio_andin.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = conservatism
 	traits = {
 		#
 	}

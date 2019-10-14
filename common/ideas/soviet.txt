@@ -69,54 +69,6 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
-
-		International_Brigades = {
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				send_volunteer_size = 10
-			}
-		}
-
-		Gromovaya_Voyna = {
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				army_speed_factor = 2
-				army_armor_speed_factor = 2
-			}
-		}
-		Red_Marines = {
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				amphibious_invasion = 2
-			}
-		}
 	}
 
 
