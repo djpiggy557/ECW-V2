@@ -6,14 +6,11 @@ state={
 	state_category = wasteland
 
 	history={
-	    owner = DES
+		owner = 
 		buildings = {
 			infrastructure = 0
 		}
-	    set_demilitarized_zone = yes
-	
-		add_core_of = OMA
-		add_core_of = SAU
+		add_core_of = 
 	}
 
 	provinces={
