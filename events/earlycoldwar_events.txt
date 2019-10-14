@@ -2,32 +2,36 @@ add_namespace = earlycoldwar
 
 ##Event: Trotsky's Purge
 country_event = {
- id = earlycoldwar.1
- title = earlycoldwar.1.title
- desc = earlycoldwar.1.desc
- picture = GFX_report_event_soviet_purge_politicians
- is_triggered_only = yes
- fire_only_once = yes
- trigger = {
-complete_national_focus= Great_Purge
+	id = earlycoldwar.1
+	title = earlycoldwar.1.title
+	desc = earlycoldwar.1.desc
+	picture = GFX_report_event_soviet_purge_politicians
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		complete_national_focus= Great_Purge
 
 add_political_power = 120
-	}	mean_time_to_happen = { days = 1}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.1.a
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Trial of Kirov and Postyshev
 country_event = {
- id = earlycoldwar.2
- title = earlycoldwar.2.title
- desc = earlycoldwar.2.desc
- picture = GFX_report_event_soviet_purge_trial
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.2
+	title = earlycoldwar.2.title
+	desc = earlycoldwar.2.desc
+	picture = GFX_report_event_soviet_purge_trial
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.2.a
 		ai_chance = { factor = 1}
@@ -37,15 +41,14 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Trial of Zhdanov and Rudzutaks
 country_event = {
- id = earlycoldwar.3
- title = earlycoldwar.3.title
- desc = earlycoldwar.3.desc
- picture = GFX_report_event_poland_rejects
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.3
+	title = earlycoldwar.3.title
+	desc = earlycoldwar.3.desc
+	picture = GFX_report_event_poland_rejects
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.3.a
 		ai_chance = { factor = 1}
@@ -55,15 +58,14 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Trial of Yezhov and Mikoyan
 country_event = {
- id = earlycoldwar.4
- title = earlycoldwar.4.title
- desc = earlycoldwar.4.desc
- picture = GFX_report_event_journalists_speech
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.4
+	title = earlycoldwar.4.title
+	desc = earlycoldwar.4.desc
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.4.a
 		ai_chance = { factor = 1}
@@ -73,15 +75,14 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Trial of Kuybyshev and Molotov
 country_event = {
- id = earlycoldwar.5
- title = earlycoldwar.5.title
- desc = earlycoldwar.5.desc
- picture = GFX_news_event_aid_pact
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.5
+	title = earlycoldwar.5.title
+	desc = earlycoldwar.5.desc
+	picture = GFX_news_event_aid_pact
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.5.a
 		ai_chance = { factor = 1}
@@ -91,15 +92,14 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Trial of Voroshilov
 country_event = {
- id = earlycoldwar.6
- title = earlycoldwar.6.title
- desc = earlycoldwar.6.desc
- picture = GFX_news_event_023
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.6
+	title = earlycoldwar.6.title
+	desc = earlycoldwar.6.desc
+	picture = GFX_news_event_023
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.6.a
 		ai_chance = { factor = 1}
@@ -109,15 +109,14 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Execution of Beria
 country_event = {
- id = earlycoldwar.7
- title = earlycoldwar.7.title
- desc = earlycoldwar.7.desc
- picture = GFX_report_event_canadian_soldiers
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.7
+	title = earlycoldwar.7.title
+	desc = earlycoldwar.7.desc
+	picture = GFX_report_event_canadian_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.7.a
 		ai_chance = { factor = 1}
@@ -131,16 +130,17 @@ size = 0.5
 }
 	}
 }
-
 ##Event: Chilean Junta
 country_event = {
- id = earlycoldwar.8
- title = earlycoldwar.8.title
- desc = earlycoldwar.8.desc
- picture = GFX_report_event_chinese_soldiers_fighting
- fire_only_once = yes
- major = yes
-	mean_time_to_happen = { days = 152}
+	id = earlycoldwar.8
+	title = earlycoldwar.8.title
+	desc = earlycoldwar.8.desc
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	major = yes
+	mean_time_to_happen = {
+		days = 152
+	}
 	option = {
 		name = earlycoldwar.8.a
 		ai_chance = { factor = 1}
@@ -151,32 +151,34 @@ size = 0.5
 }
 	}
 }
-
 ##Event: The Results of the 1931 Election
 country_event = {
- id = earlycoldwar.9
- title = earlycoldwar.9.title
- desc = earlycoldwar.9.desc
- picture = GFX_report_event_generic_read_write
- is_triggered_only = yes
- fire_only_once = yes
- trigger = {
-has_completed_focus= ENG_resultsofthe1931election
-	}	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.9
+	title = earlycoldwar.9.title
+	desc = earlycoldwar.9.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_completed_focus= ENG_resultsofthe1931election
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.9.a
 		ai_chance = { factor = 20}
-		complete_national_focus= ENG_henrypollit
+		set_country_flag= henrypollit
 	}
 	option = {
 		name = earlycoldwar.9.b
 		ai_chance = { factor = 30}
-		complete_national_focus= ENG_oswaldmosely
+		set_country_flag= oswaldmosley
 	}
 	option = {
 		name = earlycoldwar.9.c
 		ai_chance = { factor = 50}
-		complete_national_focus= ENG_ramsaymacdonald
+		set_country_flag= ramsaymacdonald
 	}
 	option = {
 		name = earlycoldwar.9.d
@@ -191,16 +193,17 @@ elections_allowed = no
 }
 	}
 }
-
 ##Event: Oswald's Empire
 country_event = {
- id = earlycoldwar.10
- title = earlycoldwar.10.title
- desc = earlycoldwar.10.desc
- picture = GFX_report_event_german_troops
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.10
+	title = earlycoldwar.10.title
+	desc = earlycoldwar.10.desc
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.10.a
 		ai_chance = { factor = 20}
@@ -219,16 +222,17 @@ elections_allowed = no
 		ENG = {end_puppet= ROOT}
 	}
 }
-
 ##Event: Malaysia for Alliance
 country_event = {
- id = earlycoldwar.11
- title = earlycoldwar.11.title
- desc = earlycoldwar.11.desc
- picture = GFX_report_event_saf_civil_war
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.11
+	title = earlycoldwar.11.title
+	desc = earlycoldwar.11.desc
+	picture = GFX_report_event_saf_civil_war
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.11.a
 		ai_chance = { factor = 10}
@@ -247,15 +251,14 @@ add_to_faction= ENG
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Join the new Alliance
 country_event = {
- id = earlycoldwar.12
- title = earlycoldwar.12.title
- desc = earlycoldwar.12.desc
- picture = GFX_report_event_saf_civil_war
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.12
+	title = earlycoldwar.12.title
+	desc = earlycoldwar.12.desc
+	picture = GFX_report_event_saf_civil_war
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.12.a
 		ai_chance = { factor = 10}
@@ -266,15 +269,14 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: New Zealand Independence or Strength
 country_event = {
- id = earlycoldwar.13
- title = earlycoldwar.13.title
- desc = earlycoldwar.13.desc
- picture = GFX_report_event_generic_sign_treaty1
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.13
+	title = earlycoldwar.13.title
+	desc = earlycoldwar.13.desc
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.13.a
 		ai_chance = { factor = 10}
@@ -286,15 +288,14 @@ country_event = {
 		ENG = {end_puppet= NZL}
 	}
 }
-
 ##Event: Australian Independence or Strength
 country_event = {
- id = earlycoldwar.14
- title = earlycoldwar.14.title
- desc = earlycoldwar.14.desc
- picture = GFX_report_event_hitler_handshake
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.14
+	title = earlycoldwar.14.title
+	desc = earlycoldwar.14.desc
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.14.a
 		ai_chance = { factor = 10}
@@ -306,16 +307,17 @@ country_event = {
 		ENG = {end_puppet= AST}
 	}
 }
-
 ##Event: Canadian Independence or Strength
 country_event = {
- id = earlycoldwar.15
- title = earlycoldwar.15.title
- desc = earlycoldwar.15.desc
- picture = GFX_report_event_generic_read_write
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.15
+	title = earlycoldwar.15.title
+	desc = earlycoldwar.15.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.15.a
 		ai_chance = { factor = 10}
@@ -327,15 +329,14 @@ country_event = {
 		ENG = {end_puppet= CAN}
 	}
 }
-
 ##Event: South African Independence or Strength
 country_event = {
- id = earlycoldwar.16
- title = earlycoldwar.16.title
- desc = earlycoldwar.16.desc
- picture = GFX_report_event_generic_read_write
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.16
+	title = earlycoldwar.16.title
+	desc = earlycoldwar.16.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.16.a
 		ai_chance = { factor = 10}
@@ -347,15 +348,14 @@ country_event = {
 		ENG = {end_puppet= SAF}
 	}
 }
-
 ##Event: True Indian Glory
 country_event = {
- id = earlycoldwar.17
- title = earlycoldwar.17.title
- desc = earlycoldwar.17.desc
- picture = GFX_report_event_quit_india_movement
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.17
+	title = earlycoldwar.17.title
+	desc = earlycoldwar.17.desc
+	picture = GFX_report_event_quit_india_movement
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.17.a
 		ai_chance = { factor = 10}
@@ -366,16 +366,17 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Soviet-Guominjun Treaty
 country_event = {
- id = earlycoldwar.18
- title = earlycoldwar.18.title
- desc = earlycoldwar.18.desc
- picture = GFX_report_event_soviet_tanks_snow
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.18
+	title = earlycoldwar.18.title
+	desc = earlycoldwar.18.desc
+	picture = GFX_report_event_soviet_tanks_snow
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.18.a
 		ai_chance = { factor = 10}
@@ -399,16 +400,17 @@ popularity = -1
 SOV = {give_guarantee= MEN}
 	}
 }
-
 ##Event: Communist Revolution
 country_event = {
- id = earlycoldwar.19
- title = earlycoldwar.19.title
- desc = earlycoldwar.19.desc
- picture = GFX_report_event_tanks_vietnam
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.19
+	title = earlycoldwar.19.title
+	desc = earlycoldwar.19.desc
+	picture = GFX_report_event_tanks_vietnam
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.19.a
 		ai_chance = { factor = 10}
@@ -439,16 +441,17 @@ popularity = -1
 add_manpower= -1500
 	}
 }
-
 ##Event: Zapata Requests Help
 country_event = {
- id = earlycoldwar.20
- title = earlycoldwar.20.title
- desc = earlycoldwar.20.desc
- picture = GFX_report_event_spain_civil_war_volunteers_02
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.20
+	title = earlycoldwar.20.title
+	desc = earlycoldwar.20.desc
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.20.a
 		ai_chance = { factor = 10}
@@ -463,16 +466,17 @@ id = earlycoldwar.21
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Zapata has returned to the Country!
 country_event = {
- id = earlycoldwar.21
- title = earlycoldwar.21.title
- desc = earlycoldwar.21.desc
- picture = GFX_report_event_fighters
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.21
+	title = earlycoldwar.21.title
+	desc = earlycoldwar.21.desc
+	picture = GFX_report_event_fighters
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.21.a
 		ai_chance = { factor = 1}
@@ -486,16 +490,17 @@ id = earlycoldwar.22
 }
 	}
 }
-
 ##Event: Zapata's Revolution
 country_event = {
- id = earlycoldwar.22
- title = earlycoldwar.22.title
- desc = earlycoldwar.22.desc
- picture = GFX_report_event_japanese_army_parade
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.22
+	title = earlycoldwar.22.title
+	desc = earlycoldwar.22.desc
+	picture = GFX_report_event_japanese_army_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.22.a
 		ai_chance = { factor = 1}
@@ -533,16 +538,17 @@ size = 0.7
 }
 	}
 }
-
 ##Event: Future of Hungary
 country_event = {
- id = earlycoldwar.23
- title = earlycoldwar.23.title
- desc = earlycoldwar.23.desc
- picture = GFX_report_event_soldiers_marching
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.23
+	title = earlycoldwar.23.title
+	desc = earlycoldwar.23.desc
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.23.a
 		ai_chance = { factor = 10}
@@ -559,16 +565,17 @@ country_event = {
 		set_country_flag= HUN_backtotherepublic
 	}
 }
-
 ##Event: 1932 Election Results
 country_event = {
- id = earlycoldwar.24
- title = earlycoldwar.24.title
- desc = earlycoldwar.24.desc
- picture = GFX_report_event_usa_election_generic
- is_triggered_only = yes
- fire_only_once = yes
-	mean_time_to_happen = { days = 1}
+	id = earlycoldwar.24
+	title = earlycoldwar.24.title
+	desc = earlycoldwar.24.desc
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = earlycoldwar.24.a
 		ai_chance = { factor = 1}
@@ -590,15 +597,14 @@ country_event = {
 		set_country_flag= roosevelt_iii
 	}
 }
-
 ##Event: Federal Enfcorced Segregation
 country_event = {
- id = earlycoldwar.25
- title = earlycoldwar.25.title
- desc = earlycoldwar.25.desc
- picture = GFX_report_event_usa_election_generic
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.25
+	title = earlycoldwar.25.title
+	desc = earlycoldwar.25.desc
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.25.a
 		ai_chance = { factor = 1}
@@ -609,16 +615,15 @@ country_event = {
 		news_event= earlycoldwar.26
 	}
 }
-
 ##Event: Segregation in the United States
 news_event = {
- id = earlycoldwar.26
- title = earlycoldwar.26.title
- desc = earlycoldwar.26.desc
- picture = GFX_news_event_generic_sign_treaty2
- is_triggered_only = yes
- fire_only_once = yes
- major = yes
+	id = earlycoldwar.26
+	title = earlycoldwar.26.title
+	desc = earlycoldwar.26.desc
+	picture = GFX_news_event_generic_sign_treaty2
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
 	option = {
 		name = earlycoldwar.26.a
 		ai_chance = { factor = 1}
@@ -628,15 +633,14 @@ news_event = {
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Assassinating Long
 country_event = {
- id = earlycoldwar.27
- title = earlycoldwar.27.title
- desc = earlycoldwar.27.desc
- picture = GFX_news_event_generic_sign_treaty2
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.27
+	title = earlycoldwar.27.title
+	desc = earlycoldwar.27.desc
+	picture = GFX_news_event_generic_sign_treaty2
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.27.a
 		ai_chance = { factor = 1}
@@ -647,30 +651,28 @@ country_event = {
 		news_event= earlycoldwar.28
 	}
 }
-
 ##Event: Huey Long Assassinated!
 news_event = {
- id = earlycoldwar.28
- title = earlycoldwar.28.title
- desc = earlycoldwar.28.desc
- picture = GFX_news_event_generic_sign_treaty2
- is_triggered_only = yes
- fire_only_once = yes
- major = yes
+	id = earlycoldwar.28
+	title = earlycoldwar.28.title
+	desc = earlycoldwar.28.desc
+	picture = GFX_news_event_generic_sign_treaty2
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
 	option = {
 		name = earlycoldwar.28.a
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Philippine Statehood
 country_event = {
- id = earlycoldwar.29
- title = earlycoldwar.29.title
- desc = earlycoldwar.29.desc
- picture = GFX_report_event_usa_election_generic
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.29
+	title = earlycoldwar.29.title
+	desc = earlycoldwar.29.desc
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.29.a
 		ai_chance = { factor = 1}
@@ -689,15 +691,14 @@ target = PHI
 }
 	}
 }
-
 ##Event: Seize the Communist Dutch Colonies
 country_event = {
- id = earlycoldwar.30
- title = earlycoldwar.30.title
- desc = earlycoldwar.30.desc
- picture = GFX_report_event_merchant_ship_01
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.30
+	title = earlycoldwar.30.title
+	desc = earlycoldwar.30.desc
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.30.a
 		ai_chance = { factor = 10}
@@ -715,15 +716,14 @@ country_event = {
 ENG = {set_state_owner= 309}
 	}
 }
-
 ##Event: Purchase of Greenland or Baja
 country_event = {
- id = earlycoldwar.31
- title = earlycoldwar.31.title
- desc = earlycoldwar.31.desc
- picture = GFX_report_event_usa_election_generic
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.31
+	title = earlycoldwar.31.title
+	desc = earlycoldwar.31.desc
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.31.a
 		ai_chance = { factor = 10}
@@ -743,15 +743,14 @@ id = earlycoldwar.34
 }
 	}
 }
-
 ##Event: US Purchase of Baja
 country_event = {
- id = earlycoldwar.32
- title = earlycoldwar.32.title
- desc = earlycoldwar.32.desc
- picture = GFX_report_event_military_planning
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.32
+	title = earlycoldwar.32.title
+	desc = earlycoldwar.32.desc
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.32.a
 		ai_chance = { factor = 1}
@@ -768,15 +767,14 @@ id = earlycoldwar.33
 }
 	}
 }
-
 ##Event: Mexico Refused
 country_event = {
- id = earlycoldwar.33
- title = earlycoldwar.33.title
- desc = earlycoldwar.33.desc
- picture = GFX_report_event_usa_election_generic
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.33
+	title = earlycoldwar.33.title
+	desc = earlycoldwar.33.desc
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.33.a
 		ai_chance = { factor = 1}
@@ -791,15 +789,14 @@ id = earlycoldwar.34
 }
 	}
 }
-
 ##Event: US Purchase of Greenland
 country_event = {
- id = earlycoldwar.34
- title = earlycoldwar.34.title
- desc = earlycoldwar.34.desc
- picture = GFX_report_event_military_planning
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.34
+	title = earlycoldwar.34.title
+	desc = earlycoldwar.34.desc
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.34.a
 		ai_chance = { factor = 10}
@@ -810,15 +807,14 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
-
 ##Event: Results of the 1932 Legislative Election
 country_event = {
- id = earlycoldwar.35
- title = earlycoldwar.35.title
- desc = earlycoldwar.35.desc
- picture = GFX_report_event_generic_sign_treaty2
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.35
+	title = earlycoldwar.35.title
+	desc = earlycoldwar.35.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.35.a
 		ai_chance = { factor = 1}
@@ -840,15 +836,14 @@ country_event = {
 		set_country_flag= maurice_pujo
 	}
 }
-
 ##Event: King of France
 country_event = {
- id = earlycoldwar.36
- title = earlycoldwar.36.title
- desc = earlycoldwar.36.desc
- picture = GFX_report_event_pierre_laval
- is_triggered_only = yes
- fire_only_once = yes
+	id = earlycoldwar.36
+	title = earlycoldwar.36.title
+	desc = earlycoldwar.36.desc
+	picture = GFX_report_event_pierre_laval
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earlycoldwar.36.a
 		ai_chance = { factor = 1}
@@ -865,25 +860,24 @@ country_event = {
 		set_country_flag= louis_napoleon
 	}
 }
-
 ##Event: Chaco War
 news_event = {
- id = earlycoldwar.37
- title = earlycoldwar.37.title
- desc = earlycoldwar.37.desc
- picture = GFX_news_event_039
- fire_only_once = yes
- major = yes
- trigger = {
-BOL = {declare_war_on= { 
+	id = earlycoldwar.37
+	title = earlycoldwar.37.title
+	desc = earlycoldwar.37.desc
+	picture = GFX_news_event_039
+	fire_only_once = yes
+	major = yes
+	mean_time_to_happen = {
+		days = 122
+	}
+	option = {
+		name = earlycoldwar.37.a
+		ai_chance = { factor = 1}
+		BOL = {declare_war_on= { 
 target = PAR 
 type = annex_everything 
 }
 }
-	}	mean_time_to_happen = { days = 122}
-	option = {
-		name = earlycoldwar.37.a
-		ai_chance = { factor = 1}
 	}
 }
-
