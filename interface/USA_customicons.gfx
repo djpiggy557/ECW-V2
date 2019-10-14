@@ -1,3 +1,43 @@
 spriteTypes = { 
- 
+##Icon For: 1170870
+ SpriteType = { 
+ name = "GFX_finishthebananawars" 
+ texturefile = "gfx/interface/goals/GFX_finishthebananawars.tga" 
+ }##Icon For: 1170871
+ SpriteType = { 
+ name = "GFX_philippinesstatehood" 
+ texturefile = "gfx/interface/goals/GFX_philippinesstatehood.tga" 
+ }##Icon For: 1170869
+ SpriteType = { 
+ name = "GFX_stateofpuertorico" 
+ texturefile = "gfx/interface/goals/GFX_stateofpuertorico.tga" 
+ }##Icon For: 1170859
+ SpriteType = { 
+ name = "GFX_georgiandictator" 
+ texturefile = "gfx/interface/goals/GFX_georgiandictator.tga" 
+ }##Icon For: 1170860
+ SpriteType = { 
+ name = "GFX_northamericanempire" 
+ texturefile = "gfx/interface/goals/GFX_northamericanempire.tga" 
+ }##Icon For: 1170854
+ SpriteType = { 
+ name = "GFX_reducefemalesuffrage" 
+ texturefile = "gfx/interface/goals/GFX_reducefemalesuffrage.tga" 
+ }##Icon For: 1170855
+ SpriteType = { 
+ name = "GFX_idealsofthefoundingfathers" 
+ texturefile = "gfx/interface/goals/GFX_idealsofthefoundingfathers.tga" 
+ }##Icon For: 1170839
+ SpriteType = { 
+ name = "GFX_womenssuffrage" 
+ texturefile = "gfx/interface/goals/GFX_womenssuffrage.tga" 
+ }##Icon For: 1170838
+ SpriteType = { 
+ name = "GFX_catholicprotestantrelations" 
+ texturefile = "gfx/interface/goals/GFX_catholicprotestantrelations.tga" 
+ }##Icon For: 1170837
+ SpriteType = { 
+ name = "GFX_bootprohibition" 
+ texturefile = "gfx/interface/goals/GFX_bootprohibition.tga" 
+ } 
  }
