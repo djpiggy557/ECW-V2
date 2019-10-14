@@ -422,19 +422,19 @@ add_stability
 			factor = 1
 		}
 		completion_reward = {
-			set_politics= {
- ruling_party = neutrality 
-elections_allowed = no 
-}
+			set_politics
+= { ruling_party = neutrality elections_allowed = yes }
 
 create_country_leader= {
  name = "Puyi"
 desc = ""
-picture = "Portrait_GER_karl_liebknecht.dds" 
+picture = "portrait_ger_erik_zeigner.dds" 
 expire = "1965.1.1"
-ideology = Despot
+ideology = despot
 traits = {
 }
+
+ }
 		}
 	}
 
