@@ -366,7 +366,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Aleksandr Vasilevsky"
+	name = "Mikhail Artemyevich Muravyov"
 	id = 407
 		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
 	traits = { armor_officer politically_connected }
@@ -404,7 +404,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Ivan Konev"
+	name = "Ivar Smilga"
 	id = 408
 		picture = "Portrait_Soviet_Ivan_Konev.dds"
 	traits = { armor_officer harsh_leader politically_connected }
@@ -419,7 +419,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Semyon Timoshenko"
+	name = "Victor Serge"
 	id = 404
 		picture = "Portrait_Soviet_Semyon_Timoshenko.dds"
 	traits = { cavalry_officer politically_connected career_officer }
@@ -434,7 +434,7 @@ create_corps_commander = {
 }
 
 create_field_marshal = {
-	name = "Kliment Voroshilov"
+	name = "Andrei Bubnov"
 	id = 405
 		picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
 	traits = { old_guard politically_connected inflexible_strategist }
@@ -463,7 +463,7 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Semyon Budyonny"
+	name = "Vladimir Antonov-Ovseyenko"
 		picture = "Portrait_Soviet_Semyon_Budyonny.dds"
 	traits = { old_guard politically_connected inflexible_strategist }
 	skill = 1
