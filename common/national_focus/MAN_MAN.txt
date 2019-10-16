@@ -13,7 +13,7 @@ focus_tree = {
 		icon = GFX_focus_prc_infiltration
 		x = 12
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = MAN_militarysituation }
 		ai_will_do = {
@@ -119,7 +119,7 @@ add_manpower= 2500
 ideology = fascism 
 popularity = 0.1 
 }
-add_political_power= 50
+add_political_power= 25
 		}
 	}
 
@@ -137,7 +137,9 @@ add_political_power= 50
 			factor = 1
 		}
 		completion_reward = {
-			add_autonomy_ratio = {
+			add_political_power= 25
+
+add_autonomy_ratio = {
 	value = 0.45
         localization = MAN_the_two_emperors
 			}
@@ -236,6 +238,9 @@ add_manpower=2500
 		mutually_exclusive = { focus = MAN_letinjapanesesettlers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 75
 		}
 	}
 
@@ -432,6 +437,7 @@ name = land_doc_bonus
 bonus = 1.0
 uses = 1
 category = land_doctrine
+}
 		}
 	}
 
@@ -509,6 +515,7 @@ name = land_doc_bonus
 bonus = 1.0
 uses = 1
 category = land_doctrine
+}
 		}
 	}
 
@@ -518,7 +525,7 @@ category = land_doctrine
 		icon = GFX_goal_rhineland
 		x = 4
 		y = 1
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -620,6 +627,14 @@ random_owned_controlled_state = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+name = industrial_bonus
+bonus = 1.0
+uses = 1
+category = industry
+}
+		}
 	}
 
 	#Focus for The Forbidden City
@@ -659,15 +674,21 @@ add_stability
 			factor = 1
 		}
 		completion_reward = {
-			set_politics
-= { ruling_party = neutrality elections_allowed = yes }
+			kill_country_leader
+= yes
+
+add_popularity
+= { ideology = neutrality popularity = 0.35 }
+
+set_politics
+= { ruling_party = neutrality elections_allowed = no }
 
 create_country_leader= {
  name = "Puyi"
 desc = ""
-picture = "portrait_ger_erik_zeigner.dds" 
+picture = "Portrait_MAN_Puyi.dds" 
 expire = "1965.1.1"
-ideology = despot
+ideology = despotism
 traits = {
 }
 
@@ -689,7 +710,7 @@ traits = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 50
+			add_political_power= 125
 		}
 	}
 
@@ -754,7 +775,7 @@ target = XKC
 		}
 	}
 
-	#Focus for Rally the Troops
+	#Focus for Rally the troops
 	focus = {
 		id = MAN_rallythetroops
 		icon = GFX_goal_generic_axis_build_infantry
@@ -933,6 +954,14 @@ random_owned_controlled_state = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power= 15
+
+add_popularity= { 
+ideology = fascism 
+popularity = 0.15 
+}
+		}
 	}
 
 	#Focus for Crackdown on Minoritys
@@ -946,6 +975,9 @@ random_owned_controlled_state = {
 		prerequisite = { focus = MAN_ajapaneselapdog }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.15
 		}
 	}
 
@@ -970,8 +1002,7 @@ random_owned_controlled_state = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability
-= 0.10
+			add_ideas = MAN_Another_Tokyo
 		}
 	}
 
@@ -986,6 +1017,18 @@ random_owned_controlled_state = {
 		prerequisite = { focus = MAN_ajapaneselapdog }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			create_country_leader= {
+ name = "Bao Wenyue"
+desc = ""
+picture = "Portrait_MAN_Bao_Wenyue.dds" 
+expire = "1965.1.1"
+ideology = fascism_ideology
+traits = {
+}
+
+ }
 		}
 	}
 
@@ -1023,6 +1066,11 @@ add_manpower=5000
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_manpower=2500
+
+add_stability= 0.05
+		}
 	}
 
 	#Focus for Sino-Japanese Friendship
@@ -1036,6 +1084,15 @@ add_manpower=5000
 		prerequisite = { focus = MAN_ajapaneselapdog }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power= -50
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 2000
+    producer = JAP
+}
 		}
 	}
 
