@@ -92,7 +92,7 @@ id = earlycoldwar.11
 		icon = GFX_goal_support_communism
 		x = 4
 		y = 2
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = ENG_resultsofthe1931election }
 		mutually_exclusive = { 
@@ -357,7 +357,7 @@ id = earlycoldwar.12
 		icon = GFX_goal_support_democracy
 		x = 10
 		y = 2
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = ENG_resultsofthe1931election }
 		mutually_exclusive = { 
@@ -383,7 +383,7 @@ id = earlycoldwar.12
 		icon = GFX_goal_support_fascism
 		x = 16
 		y = 2
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = ENG_resultsofthe1931election }
 		mutually_exclusive = { 
@@ -399,7 +399,7 @@ id = earlycoldwar.12
 			factor = 25
 		}
 		available = {
-			set_country_flag= oswaldmosley
+			has_country_flag= oswaldmosley
 		}
 		completion_reward = {
 			set_politics= {

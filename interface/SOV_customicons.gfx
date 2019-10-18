@@ -1,3 +1,7 @@
 spriteTypes = { 
- 
+##Icon For: 1137431
+ SpriteType = { 
+ name = "GFX_beginafiveyearplan" 
+ texturefile = "gfx/interface/goals/GFX_beginafiveyearplan.tga" 
+ } 
  }

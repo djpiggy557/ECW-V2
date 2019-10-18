@@ -172,7 +172,7 @@ id = earlycoldwar.19
 	focus = {
 		id = SOV_volgaarmsindustry
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 9
+		x = 7
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -207,7 +207,7 @@ id = earlycoldwar.19
 	focus = {
 		id = SOV_sovietscience
 		icon = GFX_goal_generic_scientific_exchange
-		x = 9
+		x = 7
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -224,7 +224,7 @@ id = earlycoldwar.19
 	focus = {
 		id = SOV_turkestanindustry
 		icon = GFX_goal_generic_construction2
-		x = 9
+		x = 7
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -445,8 +445,8 @@ target = ENG
 	#Focus for Begin a Five Year Plan
 	focus = {
 		id = SOV_beginafiveyearplan
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 9
+		icon = GFX_beginafiveyearplan
+		x = 7
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -1166,6 +1166,29 @@ category = infantry_weapons
 uses = 5
 category = naval_doctrine 
 }
+		}
+	}
+
+	#Focus for Dniper Daugava Line
+	focus = {
+		id = SOV_dniperdaugavaline
+		icon = GFX_goal_generic_fortify_city
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_defensive_war= yes has_offensive_war= yes
+		}
+		completion_reward = {
+			add_building_construction= { 
+type = bunker 
+province = 721 737 3573 588 11405 453 9463 6507 6495 9491 11530 9543 11557 489 3568 546 9228 6344 6233 11271 6354 11220 11241 9323 6249 6326 3219 6459 310 7482 10323 9340
+level = 5 
+instant_build = yes }
 		}
 	}
 
