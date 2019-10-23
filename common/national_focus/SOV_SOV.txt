@@ -682,7 +682,7 @@ id = earlycoldwar.19
 	#Focus for Trotsky's Doctrine
 	focus = {
 		id = SOV_trotskysdoctrine
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_trotskysdoctrine
 		x = 24
 		y = 2
 		cost = 3
@@ -1032,7 +1032,7 @@ category = land_doctrine
 	#Focus for Every Soldier Armed
 	focus = {
 		id = SOV_everysoldierarmed
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_everysoldierarmed
 		x = 23
 		y = 3
 		cost = 10
@@ -1053,7 +1053,7 @@ producer = SOV
 	#Focus for Mass Assault
 	focus = {
 		id = SOV_massassault
-		icon = GFX_focus_prc_infiltration
+		icon = GFX_massassault
 		x = 25
 		y = 3
 		cost = 10
