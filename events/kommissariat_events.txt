@@ -37,3 +37,71 @@ traits = {
  }
 	}
 }
+##Event: Return Of the Rhine
+country_event = {
+	id = kommissariat.2
+	title = kommissariat.2.title
+	desc = kommissariat.2.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_nra_march
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kommissariat.2.a
+		ai_chance = { factor = 1}
+		RHI = { country_event = kommissarreich.10 }
+	}
+}
+##Event: Return Of Hamburg
+country_event = {
+	id = kommissariat.3
+	title = kommissariat.3.title
+	desc = kommissariat.3.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_soldiers_marching
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kommissariat.3.a
+		ai_chance = { factor = 1}
+		DEN = { country_event = kommissarreich.11 }
+	}
+}
+##Event: They have rejected!
+country_event = {
+	id = kommissariat.4
+	title = kommissariat.4.title
+	desc = kommissariat.4.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_polish_army
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kommissariat.4.a
+		ai_chance = { factor = 1}
+		create_wargoal = { 
+type = annex_everything 
+target = RHI
+	}
+	option = {
+		name = kommissariat.4.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: The Danish have rejected!
+country_event = {
+	id = kommissariat.5
+	title = kommissariat.5.title
+	desc = kommissariat.5.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_lithuania_army
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kommissariat.5.a
+		ai_chance = { factor = 1}
+		create_wargoal = { 
+type = annex_everything 
+target = DEN
+	}
+	option = {
+		name = kommissariat.5.b
+		ai_chance = { factor = 1}
+	}
+}

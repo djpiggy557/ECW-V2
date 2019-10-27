@@ -628,7 +628,7 @@ target = FRA
 			factor = 1
 		}
 		completion_reward = {
-			country_event = kommissarreich.17
+			country_event = kommissariat.2
 		}
 	}
 
@@ -883,7 +883,7 @@ add_political_power
 			factor = 1
 		}
 		completion_reward = {
-			country_event = kommissarreich.18
+			country_event = kommissariat.3
 		}
 	}
 
