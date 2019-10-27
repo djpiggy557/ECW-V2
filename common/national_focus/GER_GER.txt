@@ -23,9 +23,9 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Autonomy for Minoritys?
+	#Focus for Autonomy for Minorities?
 	focus = {
-		id = GER_autonomyforminoritys
+		id = GER_autonomyforminorities
 		icon = GFX_focus_generic_polish_deal
 		x = 6
 		y = 1
@@ -93,7 +93,7 @@ traits = {
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = GER_autonomyforminoritys 
+			focus = GER_autonomyforminorities 
 		}
 		prerequisite = { 
 			focus = GER_removethelastmonuments 
