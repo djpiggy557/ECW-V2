@@ -371,6 +371,8 @@ remove_ideas = GER_Purged_Reichstag
 		}
 		completion_reward = {
 			add_political_power= 50
+
+SOV = {remove_from_faction= GER}
 		}
 	}
 
@@ -390,6 +392,9 @@ remove_ideas = GER_Purged_Reichstag
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = { id = kommissariat.1 }
 		}
 	}
 
@@ -879,6 +884,125 @@ add_political_power
 		}
 		completion_reward = {
 			country_event = kommissarreich.18
+		}
+	}
+
+	#Focus for Purge Radical Elements
+	focus = {
+		id = GER_purgeradicalelements
+		icon = GFX_focus_hun_assassinate_horthy
+		x = 3
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_findasuccessor }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = GER_red_army
+
+add_political_power = -50
+		}
+	}
+
+	#Focus for A Socialist Paradise
+	focus = {
+		id = GER_asocialistparadise
+		icon = GFX_focus_generic_join_comintern
+		x = 4
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_buildupindustry 
+		}
+		prerequisite = { 
+			focus = GER_purgeradicalelements 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 125
+
+add_stability= 0.15
+		}
+	}
+
+	#Focus for Build up Industry
+	focus = {
+		id = GER_buildupindustry
+		icon = GFX_goal_generic_construction2
+		x = 5
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_findasuccessor }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
