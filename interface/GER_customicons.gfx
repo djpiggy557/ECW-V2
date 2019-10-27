@@ -15,6 +15,10 @@ spriteTypes = {
  SpriteType = { 
  name = "GFX_reformeconomicpolicys" 
  texturefile = "gfx/interface/goals/GFX_reformeconomicpolicys.tga" 
+ }##Icon For: 1127015
+ SpriteType = { 
+ name = "GFX_restaffthemilitary" 
+ texturefile = "gfx/interface/goals/GFX_restaffthemilitary.tga" 
  }##Icon For: 1130690
  SpriteType = { 
  name = "GFX_diplomacy" 

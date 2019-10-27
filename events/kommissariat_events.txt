@@ -1,0 +1,39 @@
+add_namespace = kommissariat
+
+##Event: Succession
+country_event = {
+	id = kommissariat.1
+	title = kommissariat.1.title
+	desc = kommissariat.1.desc
+	picture = GFX_/media/get//hoi4/event_gfx/event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kommissariat.1.a
+		ai_chance = { factor = 1}
+		create_country_leader= {
+ name = "Paul Levi"
+desc = ""
+picture = "Portrait_Paul.dds" 
+expire = "1965.1.1"
+ideology = stalinism
+traits = {
+}
+
+ }
+	}
+	option = {
+		name = kommissariat.1.b
+		ai_chance = { factor = 1}
+		create_country_leader= {
+ name = "Ernst Meyer"
+desc = ""
+picture = "Portrait_Meyer.dds" 
+expire = "1965.1.1"
+ideology = stalinism
+traits = {
+}
+
+ }
+	}
+}
