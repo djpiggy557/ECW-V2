@@ -322,7 +322,7 @@ id = earlycoldwar.12
 			factor = 1
 		}
 		completion_reward = {
-			release= BOT release= EGY release= GHA release= ISR release= JOR release= KEN release= SIE release= MLW release= NGA release= SUD release= TZN release= UGA release= ZAM release= ZIM
+			release_puppet= BOT release_puppet= EGY release_puppet= GHA release_puppet= ISR release_puppet= JOR release_puppet= KEN release_puppet= SIE release_puppet= MLW release_puppet= NGA release_puppet= SUD release_puppet= TZN release_puppet= UGA release_puppet= ZAM release_puppet= ZIM
 		}
 	}
 
@@ -707,15 +707,17 @@ popularity = 0.50
 			factor = 1
 		}
 		completion_reward = {
-			OMA = {transfer_state= 658}
-YEM = {transfer_state= 659}
+			YEM = {transfer_state= 659}
+OMA = {transfer_state= 658}
+SAU = {transfer_state= 765 transfer_state= 803}
+JBS = {transfer_state= 656}
 		}
 	}
 
 	#Focus for Sell to the Italians
 	focus = {
 		id = ENG_selltotheitalians
-		icon = GFX_focus_ger_assassinate_mussolini
+		icon = GFX_focus_generic_italy_first
 		x = 6
 		y = 5
 		cost = 10
@@ -723,9 +725,6 @@ YEM = {transfer_state= 659}
 		prerequisite = { focus = ENG_africancommunism }
 		ai_will_do = {
 			factor = 1
-		}
-		bypass = {
-			ITA = {has_government= neutrality}
 		}
 		completion_reward = {
 			ITA = {transfer_state= 116 transfer_state= 183 transfer_state= 269}

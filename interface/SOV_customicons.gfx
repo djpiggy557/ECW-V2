@@ -3,5 +3,17 @@ spriteTypes = {
  SpriteType = { 
  name = "GFX_beginafiveyearplan" 
  texturefile = "gfx/interface/goals/GFX_beginafiveyearplan.tga" 
+ }##Icon For: 1405568
+ SpriteType = { 
+ name = "GFX_trotskysdoctrine" 
+ texturefile = "gfx/interface/goals/GFX_trotskysdoctrine.tga" 
+ }##Icon For: 1405572
+ SpriteType = { 
+ name = "GFX_everysoldierarmed" 
+ texturefile = "gfx/interface/goals/GFX_everysoldierarmed.tga" 
+ }##Icon For: 1405574
+ SpriteType = { 
+ name = "GFX_massassault" 
+ texturefile = "gfx/interface/goals/GFX_massassault.tga" 
  } 
  }

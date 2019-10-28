@@ -1,4 +1,4 @@
-﻿add_namespace = kommissarreich
+add_namespace = kommissarreich
 
 ##Event: May Day Celebrations!
 country_event = {
@@ -245,10 +245,7 @@ transfer_state = 51
 	option = {
 		name = kommissarreich.10.b
 		ai_chance = { factor = 1}
-		{ GER = create_wargoal = { 
-type = annex_everything 
-target = RHI
-}
+		GER = { country_event = kommissariat.4 }
 	}
 }
 ##Event: Germany Demand Schleswig!
@@ -272,10 +269,7 @@ transfer_state = 58
 	option = {
 		name = kommissarreich.11.b
 		ai_chance = { factor = 1}
-		{ GER = create_wargoal = { 
-type = annex_everything 
-target = DEN
-}
+		GER = { country_event = kommissariat.5 }
 	}
 }
 ##Event: Italian Socialism
@@ -292,10 +286,6 @@ country_event = {
 	option = {
 		name = kommissarreich.12.a
 		ai_chance = { factor = 1}
-             ITA = { add_popularity = {
-	        ideology = communism
-	        popularity = 0.15 }
-               }
 	}
 }
 ##Event: French Socialism
@@ -315,10 +305,6 @@ country_event = {
 	option = {
 		name = kommissarreich.13.a
 		ai_chance = { factor = 1}
-             FRA = { add_popularity = {
-	        ideology = communism
-	        popularity = 0.15 }
-               }
 	}
 }
 ##Event: The Revolution
@@ -335,9 +321,8 @@ country_event = {
 	option = {
 		name = kommissarreich.14.a
 		ai_chance = { factor = 1}
-                ITA = { country_event = kommissarreich.16 }
 		FRA = { country_event = kommissarreich.15 }
-               }
+ITA = { country_event = kommissarreich.16 }
 	}
 }
 ##Event: Protesters demand a Communist Government
@@ -361,7 +346,6 @@ elections_allowed = yes }
 		FRA = { start_civil_war= {
  ideology = communism
 size = 0.5 }
-               }
 	}
 }
 ##Event: Protests demanding the Overthrow of the Monarchy
@@ -385,7 +369,6 @@ elections_allowed = yes }
 		ITA = { start_civil_war= {
  ideology = communism
 size = 0.5 }
-               }
 	}
 }
 ##Event: Return Of the Rhine
@@ -420,5 +403,45 @@ country_event = {
 		name = kommissarreich.18.a
 		ai_chance = { factor = 1}
 		DEN = { country_event = kommissarreich.11 }
+	}
+}
+##Event: Succession
+country_event = {
+	id = kommissarreich.19
+	title = kommissarreich.19.title
+	desc = kommissarreich.19.desc
+	picture = GFX_/media/get//hoi4/event_gfx/report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = kommissarreich.19.a
+		ai_chance = { factor = 1}
+		create_country_leader= {
+ name = "Paul Levi"
+desc = ""
+picture = "Portrait_Paul.dds" 
+expire = "1965.1.1"
+ideology = stalinism
+traits = {
+}
+
+ }
+	}
+	option = {
+		name = kommissarreich.19.b
+		ai_chance = { factor = 1}
+		create_country_leader= {
+ name = "Ernst Meyer"
+desc = ""
+picture = "Portrait_Meyer.dds" 
+expire = "1965.1.1"
+ideology = stalinism
+traits = {
+}
+
+ }
 	}
 }

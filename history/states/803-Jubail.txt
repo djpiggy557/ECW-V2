@@ -16,7 +16,7 @@ state={
 		add_core_of = ENG 
 	}
 
-	provinces={ 10791 12702 1955 
+	provinces={ 10791 12702 
 		 
 	}
 }
