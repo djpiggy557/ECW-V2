@@ -1,4 +1,4 @@
-﻿name="Kommissarreich"
+﻿name="Kommissarreich (1.7.*)"
 path="mod/EC/ECW-V2"
 replace_path="music"
 replace_path="events"
@@ -9,5 +9,6 @@ tags={
 	"Balance"
 	"Fixes"
 }
-supported_version="1.7.*"
 picture="gg.gif"
+remote_file_id="1899831345"
+supported_version="1.7.*"
