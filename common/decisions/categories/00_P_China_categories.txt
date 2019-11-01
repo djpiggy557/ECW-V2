@@ -1,0 +1,17 @@
+ western_smuggler= {
+	icon = generic_propaganda
+
+	visible = {
+            has_global_flag =  western_smuggled
+	}
+}
+
+selling_opium = {
+	icon = generic_propaganda
+
+	visible = {
+            tag = CHI
+	}
+}
+
+

@@ -1,0 +1,87 @@
+add_namespace = china2
+
+##Event: A Meeting
+country_event = {
+	id = china2.1
+	title = china.1.title
+	desc = china.1.desc
+	picture = GFX_/media/get//hoi4/event_gfx/event_test
+	is_triggered_only = yes
+	option = {
+		name = china.1.a
+		ai_chance = { factor = 100}
+	}
+}
+
+country_event = {
+	id = china2.2
+	title = china2.2.title
+	desc = china2.2.desc
+	picture = GFX_/media/get//hoi4/event_gfx/event_test
+	is_triggered_only = yes
+	option = {
+		name = china.2.a
+		ai_chance = { factor = 1}
+		add_stability = -0.05
+add_political_power = -50
+add_ideas = heroin_addicts
+	}
+}
+
+country_event = {
+	id = china2.3
+	title = china2.3.t
+	desc = china2.3.desc
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	
+	#Accept puppet
+	option = {
+		name = china2.3.a
+		ai_chance = { 
+			base = 10 
+		}
+		FROM = { annex_country = {
+                            target = MON
+                            transfer_troops = yes
+                 }
+                      }
+		}
+
+
+	#Never
+	option = {
+		name = china2.3.b
+		ai_chance = { 
+			base = 10 
+		}
+		FROM = {
+			create_wargoal = {
+                           type = puppet_wargoal_focus
+                           target = ROOT
+                      }
+		}
+	}
+}
+
+country_event = {
+	id = china2.3
+	title = china2.3.title
+	desc = china2.3.desc
+	picture = GFX_/media/get//hoi4/event_gfx/event_test
+	option = {
+		name = china2.3.a
+		ai_chance = { factor = 1}
+		CHI = { annex_country = MEN }
+	}
+	option = {
+		name = china2.3.b
+		ai_chance = { factor = 0}
+		declare_war_on = {
+    target = CHI
+    type = annex_everything
+}
+	}
+}
+

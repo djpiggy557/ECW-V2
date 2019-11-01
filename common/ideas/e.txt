@@ -1,0 +1,15 @@
+country = { 
+
+Opium_addicted_army = {
+	allowed = { always = no }
+	modifier = {
+		max_planning = -0.15
+                planning_speed = -10 	
+                army_org = -25 	
+                army_attack_factor = -0.10 
+                 army_defence_factor = -0.10
+		}
+	
+	
+}
+}
