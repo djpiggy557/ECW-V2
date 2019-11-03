@@ -1,5 +1,5 @@
 ﻿capital = 613 # Nanjing
-
+set_variable = { opium_cost = 100 } 
 oob = "CHI_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,7 +8,8 @@ if = {
 		set_naval_oob = "CHI_1936_naval_legacy"
 	}
 }
-
+set_global_flag =  western_smuggled
+set_cosmetic_tag = CHI_clique
 set_stability = 0.2
 set_war_support = 0.5
 # Starting tech
